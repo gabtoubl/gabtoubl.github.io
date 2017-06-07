@@ -12,12 +12,12 @@
     </form>
     <div><span id="profiles"></span></div>
     <div>Show <span>
-      <input type='radio' name='showItem' value='1' id='showAllItems' onclick='switchObtained("all")' checked/>
+      <input type='radio' name='showItem' id='showAllItems' onclick='switchObtained("all")' checked/>
       <label for='showAllItems'>All Items</label>
-      <input type='radio' name='showItem' value='1' id='showObtainedItems' onclick='switchObtained(true)' />
-      <label for='showObtainedItems'>Found Items</label>
-      <input type='radio' name='showItem' value='0' id='showMissedItems' onclick='switchObtained(false)'/>
-      <label for='showMissedItems'>Missing Items</label>
+      <input type='radio' name='showItem' id='showFoundItems' onclick='switchObtained(true)' disabled/>
+      <label for='showFoundItems'>Found Items</label>
+      <input type='radio' name='showItem' id='showMissingItems' onclick='switchObtained(false)' disabled/>
+      <label for='showMissingItems'>Missing Items</label>
       </span>
     </div>
     <div id='itemDiv'>
@@ -179,7 +179,9 @@
             addradiobutton(profiles, "Player "+save['name']+", Level "+save['level'], +id);
           }
           chargeProfile(0);
-          document.getElementById('showObtainedItems').click();
+          document.getElementById('showMissingItems').disabled = false;
+          document.getElementById('showFoundItems').disabled = false;
+          document.getElementById('showFoundItems').click();
           document.getElementById('item').click();
         }
       }
