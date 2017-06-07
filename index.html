@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="theme.css">
+    <title>Platinum Souls: Dark soul item cheatsheet</title>
+  </head>
+  <body>
+    <form action="" method="post" enctype="multipart/form-data">
+      Select your Dark Souls savefile:
+      <input type="hidden" name="MAX_FILE_SIZE" value="<?=$MAXBYTES; ?>" />
+      <input type="file" name="dsSave" id="dsSave" />
+    </form>
+    <div><span id="profiles"></span></div>
+    <div>Show <span>
+      <input type='radio' name='showItem' value='1' id='showObtainedItems' onclick='switchObtained(true)' checked/>
+      <label for='showObtainedItems'>Obtained Items</label>
+      <input type='radio' name='showItem' value='0' id='showMissedItems' onclick='switchObtained(false)'/>
+      <label for='showMissedItems'>Missing Items</label>
+      </span>
+    </div>
+    <div id='itemDiv'>
+      <div id="itemTypes">
+        <img src='imgs/category/cat_item.png' alt='cat_item' id='item' class='selected'/>
+        <img src='imgs/category/cat_material.png' alt='cat_material' id='material' />
+        <img src='imgs/category/cat_key_item.png' alt='cat_key_item' id='key_item' />
+        <img src='imgs/category/cat_magic.png' alt='cat_magic' id='magic' />
+        <img src='imgs/category/cat_weapon.png' alt='cat_weapon' id='weapon' />
+        <img src='imgs/category/cat_ammunition.png' alt='cat_ammunition' id='ammunition' />
+        <img src='imgs/category/cat_armor.png' alt='cat_armor' id='armor' />
+        <img src='imgs/category/cat_ring.png' alt='cat_ring' id='ring' />
+      </div>
+      <div id="itemPlaces">
+        <div id='undeadAsylum'>Undead Asylum</div>
+        <div id='fireLinkShrine'>FireLink Shrine</div>
+        <div id='undeadBurg'>Undead Burg</div>
+        <div id='undeadParish'>Undead Parish</div>
+        <div id='darkrootGarden'>Darkroot Garden</div>
+        <div id='darkrootBasin'>Darkroot Basin</div>
+        <div id='depths'>Depths</div>
+        <div id='blighttown'>Blighttown</div>
+        <div id='quelaagDomain'>Quelaag's Domain</div>
+        <div id='theGreatHollow'>The Great Hollow</div>
+        <div id='ashLake'>Ash Lake</div>
+        <div id='valleyOfDrakes'>Valley of Drakes</div>
+        <div id='senFortress'>Sen's Fortress</div>
+        <div id='anorLondo'>Anor Londo</div>
+        <div id='paintedWorldOfAriamis'>Painted World of Ariamis</div>
+        <div id='theCatacombs'>The Catacombs</div>
+        <div id='tombsofGiants'>Tombs of Giants</div>
+        <div id='theDukeArchives'>The Duke's Archives</div>
+        <div id='crystalCave'>Crystal Cave</div>
+        <div id='newLondoRuins'>New Londo Ruins</div>
+        <div id='theAbyss'>The Abyss</div>
+        <div id='demonsRuins'>Demons Ruins</div>
+        <div id='lostIzalith'>Lost Izalith</div>
+        <div id='sanctuaryGarden'>Sanctuary Garden</div>
+        <div id='oolacileSanctuary'>Oolacile Sanctuary</div>
+        <div id='royalWood'>Royal Wood</div>
+        <div id='oolacileTownship'>Oolacile Township</div>
+        <div id='chasmOfTheAbyss'>Chasm of the Abyss</div>
+        <div id='kilnOfTheFirstFlame'>Kiln of the First Flame</div>
+      </div>
+      <div id='itemList'></div>
+    </div>
+    <p>
+      TODO (Things I have todo on my own):<br />
+      <ul>
+        <li>Set the location for all 687 items, yup</li>
+        <li>Info bubble onhover images with shitload of info (Name, location, exact location, amount, goneInNG+, isDLC, isNeededforAchievement1, etc)</li>
+        <li>Set the exact location for every item, good times!</li>
+        <li>Knight's honor and other achievements</li>
+        <li>Flag for which item is a DLC items</li>
+        <li>Flag for which item disappear in NG+</li>
+        <li>Search form?</li>
+      </ul>
+    </p>
+    <p>
+      TODO (Feel free to help me with those things):<br />
+      <ul>
+        <li>Find a better image for Black Separation Crystal for DS (currently from DS3)</li>
+        <li>Find a better image for Twinkling Titanite</li>
+        <li>Verify that the images for the "Souls of a ..." are correct</li>
+        <li>Verify that the images for the carvings are correct</li>
+        <li>Find where the unlocked gestures are stored in the savefile</li>
+        <li>Check if Beatrice's Set is mixed with Dusk's in default sort</li>
+      </ul>
+    </p>
+    <script src="fullItemList.js"></script>
+    <script src="saveParser.js"></script>
+    <script type="text/javascript">
+      var saves = [];
+      var imgsList = [];
+      var itemContainer = document.getElementById("itemList");
+      var itemTypes = document.getElementById("itemTypes").childNodes;
+      var itemPlaces = document.getElementById("itemPlaces").childNodes;
+      var inputFile = document.getElementById('dsSave');
+      var currentProfile = -1;
+      var showMissed = false;
+      var filter = 'item';
+      hideEverything = () => {
+        for (var img of imgsList) {
+          if (img.itemType == filter || img.itemLocations.indexOf(filter) != -1)
+            img.style.display = showMissed ? 'inline-block' : 'none';
+          else
+            img.style.display = 'none';
+        }
+      }
+      switchObtained = (showObtained) => {
+        showMissed = !showObtained;
+        if (currentProfile == -1)
+          hideEverything();
+        else
+          chargeProfile(currentProfile);
+      }
+      changeFilter = (category) => {
+        var reset = false;
+        var newFilter = category.id;
+        if (newFilter == filter)
+          return;
+        filter = newFilter;
+        if (currentProfile == -1)
+          hideEverything();
+        else
+          chargeProfile(currentProfile);
+        for (var cat of itemTypes)
+          if (cat.id)
+            cat.classList.remove('selected');
+        for (var cat of itemPlaces)
+          if (cat.id)
+            cat.classList.remove('selected');
+        category.classList.add('selected');
+      }
+      for (var item of fullItemList) {
+        var imgContainer = document.createElement('div');
+        imgContainer.id = item.type+item.id;
+        for (var prop in item) {
+          var newProp = 'item'+ prop[0].toUpperCase() + prop.slice(1);
+          imgContainer[newProp] = item[prop];
+        }
+        var img = document.createElement("img");
+        img.src = 'imgs/'+item.type+'/'+item.id + '.png';
+        img.alt = item.id;
+        img.title = item.name;
+        imgContainer.appendChild(img);
+        imgsList.push(imgContainer);
+        itemContainer.appendChild(imgContainer);
+      }
+      for (var category of itemTypes) {
+        if (category.id)
+          category.onclick = function() {changeFilter(this);};
+      }
+      for (var place of itemPlaces) {
+        if (place.id)
+          place.onclick = function() {changeFilter(this);};
+      }
+      chargeProfile = (id) => {
+        hideEverything();
+        currentProfile = id;
+        for (var item of saves[id].items) {
+          var img = document.getElementById(item.type+item.id);
+          if (!img)
+            console.log('error:',item.id,item.type);
+          else {
+            if (img.itemType == filter || img.itemLocations.indexOf(filter) != -1)
+              img.style.display = showMissed ? 'none' : 'inline-block';
+            else
+              img.style.display = 'none';
+          }
+        }
+      }
+      addradiobutton = (parent, text, id) => {
+        var label = document.createElement("label");
+        var radio = document.createElement("input");
+        radio.type = 'radio';
+        radio.id = 'playerSave'+id;
+        radio.value = id;
+        radio.name = 'save';
+        radio.checked = (id === 0);
+        radio.onclick = () => chargeProfile(id);
+        label.innerHTML += text;
+        label.htmlFor = 'playerSave'+id;
+        parent.appendChild(radio);
+        parent.appendChild(label);
+      }
+      loadSaves = (saves) => {
+        if (Object.keys(saves).length !== 0) {
+          var profiles = document.getElementById("profiles");
+          profiles.innerHTML = '';
+          for (var id in saves) {
+            var save = saves[id];
+            addradiobutton(profiles, "Player "+save['name']+", Level "+save['level'], +id);
+          }
+          chargeProfile(0);
+        }
+      }
+      inputFile.onchange = function(e) {
+        var file = this.files[0];
+        var reader = new FileReader();
+        reader.onload = function(e) {
+          saves = parseSaveFile(reader.result);
+          loadSaves(saves);
+        }
+        reader.readAsBinaryString(file);
+      }
+    </script>
+  </body>
+</html>

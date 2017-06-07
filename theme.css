@@ -1,0 +1,72 @@
+@font-face {
+    font-family: DarkSouls;
+    src: url('OptimusPrincepsSemiBold.ttf');
+}
+
+#itemTypes {
+  padding-left: 135px;
+}
+
+#itemTypes > img {
+  height: 75px;
+  width: 75px;
+  display: inline-block;
+}
+
+#itemTypes > img.selected {
+  filter: sepia(100%) saturate(400%) brightness(120%);
+  cursor: pointer;
+}
+
+#itemTypes:hover > img:hover {
+  filter: sepia(100%) saturate(400%) brightness(120%);
+  cursor: pointer;
+}
+
+#itemPlaces {
+  font-family: 'DarkSouls';
+  float: left;
+}
+
+#itemPlaces > div {
+  width: 135px;
+  background: url(rockTexture.jpg);
+  margin: 0px 0 1px 0;
+  color: azure;
+  border-style: ridge;
+  text-align: center;
+}
+
+#itemPlaces > div.selected {
+  filter: sepia(100%) saturate(300%) brightness(95%);
+  cursor: pointer;
+  color: black;
+}
+
+#itemPlaces:hover > div:hover {
+  filter: sepia(100%) saturate(300%) brightness(95%);
+  cursor: pointer;
+  color: black;
+}
+
+#itemList {
+  margin-left: 145px;
+  max-width: 650px;
+}
+
+#itemList > div  {
+  width: 62px;
+  height: 62px;
+  text-align: center;
+  vertical-align: middle;
+  display: none;
+}
+
+#itemList > div > img {
+  max-width: 62px;
+  max-height: 62px;
+}
+
+p {
+  clear: both;
+}
