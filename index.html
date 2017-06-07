@@ -12,8 +12,10 @@
     </form>
     <div><span id="profiles"></span></div>
     <div>Show <span>
-      <input type='radio' name='showItem' value='1' id='showObtainedItems' onclick='switchObtained(true)' checked/>
-      <label for='showObtainedItems'>Obtained Items</label>
+      <input type='radio' name='showItem' value='1' id='showAllItems' onclick='switchObtained("all")' checked/>
+      <label for='showAllItems'>All Items</label>
+      <input type='radio' name='showItem' value='1' id='showObtainedItems' onclick='switchObtained(true)' />
+      <label for='showObtainedItems'>Found Items</label>
       <input type='radio' name='showItem' value='0' id='showMissedItems' onclick='switchObtained(false)'/>
       <label for='showMissedItems'>Missing Items</label>
       </span>
@@ -93,8 +95,16 @@
       var itemPlaces = document.getElementById("itemPlaces").childNodes;
       var inputFile = document.getElementById('dsSave');
       var currentProfile = -1;
-      var showMissed = false;
+      var showMissed = true;
       var filter = 'item';
+      for (var category of itemTypes) {
+        if (category.id)
+          category.onclick = function() {changeFilter(this);};
+      }
+      for (var place of itemPlaces) {
+        if (place.id)
+          place.onclick = function() {changeFilter(this);};
+      }
       hideEverything = () => {
         for (var img of imgsList) {
           if (img.itemType == filter || img.itemLocations.indexOf(filter) != -1)
@@ -104,7 +114,10 @@
         }
       }
       switchObtained = (showObtained) => {
-        showMissed = !showObtained;
+        if (showObtained == "all")
+          showMissed = true;
+        else
+          showMissed = !showObtained;
         if (currentProfile == -1)
           hideEverything();
         else
@@ -127,29 +140,6 @@
           if (cat.id)
             cat.classList.remove('selected');
         category.classList.add('selected');
-      }
-      for (var item of fullItemList) {
-        var imgContainer = document.createElement('div');
-        imgContainer.id = item.type+item.id;
-        for (var prop in item) {
-          var newProp = 'item'+ prop[0].toUpperCase() + prop.slice(1);
-          imgContainer[newProp] = item[prop];
-        }
-        var img = document.createElement("img");
-        img.src = 'imgs/'+item.type+'/'+item.id + '.png';
-        img.alt = item.id;
-        img.title = item.name;
-        imgContainer.appendChild(img);
-        imgsList.push(imgContainer);
-        itemContainer.appendChild(imgContainer);
-      }
-      for (var category of itemTypes) {
-        if (category.id)
-          category.onclick = function() {changeFilter(this);};
-      }
-      for (var place of itemPlaces) {
-        if (place.id)
-          place.onclick = function() {changeFilter(this);};
       }
       chargeProfile = (id) => {
         hideEverything();
@@ -189,6 +179,8 @@
             addradiobutton(profiles, "Player "+save['name']+", Level "+save['level'], +id);
           }
           chargeProfile(0);
+          document.getElementById('showObtainedItems').click();
+          document.getElementById('item').click();
         }
       }
       inputFile.onchange = function(e) {
@@ -198,8 +190,26 @@
           saves = parseSaveFile(reader.result);
           loadSaves(saves);
         }
-        reader.readAsBinaryString(file);
+        if (this.files[0] != undefined)
+          reader.readAsBinaryString(file);
+        inputFile.value = '';
       }
+      for (var item of fullItemList) {
+        var imgContainer = document.createElement('div');
+        imgContainer.id = item.type+item.id;
+        for (var prop in item) {
+          var newProp = 'item'+ prop[0].toUpperCase() + prop.slice(1);
+          imgContainer[newProp] = item[prop];
+        }
+        var img = document.createElement("img");
+        img.src = 'imgs/'+item.type+'/'+item.id + '.png';
+        img.alt = item.id;
+        img.title = item.name;
+        imgContainer.appendChild(img);
+        imgsList.push(imgContainer);
+        itemContainer.appendChild(imgContainer);
+      }
+      hideEverything();
     </script>
   </body>
 </html>

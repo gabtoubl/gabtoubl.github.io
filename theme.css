@@ -4,13 +4,14 @@
 }
 
 #itemTypes {
-  padding-left: 135px;
+  padding-left: 141px;
 }
 
 #itemTypes > img {
   height: 75px;
   width: 75px;
   display: inline-block;
+  transition: 0.3s transform, 0.3s filter;
 }
 
 #itemTypes > img.selected {
@@ -21,6 +22,7 @@
 #itemTypes:hover > img:hover {
   filter: sepia(100%) saturate(400%) brightness(120%);
   cursor: pointer;
+  transform: scale(1.1);
 }
 
 #itemPlaces {
@@ -35,6 +37,7 @@
   color: azure;
   border-style: ridge;
   text-align: center;
+  transition: 0.3s transform, 0.3s color, 0.3s filter;
 }
 
 #itemPlaces > div.selected {
@@ -47,6 +50,7 @@
   filter: sepia(100%) saturate(300%) brightness(95%);
   cursor: pointer;
   color: black;
+  transform: translateX(8px);
 }
 
 #itemList {
