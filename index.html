@@ -10,15 +10,14 @@
       <input type="hidden" name="MAX_FILE_SIZE" value="<?=$MAXBYTES; ?>" />
       <input type="file" name="dsSave" id="dsSave" />
     </form>
-    <div><span id="profiles"></span></div>
-    <div>Show <span>
-      <input type='radio' name='showItem' id='showAllItems' onclick='switchObtained("all")' checked/>
-      <label for='showAllItems'>All Items</label>
-      <input type='radio' name='showItem' id='showFoundItems' onclick='switchObtained(true)' disabled/>
-      <label for='showFoundItems'>Found Items</label>
-      <input type='radio' name='showItem' id='showMissingItems' onclick='switchObtained(false)' disabled/>
-      <label for='showMissingItems'>Missing Items</label>
-      </span>
+    <div class='radioSelector' id ='profileSelector'></div><br>
+    <div class='radioSelector' id='itemSelector'>
+      <input type='radio' name='showItem' id='showAllItems' onclick='switchObtained("all")' checked/><!--
+      !--><label for='showAllItems'>All Items</label><!--
+      !--><input type='radio' name='showItem' id='showFoundItems' onclick='switchObtained(true)' /><!--
+      !--><label for='showFoundItems'>Found Items</label><!--
+      !--><input type='radio' name='showItem' id='showMissingItems' onclick='switchObtained(false)' /><!--
+      !--><label for='showMissingItems'>Missing Items</label>
     </div>
     <div id='itemDiv'>
       <div id="itemTypes">
@@ -108,14 +107,14 @@
       hideEverything = () => {
         for (var img of imgsList) {
           if (img.itemType == filter || img.itemLocations.indexOf(filter) != -1)
-            img.style.display = showMissed ? 'inline-block' : 'none';
+            img.style.display = showMissed === 'all' || showMissed ? 'inline-block' : 'none';
           else
             img.style.display = 'none';
         }
       }
       switchObtained = (showObtained) => {
-        if (showObtained == "all")
-          showMissed = true;
+        if (showObtained == 'all')
+          showMissed = 'all';
         else
           showMissed = !showObtained;
         if (currentProfile == -1)
@@ -150,7 +149,7 @@
             console.log('error:',item.id,item.type);
           else {
             if (img.itemType == filter || img.itemLocations.indexOf(filter) != -1)
-              img.style.display = showMissed ? 'none' : 'inline-block';
+              img.style.display = showMissed === true ? 'none' : 'inline-block';
             else
               img.style.display = 'none';
           }
@@ -172,15 +171,15 @@
       }
       loadSaves = (saves) => {
         if (Object.keys(saves).length !== 0) {
-          var profiles = document.getElementById("profiles");
+          var profiles = document.getElementById("profileSelector");
           profiles.innerHTML = '';
           for (var id in saves) {
             var save = saves[id];
-            addradiobutton(profiles, "Player "+save['name']+", Level "+save['level'], +id);
+            addradiobutton(profiles, save.name+"(Lv"+save.level+')', +id);
           }
           chargeProfile(0);
-          document.getElementById('showMissingItems').disabled = false;
-          document.getElementById('showFoundItems').disabled = false;
+          profiles.style.display = 'inline-block';
+          document.getElementById('itemSelector').style.display = 'inline-block';
           document.getElementById('showFoundItems').click();
           document.getElementById('item').click();
         }

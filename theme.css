@@ -3,33 +3,63 @@
     src: url('OptimusPrincepsSemiBold.ttf');
 }
 
+p {
+  clear: both;
+}
+
+
+.radioSelector input[type=radio] {
+  position: absolute;
+  visibility: hidden;
+  display: none;
+}
+.radioSelector label {
+  border-left: 1px solid #675f6b;
+  border-right: 1px solid #675f6b;
+  color: #9a929e;
+  display: inline-block;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 5px 20px;
+}
+.radioSelector input[type=radio]:checked + label{
+  color: #ccc8ce;
+  background: #675f6b;
+}
+.radioSelector {
+  font-family: 'DarkSouls';
+  border: 2px solid #675f6b;
+  margin: 5px 0px 5px 0px;
+  border-radius: 7px;
+  display: none;
+  overflow: hidden;
+}
+
+
 #itemTypes {
   padding-left: 141px;
 }
-
 #itemTypes > img {
   height: 75px;
   width: 75px;
   display: inline-block;
   transition: 0.3s transform, 0.3s filter;
 }
-
 #itemTypes > img.selected {
   filter: sepia(100%) saturate(400%) brightness(120%);
   cursor: pointer;
 }
-
 #itemTypes:hover > img:hover {
   filter: sepia(100%) saturate(400%) brightness(120%);
   cursor: pointer;
   transform: scale(1.1);
 }
 
+
 #itemPlaces {
   font-family: 'DarkSouls';
   float: left;
 }
-
 #itemPlaces > div {
   width: 135px;
   background: url(rockTexture.jpg);
@@ -39,13 +69,11 @@
   text-align: center;
   transition: 0.3s transform, 0.3s color, 0.3s filter;
 }
-
 #itemPlaces > div.selected {
   filter: sepia(100%) saturate(300%) brightness(95%);
   cursor: pointer;
   color: black;
 }
-
 #itemPlaces:hover > div:hover {
   filter: sepia(100%) saturate(300%) brightness(95%);
   cursor: pointer;
@@ -53,11 +81,11 @@
   transform: translateX(8px);
 }
 
+
 #itemList {
   margin-left: 145px;
   max-width: 650px;
 }
-
 #itemList > div  {
   width: 62px;
   height: 62px;
@@ -65,12 +93,7 @@
   vertical-align: middle;
   display: none;
 }
-
 #itemList > div > img {
   max-width: 62px;
   max-height: 62px;
-}
-
-p {
-  clear: both;
 }
