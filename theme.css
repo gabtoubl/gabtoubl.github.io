@@ -35,6 +35,11 @@ p {
   overflow: hidden;
 }
 
+/*
+#itemDiv {
+  position: relative;
+}
+*/
 
 #itemTypes {
   padding-left: 141px;
@@ -92,8 +97,50 @@ p {
   text-align: center;
   vertical-align: middle;
   display: none;
+  cursor: pointer;
 }
 #itemList > div > img {
   max-width: 62px;
   max-height: 62px;
+}
+
+#itemInfo {
+  z-index: 685;
+  display: none;
+  font-family: 'DarkSouls';
+  padding: 8px;
+  background: grey;
+  border: 3px ridge azure;
+  border-radius: 8px;
+  position: absolute;
+}
+#itemInfo #itemInfoImgContainer {
+  width: 62px;
+  height: 62px;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+}
+#itemInfo #itemInfoName {
+  font-size: 20px;
+  color: white;
+}
+#itemInfo #itemInfoImg {
+  max-width: 62px;
+  max-height: 62px;
+}
+#itemInfo #itemInfoAmount {
+  text-align: right;
+}
+#itemInfo #itemInfoLocations {
+  font-family: 'Garamond';
+}
+#itemInfo #itemInfoLocations .itemLocationTitle {
+  font-size: 16px;
+  font-weight: bold;
+  color: honeydew;
+}
+#itemInfo #itemInfoLocations .itemLocationDescription {
+  font-size: 14px;
+  font-style: italic;
 }

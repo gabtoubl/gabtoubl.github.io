@@ -32,7 +32,7 @@
       </div>
       <div id="itemPlaces">
         <div id='undeadAsylum'>Undead Asylum</div>
-        <div id='fireLinkShrine'>FireLink Shrine</div>
+        <div id='firelinkShrine'>Firelink Shrine</div>
         <div id='undeadBurg'>Undead Burg</div>
         <div id='undeadParish'>Undead Parish</div>
         <div id='darkrootGarden'>Darkroot Garden</div>
@@ -61,11 +61,24 @@
         <div id='kilnOfTheFirstFlame'>Kiln of the First Flame</div>
       </div>
       <div id='itemList'></div>
+      <div id='itemInfo'>
+        <div id='itemInfoTitle'>
+          <div id='itemInfoImgContainer'>
+            <img id='itemInfoImg' src='' alt=''/>
+          </div>
+          <span id='itemInfoName'></span>
+        </div>
+        <div id='itemInfoDescription'></div>
+        <hr>
+        <table id='itemInfoLocations'>
+        </table>
+        <div id='itemInfoAmount'></div>
+      </div>
     </div>
     <p>
       TODO (Things I have todo on my own):<br />
       <ul>
-        <li>Info bubble onhover images with shitload of info (Name, location, exact location, amount, goneInNG+, isDLC, isNeededforAchievement1, etc)</li>
+        <li>Info bubble onclick images with shitload of info (Name, location, exact location, amount, goneInNG+, isDLC, isNeededforAchievement1, etc)</li>
         <li>Knight's honor and other achievements</li>
         <li>Flag for which item is a DLC items</li>
         <li>Flag for which item disappear in NG+</li>
@@ -89,9 +102,16 @@
     <script type="text/javascript">
       var saves = [];
       var imgsList = [];
-      var itemContainer = document.getElementById("itemList");
+      var itemDiv = document.getElementById("itemDiv");
+      var itemList = document.getElementById("itemList");
       var itemTypes = document.getElementById("itemTypes").childNodes;
       var itemPlaces = document.getElementById("itemPlaces").childNodes;
+      var itemInfo = document.getElementById("itemInfo");
+      var itemInfoImg = document.getElementById("itemInfoImg");
+      var itemInfoName = document.getElementById("itemInfoName");
+      var itemInfoDescription = document.getElementById("itemInfoDescription");
+      var itemInfoLocations = document.getElementById("itemInfoLocations");
+      var itemInfoAmount = document.getElementById("itemInfoAmount");
       var inputFile = document.getElementById('dsSave');
       var currentProfile = -1;
       var showMissed = true;
@@ -148,6 +168,7 @@
           if (!img)
             console.log('error:',item.id,item.type);
           else {
+            img.itemAmount = item.amount;
             if (img.itemType == filter || img.itemLocations.indexOf(filter) != -1)
               img.style.display = showMissed === true ? 'none' : 'inline-block';
             else
@@ -184,6 +205,44 @@
           document.getElementById('item').click();
         }
       }
+      showItemInfo = (item,e) => {
+        itemInfoImg.src = 'imgs/'+item.itemType+'/'+item.itemId + '.png';
+        itemInfoImg.alt = item.id;
+        itemInfoName.innerHTML = item.itemName;
+        itemInfoAmount.innerHTML = 'Found: ' + item.itemAmount;
+        itemInfoLocations.innerHTML = '';
+        for (var itemLocation of item.itemLocations) {
+          itemLocation = itemLocation[0].toUpperCase() + itemLocation.slice(1).split(/(?=[A-Z])/).join(' ')
+          var line = document.createElement('tr');
+          var title = document.createElement('td');
+          title.className = 'itemLocationTitle';
+          title.innerHTML = itemLocation + ': ';
+          line.appendChild(title);
+          var description = document.createElement('td');
+          description.className = 'itemLocationDescription';
+          description.innerHTML = 'Do XXXXXX before YYYYY (100%)';
+          line.appendChild(description);
+          itemInfoLocations.append(line);
+        }
+        itemInfo.style.display = 'block';
+        var rectItem = item.getBoundingClientRect();
+        var rectInfo = itemInfo.getBoundingClientRect();
+        itemInfo.style.top = (rectItem.top - rectInfo.height + window.scrollY)+ 'px';
+        itemInfo.style.left = (rectItem.left - rectInfo.width + rectItem.width + window.scrollX)+ 'px';
+        if (parseInt(itemInfo.style.top) < 0)
+          itemInfo.style.top = parseInt(itemInfo.style.top) + rectItem.height + rectInfo.height + 'px';
+        if (parseInt(itemInfo.style.left) < 0)
+          itemInfo.style.left = parseInt(itemInfo.style.left) + rectInfo.width - rectItem.width + 'px';
+        document.onclick = function() {hideItemInfo();};
+        console.log(itemInfo.style.top, itemInfo.style.left);
+        e.stopPropagation();
+      }
+      var rememberItemInfo = showItemInfo;
+      hideItemInfo = () => {
+        itemInfo.style.display = 'none';
+        document.onclick = '';
+        showItemInfo = rememberItemInfo;
+      }
       inputFile.onchange = function(e) {
         var file = this.files[0];
         var reader = new FileReader();
@@ -198,6 +257,7 @@
       for (var item of fullItemList) {
         var imgContainer = document.createElement('div');
         imgContainer.id = item.type+item.id;
+        imgContainer.onclick = function(e) {showItemInfo(this,e);};
         for (var prop in item) {
           var newProp = 'item'+ prop[0].toUpperCase() + prop.slice(1);
           imgContainer[newProp] = item[prop];
@@ -208,7 +268,7 @@
         img.title = item.name;
         imgContainer.appendChild(img);
         imgsList.push(imgContainer);
-        itemContainer.appendChild(imgContainer);
+        itemList.appendChild(imgContainer);
       }
       hideEverything();
     </script>
