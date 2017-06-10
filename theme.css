@@ -106,13 +106,14 @@ p {
 
 #itemInfo {
   z-index: 685;
-  display: none;
+  opacity: 0;
   font-family: 'DarkSouls';
   padding: 8px;
   background: grey;
   border: 3px ridge azure;
   border-radius: 8px;
   position: absolute;
+  transition: opacity 0.2s ease-in;
 }
 #itemInfo #itemInfoImgContainer {
   width: 62px;

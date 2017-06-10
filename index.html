@@ -224,24 +224,22 @@
           line.appendChild(description);
           itemInfoLocations.append(line);
         }
-        itemInfo.style.display = 'block';
+        itemInfo.style.opacity = 1;
+        itemInfo.style.zIndex = 685;
         var rectItem = item.getBoundingClientRect();
         var rectInfo = itemInfo.getBoundingClientRect();
         itemInfo.style.top = (rectItem.top - rectInfo.height + window.scrollY)+ 'px';
         itemInfo.style.left = (rectItem.left - rectInfo.width + rectItem.width + window.scrollX)+ 'px';
+        itemInfo.style.left = rectItem.left + window.scrollX + 'px';
         if (parseInt(itemInfo.style.top) < 0)
-          itemInfo.style.top = parseInt(itemInfo.style.top) + rectItem.height + rectInfo.height + 'px';
-        if (parseInt(itemInfo.style.left) < 0)
-          itemInfo.style.left = parseInt(itemInfo.style.left) + rectInfo.width - rectItem.width + 'px';
+          itemInfo.style.top = rectItem.top + window.scrollY + rectItem.height + 'px';
         document.onclick = function() {hideItemInfo();};
-        console.log(itemInfo.style.top, itemInfo.style.left);
         e.stopPropagation();
       }
-      var rememberItemInfo = showItemInfo;
       hideItemInfo = () => {
-        itemInfo.style.display = 'none';
+        itemInfo.style.opacity = 0;
+        itemInfo.style.zIndex = -1;
         document.onclick = '';
-        showItemInfo = rememberItemInfo;
       }
       inputFile.onchange = function(e) {
         var file = this.files[0];
