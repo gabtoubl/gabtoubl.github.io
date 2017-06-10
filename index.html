@@ -126,7 +126,7 @@
       }
       hideEverything = () => {
         for (var img of imgsList) {
-          if (img.itemType == filter || img.itemLocations.indexOf(filter) != -1)
+          if (img.itemType == filter || filter in img.itemLocations)
             img.style.display = showMissed === 'all' || showMissed ? 'inline-block' : 'none';
           else
             img.style.display = 'none';
@@ -211,16 +211,20 @@
         itemInfoName.innerHTML = item.itemName;
         itemInfoAmount.innerHTML = 'Found: ' + item.itemAmount;
         itemInfoLocations.innerHTML = '';
-        for (var itemLocation of item.itemLocations) {
-          itemLocation = itemLocation[0].toUpperCase() + itemLocation.slice(1).split(/(?=[A-Z])/).join(' ')
+        for (var itemLocation in item.itemLocations) {
+          var titleContent = itemLocation[0].toUpperCase() + itemLocation.slice(1).split(/(?=[A-Z])/).join(' ')
           var line = document.createElement('tr');
           var title = document.createElement('td');
           title.className = 'itemLocationTitle';
-          title.innerHTML = itemLocation + ': ';
+          title.innerHTML = titleContent + ': ';
           line.appendChild(title);
           var description = document.createElement('td');
           description.className = 'itemLocationDescription';
-          description.innerHTML = 'Do XXXXXX before YYYYY (100%)';
+          for (methodContent of item.itemLocations[itemLocation]) {
+            var method = document.createElement('li');
+            method.innerHTML = methodContent;
+            description.appendChild(method);
+          }
           line.appendChild(description);
           itemInfoLocations.append(line);
         }

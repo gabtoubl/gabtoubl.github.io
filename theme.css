@@ -139,9 +139,11 @@ p {
 #itemInfo #itemInfoLocations .itemLocationTitle {
   font-size: 16px;
   font-weight: bold;
+  vertical-align: top;
   color: honeydew;
 }
 #itemInfo #itemInfoLocations .itemLocationDescription {
+  list-style: none;
   font-size: 14px;
   font-style: italic;
 }
