@@ -1,8 +1,8 @@
-var fullItemList = [
+Oscar of Astoravar fullItemList = [
   {id: 200, name: "Estus Flask", type: "item", amount: 0, locations: {
     'undeadAsylum': [
-      {type: '[Gift]', where: 'Oscar, Knight of Astora'},
-      {type: '[Drop]', where: 'Oscar, Knight of Astora (100%)'}]
+      {type: '[Gift]', where: 'Oscar of Astora'},
+      {type: '[Drop]', where: 'Oscar of Astora (100%)'}]
   }},
   {id: 106, name: "Orange Guidance Soapstone", type: "item", amount: 0, locations: {
     'undeadBurg': [
@@ -10,7 +10,7 @@ var fullItemList = [
       {type: '[Drop]', where: 'Undead Male Merchant (100%)'}]
   }},
   {id: 100, name: "White Sign Soapstone", type: "item", amount: 0, locations: {
-    'undeadBurg': [
+    'undeadParish': [
       {type: '[Gift]', where: 'Solaire of Astora'},
       {type: '[Drop]', where: 'Solaire of Astora (100%)'}]
   }},
@@ -338,7 +338,7 @@ var fullItemList = [
     'kilnOfTheFirstFlame': [{type:'[Drop]', where:'Gwyn, Lord of Cinder (100%)'}]
   }},
   {id: 500, name: "Humanity", type: "item", amount: 0, locations: {
-    'firelinkShrine': [{type:'[Corpse]', where:''}],
+    'firelinkShrine': [{type:'[Corpse]', where:''}]
     'undeadBurg': [
       {type:'[Drop]', where:'Undead Rat (5%)'},
       {type:'[Corpse]', where:''}],
@@ -352,15 +352,17 @@ var fullItemList = [
     'valleyOfDrakes': [{type:'[Corpse]', where:''}],
     'paintedWorldOfAriamis': [{type:'[Drop]', where:'Snow Rat (5%)'}],
     'tombOfTheGiants': [
-      {type:'[Drop]', where:'Baby Skeleton (2%)'},
-      {type:'[Corpse]', where:''}],
+      {type:'[Corpse]', where:''},
+      {type:'[Drop]', where:'Baby Skeleton (2%)'}],
     'theDukeArchives': [{type:'[Drop]', where:'Pisaca (4%)'}],
     'crystalCave': [{type:'[Corpse]', where:''}],
     'chasmOfTheAbyss': [
       {type:'[Drop]', where:'Humanity Phantom(small) (4.44%)'},
       {type:'[Drop]', where:'Humanity Phantom(medium) (8%)'},
       {type:'[Drop]', where:'Humanity Phantom(big) (9.09%)'}],
-    'special': [{type:'[Drop]', where:'Most bosses (100%)'}]
+    'special': [
+      {type:'[Drop]', where:'Most bosses (100%)'},
+      {type:'[Drop]', where:'Most NPCs (100%)'}]
   }},
   {id: 501, name: "Twin Humanities", type: "item", amount: 0, locations: {
     'undeadBurg': [{type:'[Corpse]', where:''}],
@@ -652,8 +654,8 @@ var fullItemList = [
   }},
   {id: 2012, name: "Undead Asylum F2 East Key", type: "key_item", amount: 0, locations: {
     'undeadAsylum': [
-      {type:'[Gift]', where:'Oscar, Knight of Astora'},
-      {type:'[Drop]', where:'Oscar, Knight of Astora (100%)'}]
+      {type:'[Gift]', where:'Oscar of Astora'},
+      {type:'[Drop]', where:'Oscar of Astora (100%)'}]
   }},
   {id: 2016, name: "Undead Asylum F2 West Key", type: "key_item", amount: 0, locations: {
     'firelinkShrine': [{type:'[Corpse]', where:'On top of a roof'}]
@@ -661,7 +663,7 @@ var fullItemList = [
   {id: 2011, name: "Big Pilgrim's Key", type: "key_item", amount: 0, locations: {
     'undeadAsylum': [
       {type:'[Drop]', where:'Asylum Demon (100% on 2nd encounter)'},
-      {type:'[Gift]', where:'Oscar, Knight of Astora (if Asylum Demon killed on 1st encounter)'},
+      {type:'[Gift]', where:'Oscar of Astora (if Asylum Demon killed on 1st encounter)'},
       {type:'[Drop]', where:'Oscar, Knight of Astora (100% if Asylum Demon killed on 1st encounter)'}]
   }},
   {id: 2021, name: "Residence Key", type: "key_item", amount: 0, locations: {
@@ -967,7 +969,7 @@ var fullItemList = [
     'undeadParish': [{type:'[Covenant]', where:'Rank the Warrior of Sunlight covenant up to +1'}]
   }},
   {id: 5520, name: "Miracle: Sunlight Spear", type: "magic", amount: 0, locations: {
-    'undeadParish': [{type:'[Covenant]', where:'Craft with Soul of Gwyn at the sunlight altar'}]
+    'undeadParish': [{type:'[Craft]', where:'As a Warrior of the Sunlight covenant, craft with Soul of Gwyn at the sunlight altar'}]
   }},
   {id: 5900, name: "Miracle: Sunlight Blade", type: "magic", amount: 0, locations: {
     'anorLondo': [{type:'[Chest]', where:''}]
@@ -982,505 +984,540 @@ var fullItemList = [
     'tombOfTheGiants': [{type:'[Covenant]', where:'Rank the Gravelord Servant covenant up to +1'}]
   }},
   {id: 100000, name: "Dagger", type: "weapon", amount: 0, locations: {
-    'undeadBurg': [{type:'[]', where:''}],
-    'special': [{type:'[]', where:''}]
+    'undeadBurg': [{type:'[Buy]', where:'Undead Male Merchant'}],
+    'start': [{type:'', where:'Sorcerer class'}]
   }},
   {id: 101000, name: "Parrying Dagger", type: "weapon", amount: 0, locations: {
-    'newLondoRuins': [{type:'[]', where:''}]
+    'newLondoRuins': [{type:'[Corpse]', where:''}]
   }},
   {id: 103000, name: "Bandit's Knife", type: "weapon", amount: 0, locations: {
-    'undeadBurg': [{type:'[]', where:''}],
-    'special': [{type:'[]', where:''}]
+    'undeadBurg': [{type:'[Drop]', where:'Hollow Thief (2%)'}],
+    'start': [{type:'', where:'Thief class'}]
   }},
   {id: 102000, name: "Ghost Blade", type: "weapon", amount: 0, locations: {
-    'newLondoRuins': [{type:'[]', where:''}]
+    'newLondoRuins': [{type:'[Drop]', where:'Banshee (1%)'}]
   }},
   {id: 9011000, name: "Dark Silver Tracer", type: "weapon", amount: 0, locations: {
-    'oolacileTownship': [{type:'[]', where:''}]
+    'oolacileTownship': [
+      {type:'[Gift]', where:'Trade with Lord\'s Blade Ciaran with Soul of Artorias'},
+      {type:'[Drop]', where:'Lord\'s Blade Ciaran (100%)'}]
   }},
   {id: 104000, name: "Priscilla's Dagger", type: "weapon", amount: 0, locations: {
-    'paintedWorldOfAriamis': [{type:'[]', where:''}]
+    'paintedWorldOfAriamis': [{type:'[Tail]', where:'Crossbreed Priscilla'}]
   }},
   {id: 200000, name: "Shortsword", type: "weapon", amount: 0, locations: {
-    'undeadBurg': [{type:'[]', where:''}],
-    'special': [{type:'[]', where:''}]
+    'undeadBurg': [
+      {type:'[Buy]', where:'Undead Male Merchant'},
+      {type:'[Drop]', where:'Hollow Warrior (2%)'}],
+    'start': [{type:'', where:'Hunter class'}]
   }},
   {id: 201000, name: "Longsword", type: "weapon", amount: 0, locations: {
-    'undeadAsylum': [{type:'[]', where:''}],
-    'undeadBurg': [{type:'[]', where:''}],
-    'undeadParish': [{type:'[]', where:''}],
-    'special': [{type:'[]', where:''}]
+    'undeadAsylum': [{type:'[Drop]', where:'Hollow Soldier (2%)'}],
+    'undeadBurg': [{type:'[Drop]', where:'Hollow Soldier (2%)'}],
+    'undeadParish': [
+      {type:'[Drop]', where:'Hollow Soldier (2%)'},
+      {type:'[Buy]', where:'Andre of Astora'}],
+    'start': [{type:'', where:'Warrior class'}]
   }},
   {id: 202000, name: "Broadsword", type: "weapon", amount: 0, locations: {
-    'undeadParish': [{type:'[]', where:''}],
-    'special': [{type:'[]', where:''}]
+    'undeadParish': [{type:'[Buy]', where:'Andre of Astora'}],
+    'start': [{type:'', where:'Knight class'}]
   }},
   {id: 204000, name: "Balder Side Sword", type: "weapon", amount: 0, locations: {
-    'undeadParish': [{type:'[]', where:''}],
-    'senFortress': [{type:'[]', where:''}]
+    'undeadParish': [{type:'[Drop]', where:'Balder Knight (1%)'}],
+    'senFortress': [{type:'[Drop]', where:'Balder Knight (1%)'}]
   }},
   {id: 206000, name: "Sunlight Straight Sword", type: "weapon", amount: 0, locations: {
-    'undeadParish': [{type:'[]', where:''}],
-    'anorLondo': [{type:'[]', where:''}],
-    'lostIzalith': [{type:'[]', where:''}]
+    'undeadParish': [{type:'[Drop]', where:'Solaire of Astora (100%)'}],
+    'anorLondo': [{type:'[Drop]', where:'Solaire of Astora (100%)'}],
+    'demonsRuins': [{type:'[Drop]', where:'Solaire of Astora (100%)'}],
+    'lostIzalith': [{type:'[Drop]', where:'Solaire of Astora (100%)'}]
   }},
   {id: 210000, name: "Darksword", type: "weapon", amount: 0, locations: {
-    'theAbyss': [{type:'[]', where:''}]
+    'theAbyss': [{type:'[Covenant]', where:'Rank the Darkwraith covenant up to +2'}]
   }},
   {id: 207000, name: "Barbed Straight Sword", type: "weapon", amount: 0, locations: {
-    'depths': [{type:'[]', where:''}],
-    'demonsRuins': [{type:'[]', where:''}],
-    'lostIzalith': [{type:'[]', where:''}]
+    'depths': [{type:'[Drop]', where:'Kirk, Knight of Thorns (33%)'}],
+    'demonsRuins': [{type:'[Drop]', where:'Kirk, Knight of Thorns (33%)'}],
+    'lostIzalith': [{type:'[Drop]', where:'Kirk, Knight of Thorns (33%)'}]
   }},
   {id: 205000, name: "Crystal Straight Sword", type: "weapon", amount: 0, locations: {
-    'firelinkShrine': [{type:'[]', where:''}],
-    'theDukeArchives': [{type:'[]', where:''}]
+    'firelinkShrine': [{type:'[Buy]', where:'Domhnall of Zena'}],
+    'theDukeArchives': [{type:'[Drop]', where:'Undead Crystal Soldier (3%)'}]
   }},
   {id: 208000, name: "Silv. Knight Str. Sword", type: "weapon", amount: 0, locations: {
-    'anorLondo': [{type:'[]', where:''}]
+    'anorLondo': [{type:'[Drop]', where:'Silver Knight (2%)'}]
   }},
   {id: 209000, name: "Astora's Straight Sword", type: "weapon", amount: 0, locations: {
-    'valleyOfDrakes': [{type:'[]', where:''}]
+    'valleyOfDrakes': [{type:'[Corpse]', where:''}]
   }},
   {id: 211000, name: "Drake Sword", type: "weapon", amount: 0, locations: {
-    'undeadParish': [{type:'[]', where:''}]
+    'undeadParish': [{type:'[Tail]', where:'Hellkite Dragon'}]
   }},
   {id: 203000, name: "Broken Straight Sword", type: "weapon", amount: 0, locations: {
-    'undeadAsylum': [{type:'[]', where:''}],
-    'paintedWorldOfAriamis': [{type:'[]', where:''}],
-    'blighttown': [{type:'[]', where:''}]
+    'undeadAsylum': [{type:'[Drop]', where:'Zombie (2%)'}],
+    'paintedWorldOfAriamis': [{type:'[Drop]', where:'Zombie (2%)'}],
+    'blighttown': [{type:'[Drop]', where:'Infested Ghoul (2%)'}]
   }},
   {id: 212000, name: "Straight Sword Hilt", type: "weapon", amount: 0, locations: {
-    'special': [{type:'[]', where:''}]
+    'start': [{type:'', where:'Every class'}]
   }},
   {id: 300000, name: "Bastard Sword", type: "weapon", amount: 0, locations: {
-    'undeadParish': [{type:'[]', where:''}]
+    'undeadParish': [{type:'[Buy]', where:'Andre of Astora'}]
   }},
   {id: 301000, name: "Claymore", type: "weapon", amount: 0, locations: {
-    'undeadBurg': [{type:'[]', where:''}]
+    'undeadBurg': [{type:'[Corpse]', where:''}]
   }},
   {id: 302000, name: "Man-serpent Greatsword", type: "weapon", amount: 0, locations: {
-    'senFortress': [{type:'[]', where:''}]
+    'senFortress': [{type:'[Drop]', where:'Serpent Soldier (2%)'}],
+    'paintedWorldOfAriamis': [{type:'[Drop]', where:'Serpent Soldier (2%)'}]
   }},
   {id: 303000, name: "Flamberge", type: "weapon", amount: 0, locations: {
-    'senFortress': [{type:'[]', where:''}],
-    'blighttown': [{type:'[]', where:''}]
+    'senFortress': [{type:'[Drop]', where:'Serpent Mage (2%)'}],
+    'blighttown': [{type:'[Buy]', where:'Shiva of the East'}],
+    'paintedWorldOfAriamis': [{type:'[Drop]', where:'Serpent Mage (2%)'}]
   }},
   {id: 304000, name: "Crystal Greatsword", type: "weapon", amount: 0, locations: {
-    'firelinkShrine': [{type:'[]', where:''}]
+    'firelinkShrine': [{type:'[Buy]', where:'Domhnall of Zena'}]
   }},
   {id: 310000, name: "Black Knight Sword", type: "weapon", amount: 0, locations: {
-    'undeadBurg': [{type:'[]', where:''}],
-    'kilnOfTheFirstFlame': [{type:'[]', where:''}],
-    'undeadAsylum': [{type:'[]', where:''}]
+    'undeadAsylum': [{type:'[Drop]', where:'Sword Black Knight (20%)'}],
+    'undeadBurg': [{type:'[Drop]', where:'Sword Black Knight (20%)'}],
+    'kilnOfTheFirstFlame': [{type:'[Drop]', where:'Sword Black Knight (20%)'}]
   }},
   {id: 306000, name: "Stone Greatsword", type: "weapon", amount: 0, locations: {
-    'blighttown': [{type:'[]', where:''}],
-    'darkrootGarden': [{type:'[]', where:''}]
+    'darkrootGarden': [{type:'[Drop]', where:'Stone Knight (2%)'}],
+    'blighttown': [{type:'[Buy]', where:'Shiva of the East'}]
   }},
   {id: 311000, name: "Greatsword of Artorias", type: "weapon", amount: 0, locations: {
-    'special': [{type:'[]', where:''}]
+    'anorLondo': [
+      {type:'[Craft]', where:'Straight Sword Hilt+10 + Soul of Sif'}]
+      {type:'[Craft]', where:'Broken Straight Sword+10 + Soul of Sif'}]
   }},
   {id: 307000, name: "Greatsword of Artorias", type: "weapon", amount: 0, locations: {
-    'special': [{type:'[]', where:''}]
+    'anorLondo': [{type:'[Craft]', where:'Any (Great)Sword+10 + Soul of Sif'}]
   }},
   {id: 9012000, name: "Abyss Greatsword", type: "weapon", amount: 0, locations: {
-    'special': [{type:'[]', where:''}]
+    'anorLondo': [{type:'[Craft]', where:'Any (Great)Sword+10 + Soul of Artorias'}]
   }},
   {id: 314000, name: "Great Lord Greatsword", type: "weapon", amount: 0, locations: {
-    'special': [{type:'[]', where:''}]
+    'anorLondo': [{type:'[Craft]', where:'Any (Great)Sword+10 + Soul of Gwyn'}]
   }},
   {id: 309000, name: "Moonlight Greatsword", type: "weapon", amount: 0, locations: {
-    'special': [{type:'[]', where:''}]
+    'anorLondo': [{type:'[Tail]', where:'Seath the Scaleless'}]
   }},
   {id: 9020000, name: "Obsidian Greatsword", type: "weapon", amount: 0, locations: {
-    'royalWood': [{type:'[]', where:''}]
+    'royalWood': [{type:'[Tail]', where:'Black Dragon Kalameet'}]
   }},
   {id: 351000, name: "Greatsword", type: "weapon", amount: 0, locations: {
-    'anorLondo': [{type:'[]', where:''}],
-    'senFortress': [{type:'[]', where:''}],
-    'paintedWorldOfAriamis': [{type:'[]', where:''}],
-    'undeadParish': [{type:'[]', where:''}]
+    'undeadParish': [{type:'[Drop]', where:'Berenike Knight (2%)'}],
+    'senFortress': [{type:'[Buy]', where:'Crestfallen Merchant'}],
+    'anorLondo': [{type:'[Corpse]', where:''}],
+    'paintedWorldOfAriamis': [{type:'[Drop]', where:'Berenike Knight (2%)'}]
   }},
   {id: 350000, name: "Zweihander", type: "weapon", amount: 0, locations: {
-    'firelinkShrine': [{type:'[]', where:''}]
+    'firelinkShrine': [{type:'[Corpse]', where:''}]
   }},
   {id: 352000, name: "Demon Great Machete", type: "weapon", amount: 0, locations: {
-    'undeadBurg': [{type:'[]', where:''}],
-    'demonsRuins': [{type:'[]', where:''}],
-    'blighttown': [{type:'[]', where:''}]
+    'undeadBurg': [{type:'[Drop]', where:'Capra Demon (5%)'}],
+    'blighttown': [{type:'[Buy]', where:'Shiva of the East'}],
+    'demonsRuins': [{type:'[Drop]', where:'Capra Demon (5%)'}]
   }},
   {id: 355000, name: "Black Knight Greatsword", type: "weapon", amount: 0, locations: {
-    'undeadParish': [{type:'[]', where:''}],
-    'kilnOfTheFirstFlame': [{type:'[]', where:''}]
+    'undeadParish': [{type:'[Drop]', where:'Greatsword Black Knight (20%)'}],
+    'kilnOfTheFirstFlame': [{type:'[Drop]', where:'Greatsword Black Knight (20%)'}]
   }},
   {id: 354000, name: "Dragon Greatsword", type: "weapon", amount: 0, locations: {
-    'ashLake': [{type:'[]', where:''}]
+    'ashLake': [{type:'[Tail]', where:'Everlasting Dragon'}]
   }},
   {id: 400000, name: "Scimitar", type: "weapon", amount: 0, locations: {
-    'undeadBurg': [{type:'[]', where:''}],
-    'theCatacombs': [{type:'[]', where:''}],
-    'special': [{type:'[]', where:''}]
+    'firelinkShrine': [{type:'[Drop]', where:'Skeleton (2%)'}],
+    'undeadBurg': [{type:'[Buy]', where:'Undead Male Merchant'}],
+    'theCatacombs': [{type:'[Drop]', where:'Skeleton (2%)'}],
+    'start': [{type:'', where:'Wanderer'}]
   }},
   {id: 401000, name: "Falchion", type: "weapon", amount: 0, locations: {
-    'blighttown': [{type:'[]', where:''}],
-    'theCatacombs': [{type:'[]', where:''}]
+    'firelinkShrine': [{type:'[Drop]', where:'Skeleton (2%)'}],
+    'blighttown': [{type:'[Corpse]', where:''}],
+    'theCatacombs': [{type:'[Drop]', where:'Skeleton (2%)'}],
+    'theDukeArchives': [{type:'[Drop]', where:'Mimic (100%)'}],
   }},
   {id: 402000, name: "Shotel", type: "weapon", amount: 0, locations: {
-    'senFortress': [{type:'[]', where:''}],
-    'blighttown': [{type:'[]', where:''}]
+    'senFortress': [{type:'[Corpse]', where:''}],
+    'blighttown': [{type:'[Buy]', where:'Shiva of the East'}]
   }},
   {id: 405000, name: "Painting Guardian Sword", type: "weapon", amount: 0, locations: {
-    'anorLondo': [{type:'[]', where:''}]
+    'anorLondo': [{type:'[Drop]', where:'Painting Guardian (2%)'}]
   }},
   {id: 403000, name: "Jagged Ghost Blade", type: "weapon", amount: 0, locations: {
-    'newLondoRuins': [{type:'[]', where:''}]
+    'newLondoRuins': [{type:'[Drop]', where:'Ghost (1%)'}]
   }},
   {id: 9010000, name: "Gold Tracer", type: "weapon", amount: 0, locations: {
-    'oolacileTownship': [{type:'[]', where:''}]
+    'oolacileTownship': [
+      {type:'[Gift]', where:'Trade with Lord\'s Blade Ciaran with Soul of Artorias'},
+      {type:'[Drop]', where:'Lord\'s Blade Ciaran (100%)'}]
   }},
   {id: 406000, name: "Quelaag's Furysword", type: "weapon", amount: 0, locations: {
-    'special': [{type:'[]', where:''}]
+    'anorLondo': [{type:'[Craft]', where:'Any Curvedsword+10 + Soul of Quelaag'}]
   }},
   {id: 451000, name: "Murakumo", type: "weapon", amount: 0, locations: {
-    'blighttown': [{type:'[]', where:''}],
-    'darkrootGarden': [{type:'[]', where:''}],
-    'tombOfTheGiants': [{type:'[]', where:''}]
+    'firelinkShrine': [{type:'[Drop]', where:'Giant Skeleton (2%)'}],
+    'darkrootGarden': [{type:'[Drop]', where:'Shiva of the East (100%)'}],
+    'blighttown': [{type:'[Drop]', where:'Shiva of the East (100%)'}],
+    'theCatacombs': [{type:'[Drop]', where:'Giant Skeleton (2%)'}],
+    'tombOfTheGiants': [{type:'[Drop]', where:'Giant Skeleton (2%)'}]
   }},
   {id: 450000, name: "Server", type: "weapon", amount: 0, locations: {
-    'blighttown': [{type:'[]', where:''}]
+    'blighttown': [{type:'[Corpse]', where:''}]
   }},
   {id: 453000, name: "Gravelord Sword", type: "weapon", amount: 0, locations: {
-    'tombOfTheGiants': [{type:'[]', where:''}]
+    'tombOfTheGiants': [{type:'[Covenant]', where:'Join the Gravelord Servant covenant'}]
   }},
   {id: 500000, name: "Uchigatana", type: "weapon", amount: 0, locations: {
-    'undeadBurg': [{type:'[]', where:''}],
-    'darkrootGarden': [{type:'[]', where:''}],
-    'blighttown': [{type:'[]', where:''}]
+    'undeadBurg': [{type:'[Drop]', where:'Undead Male Merchant (100%)'}],
+    'blighttown': [{type:'[Buy]', where:'Shiva of the East'}]
   }},
   {id: 502000, name: "Iaito", type: "weapon", amount: 0, locations: {
-    'blighttown': [{type:'[]', where:''}]
+    'blighttown': [{type:'[Corpse]', where:''}]
   }},
   {id: 501000, name: "Washing Pole", type: "weapon", amount: 0, locations: {
-    'blighttown': [{type:'[]', where:''}]
+    'blighttown': [{type:'[Buy]', where:'Shiva of the East'}]
   }},
   {id: 503000, name: "Chaos Blade", type: "weapon", amount: 0, locations: {
-    'special': [{type:'[]', where:''}]
+    'anorLondo': [{type:'[Craft]', where:'Any Katana+10 + Soul of Quelaag'}]
   }},
   {id: 600000, name: "Mail Breaker", type: "weapon", amount: 0, locations: {
-    'undeadBurg': [{type:'[]', where:''}]
+    'undeadBurg': [{type:'[Corpse]', where:''}]
   }},
   {id: 601000, name: "Rapier", type: "weapon", amount: 0, locations: {
-    'undeadBurg': [{type:'[]', where:''}],
-    'undeadParish': [{type:'[]', where:''}],
-    'senFortress': [{type:'[]', where:''}]
+    'undeadBurg': [{type:'[Buy]', where:'Undead Male Merchant'}],
+    'undeadParish': [{type:'[Drop]', where:'Balder Knight (2%)'}],
+    'senFortress': [{type:'[Drop]', where:'Balder Knight (2%)'}]
   }},
   {id: 602000, name: "Estoc", type: "weapon", amount: 0, locations: {
-    'newLondoRuins': [{type:'[]', where:''}]
+    'newLondoRuins': [{type:'[Corpse]', where:''}]
   }},
   {id: 604000, name: "Ricard's Rapier", type: "weapon", amount: 0, locations: {
-    'senFortress': [{type:'[]', where:''}]
+    'senFortress': [{type:'[Drop]', where:'Undead Prince Ricard (100%)'}]
   }},
   {id: 603000, name: "Velka's Rapier", type: "weapon", amount: 0, locations: {
-    'paintedWorldOfAriamis': [{type:'[]', where:''}]
+    'paintedWorldOfAriamis': [{type:'[Corpse]', where:''}]
   }},
   {id: 700000, name: "Hand Axe", type: "weapon", amount: 0, locations: {
-    'undeadBurg': [{type:'[]', where:''}],
-    'special': [{type:'[]', where:''}]
+    'undeadBurg': [{type:'[Buy]', where:'Undead Male Merchant'}],
+    'start': [{type:'', where:'Pyromancer class'}]
   }},
   {id: 701000, name: "Battle Axe", type: "weapon", amount: 0, locations: {
-    'undeadParish': [{type:'[]', where:''}],
-    'undeadBurg': [{type:'[]', where:''}],
-    'special': [{type:'[]', where:''}]
+    'undeadBurg': [{type:'[Drop]', where:'Hollow Warrior (2%)'}],
+    'undeadParish': [{type:'[Buy]', where:'Andre of Astora'}],
+    'start': [{type:'', where:'Bandit class'}]
   }},
   {id: 703000, name: "Butcher Knife", type: "weapon", amount: 0, locations: {
-    'blighttown': [{type:'[]', where:''}]
+    'blighttown': [{type:'[Drop]', where:'Maneater Mildred (100%)'}]
   }},
   {id: 705000, name: "Gargoyle Tail Axe", type: "weapon", amount: 0, locations: {
-    'undeadParish': [{type:'[]', where:''}],
-    'anorLondo': [{type:'[]', where:''}]
+    'undeadParish': [{type:'[Tail]', where:'Bell Gargoyles'}],
+    'anorLondo': [{type:'[Tail]', where:'Gargoyle'}]
   }},
   {id: 702000, name: "Crescent Axe", type: "weapon", amount: 0, locations: {
-    'theCatacombs': [{type:'[]', where:''}],
-    'tombOfTheGiants': [{type:'[]', where:''}],
-    'firelinkShrine': [{type:'[]', where:''}]
+    'firelinkShrine': [
+      {type:'[Drop]', where:'Patches (100%)'},
+      {type:'[Buy]', where:'Patches'}],
+    'theCatacombs': [{type:'[Drop]', where:'Patches (100%)'}],
+    'tombOfTheGiants': [{type:'[Drop]', where:'Patches (100%)'}]
   }},
   {id: 704000, name: "Golem Axe", type: "weapon", amount: 0, locations: {
-    'special': [{type:'[]', where:''}]
+    'anorLondo': [{type:'[Craft]', where:'Any Axe+10 + Core of an Iron Golem'}]
   }},
   {id: 750000, name: "Greataxe", type: "weapon", amount: 0, locations: {
-    'depths': [{type:'[]', where:''}],
-    'senFortress': [{type:'[]', where:''}],
-    'paintedWorldOfAriamis': [{type:'[]', where:''}],
-    'undeadParish': [{type:'[]', where:''}]
+    'undeadParish': [{type:'[Drop]', where:'Berenike Knight (2%)'}],
+    'depths': [{type:'[Corpse]', where:''}],
+    'senFortress': [
+      {type:'[Buy]', where:'Crestfallen Merchant'}],
+      {type:'[Drop]', where:'Berenike Knight (2%)'}],
+    'paintedWorldOfAriamis': [{type:'[Drop]', where:'Berenike Knight (2%)'}]
   }},
   {id: 751000, name: "Demon's Greataxe", type: "weapon", amount: 0, locations: {
-    'blighttown': [{type:'[]', where:''}],
-    'undeadBurg': [{type:'[]', where:''}],
-    'demonsRuins': [{type:'[]', where:''}]
+    'undeadBurg': [{type:'[Drop]', where:'Taurus Demon (5%)'}],
+    'blighttown': [{type:'[Buy]', where:'Shiva of the East'}],
+    'demonsRuins': [{type:'[Drop]', where:'Taurus Demon (5%)'}]
   }},
   {id: 9015000, name: "Stone Greataxe", type: "weapon", amount: 0, locations: {
-    'royalWood': [{type:'[]', where:''}]
+    'royalWood': [{type:'[Drop]', where:'Guardian (2%)'}]
   }},
   {id: 753000, name: "Black Knight Greataxe", type: "weapon", amount: 0, locations: {
-    'kilnOfTheFirstFlame': [{type:'[]', where:''}]
+    'kilnOfTheFirstFlame': [{type:'[Drop]', where:'Axe Black Knight (20%)'}]
   }},
   {id: 752000, name: "Dragon King Greataxe", type: "weapon", amount: 0, locations: {
-    'depths': [{type:'[]', where:''}]
+    'depths': [{type:'[Tail]', where:'Gaping Dragon'}]
   }},
   {id: 800000, name: "Club", type: "weapon", amount: 0, locations: {
-    'special': [{type:'[]', where:''}],
-    'undeadBurg': [{type:'[]', where:''}]
+    'undeadBurg': [{type:'[Buy]', where:'Undead Male Merchant'}],
+    'start': [{type:'', where:'Deprived class'}]
   }},
   {id: 809000, name: "Reinforced Club", type: "weapon", amount: 0, locations: {
-    'undeadBurg': [{type:'[]', where:''}]
+    'undeadBurg': [{type:'[Buy]', where:'Undead Male Merchant'}]
   }},
   {id: 811000, name: "Blacksmith Giant Hammer", type: "weapon", amount: 0, locations: {
-    'anorLondo': [{type:'[]', where:''}]
+    'anorLondo': [{type:'[Drop]', where:'Giant Blacksmith (100%)'}]
   }},
   {id: 801000, name: "Mace", type: "weapon", amount: 0, locations: {
-    'firelinkShrine': [{type:'[]', where:''}],
-    'theCatacombs': [{type:'[]', where:''}],
-    'special': [{type:'[]', where:''}]
+    'firelinkShrine': [{type:'[Buy]', where:'Patches'}],
+    'theCatacombs': [{type:'[Corpse]', where:''}],
+    'start': [{type:'', where:'Cleric class'}]
   }},
   {id: 802000, name: "Morning Star", type: "weapon", amount: 0, locations: {
-    'firelinkShrine': [{type:'[]', where:''}]
+    'firelinkShrine': [{type:'[Chest]', where:''}]
   }},
   {id: 803000, name: "Warpick", type: "weapon", amount: 0, locations: {
-    'undeadParish': [{type:'[]', where:''}]
+    'undeadParish': [{type:'[Buy]', where:'Andre of Astora'}]
   }},
   {id: 804000, name: "Pickaxe", type: "weapon", amount: 0, locations: {
-    'blighttown': [{type:'[]', where:''}]
+    'blighttown': [{type:'[Drop]', where:'Infested Barbarian (5%)'}]
   }},
   {id: 810000, name: "Blacksmith Hammer", type: "weapon", amount: 0, locations: {
-    'undeadParish': [{type:'[]', where:''}]
+    'undeadParish': [{type:'[Drop]', where:'Andre of Astora (100%)'}]
   }},
   {id: 812000, name: "Hammer of Vamos", type: "weapon", amount: 0, locations: {
-    'theCatacombs': [{type:'[]', where:''}]
+    'theCatacombs': [{type:'[Drop]', where:'Vamos (100%)'}]
   }},
   {id: 855000, name: "Large Club", type: "weapon", amount: 0, locations: {
-    'blighttown': [{type:'[]', where:''}]
+    'blighttown': [{type:'[Drop]', where:'Infested Barbarian (2%)'}]
   }},
   {id: 850000, name: "Great Club", type: "weapon", amount: 0, locations: {
-    'blighttown': [{type:'[]', where:''}]
+    'blighttown': [{type:'[Corpse]', where:''}]
   }},
   {id: 852000, name: "Demon's Great Hammer", type: "weapon", amount: 0, locations: {
-    'undeadAsylum': [{type:'[]', where:''}]
+    'undeadAsylum': [
+      {type:'[Snuggly]', where:'Trade with Sack'},
+      {type:'[Drop]', where:'Asylum Demon (100% on 1st encounter)'}]
   }},
   {id: 851000, name: "Grant", type: "weapon", amount: 0, locations: {
-    'tombOfTheGiants': [{type:'[]', where:''}]
+    'tombOfTheGiants': [{type:'[Drop]', where:'Paladin Leeroy (100%)'}]
   }},
   {id: 854000, name: "Dragon Tooth", type: "weapon", amount: 0, locations: {
-    'anorLondo': [{type:'[]', where:''}]
+    'anorLondo': [{type:'[Chest]', where:''}]
   }},
   {id: 856000, name: "Smough's Hammer", type: "weapon", amount: 0, locations: {
-    'special': [{type:'[]', where:''}]
+    'anorLondo': [{type:'[Craft]', where:'Any Hammer/Club+10 + Soul of Smough'}]
   }},
   {id: 1000000, name: "Spear", type: "weapon", amount: 0, locations: {
-    'undeadBurg': [{type:'[]', where:''}],
-    'undeadParish': [{type:'[]', where:''}],
-    'paintedWorldOfAriamis': [{type:'[]', where:''}]
+    'undeadBurg': [{type:'[Buy]', where:'Undead Male Merchant'}],
+    'undeadParish': [{type:'[Drop]', where:'Undead Soldier (2%)'}],
+    'paintedWorldOfAriamis': [{type:'[Drop]', where:'Phalanx (1%)'}]
   }},
   {id: 1001000, name: "Winged Spear", type: "weapon", amount: 0, locations: {
-    'firelinkShrine': [{type:'[]', where:''}]
+    'firelinkShrine': [{type:'[Corpse]', where:''}]
   }},
   {id: 1002000, name: "Partizan", type: "weapon", amount: 0, locations: {
-    'darkrootGarden': [{type:'[]', where:''}]
+    'darkrootGarden': [{type:'[Corpse]', where:''}]
   }},
   {id: 9016000, name: "Four-Pronged Prow", type: "weapon", amount: 0, locations: {
-    'royalWood': [{type:'[]', where:''}]
+    'royalWood': [{type:'[Drop]', where:'Wooden Scarecrow (1%)'}]
   }},
   {id: 1050000, name: "Pike", type: "weapon", amount: 0, locations: {
-    'undeadParish': [{type:'[]', where:''}]
+    'undeadParish': [{type:'[Buy]', where:'Andre of Astora'}]
   }},
   {id: 1004000, name: "Channeler's Trident", type: "weapon", amount: 0, locations: {
-    'undeadParish': [{type:'[]', where:''}],
-    'depths': [{type:'[]', where:''}],
-    'theDukeArchives': [{type:'[]', where:''}]
+    'undeadParish': [{type:'[Drop]', where:'Channeler (1%)'}],
+    'depths': [{type:'[Drop]', where:'Channeler (1%)'}],
+    'theDukeArchives': [{type:'[Drop]', where:'Channeler (1%)'}]
   }},
   {id: 1003000, name: "Demon's Spear", type: "weapon", amount: 0, locations: {
-    'anorLondo': [{type:'[]', where:''}],
-    'blighttown': [{type:'[]', where:''}]
+    'blighttown': [{type:'[Buy]', where:'Shiva of the East'}],
+    'anorLondo': [{type:'[Drop]', where:'Batwing Demon (2%)'}]
   }},
   {id: 1006000, name: "Silver Knight Spear", type: "weapon", amount: 0, locations: {
-    'anorLondo': [{type:'[]', where:''}]
+    'anorLondo': [{type:'[Drop]', where:'Silver Knight (2%)'}]
   }},
   {id: 1052000, name: "Moonlight Butterfly Horn", type: "weapon", amount: 0, locations: {
-    'special': [{type:'[]', where:''}]
+    'anorLondo': [{type:'[Craft]', where:'Any Spear/Trust+10 + Soul of the Moonlight Butterfly'}]
   }},
   {id: 1051000, name: "Dragonslayer Spear", type: "weapon", amount: 0, locations: {
-    'special': [{type:'[]', where:''}]
+    'anorLondo': [{type:'[Craft]', where:'Any Spear/Trust+10 + Soul of Ornstein'}]
   }},
   {id: 1100000, name: "Halberd", type: "weapon", amount: 0, locations: {
-    'undeadParish': [{type:'[]', where:''}]
+    'undeadParish': [{type:'[Corpse]', where:''}]
   }},
   {id: 1106000, name: "Lucerne ", type: "weapon", amount: 0, locations: {
-    'theCatacombs': [{type:'[]', where:''}]
+    'theCatacombs': [{type:'[Corpse]', where:''}]
   }},
   {id: 1107000, name: "Scythe", type: "weapon", amount: 0, locations: {
-    'senFortress': [{type:'[]', where:''}]
+    'senFortress': [{type:'[Corpse]', where:''}]
   }},
   {id: 1103000, name: "Gargoyle's Halberd", type: "weapon", amount: 0, locations: {
-    'undeadParish': [{type:'[]', where:''}],
-    'anorLondo': [{type:'[]', where:''}]
+    'undeadParish': [{type:'[Drop]', where:'Bell Gargoyles (3%)'}],
+    'anorLondo': [{type:'[Drop]', where:'Gargoyle (3% -> 100% if last)'}]
   }},
   {id: 1101000, name: "Giant's Halberd", type: "weapon", amount: 0, locations: {
-    'anorLondo': [{type:'[]', where:''}]
+    'anorLondo': [
+      {type:'[Buy]', where:'Giant Blacksmith'},
+      {type:'[Drop]', where:'Sentinel (2%)'},
+      {type:'[Drop]', where:'Royal Sentinel (2%)'}]
   }},
   {id: 1102000, name: "Titanite Catch Pole", type: "weapon", amount: 0, locations: {
-    'undeadParish': [{type:'[]', where:''}],
-    'anorLondo': [{type:'[]', where:''}],
-    'senFortress': [{type:'[]', where:''}],
-    'theCatacombs': [{type:'[]', where:''}],
-    'lostIzalith': [{type:'[]', where:''}]
+    'undeadParish': [{type:'[Drop]', where:'Titanite Demon (2% -> 100% if 8th killed)'}],
+    'anorLondo': [{type:'[Drop]', where:'Titanite Demon (2% -> 100% if 8th killed)'}],
+    'senFortress': [{type:'[Drop]', where:'Titanite Demon (2% -> 100% if 8th killed)'}],
+    'theCatacombs': [{type:'[Drop]', where:'Titanite Demon (2% -> 100% if 8th killed)'}],
+    'lostIzalith': [{type:'[Drop]', where:'Titanite Demon (2% -> 100% if 8th killed)'}]
   }},
   {id: 1105000, name: "Black Knight Halberd", type: "weapon", amount: 0, locations: {
-    'darkrootBasin': [{type:'[]', where:''}],
-    'kilnOfTheFirstFlame': [{type:'[]', where:''}]
+    'darkrootBasin': [{type:'[Drop]', where:'Halberd Black Knight (20%)'}],
+    'kilnOfTheFirstFlame': [{type:'[Drop]', where:'Halberd Black Knight (20%)'}]
   }},
   {id: 1150000, name: "Great Scythe", type: "weapon", amount: 0, locations: {
-    'theCatacombs': [{type:'[]', where:''}]
+    'theCatacombs': [{type:'[Corpse]', where:''}]
   }},
   {id: 1151000, name: "Lifehunt Scythe", type: "weapon", amount: 0, locations: {
-    'special': [{type:'[]', where:''}]
+    'anorLondo': [{type:'[Craft]', where:'Any Halberd/Whip+10 + Soul of Priscilla'}]
   }},
   {id: 1600000, name: "Whip", type: "weapon", amount: 0, locations: {
-    'blighttown': [{type:'[]', where:''}]
+    'blighttown': [{type:'[Corpse]', where:''}]
   }},
   {id: 1601000, name: "Notched Whip", type: "weapon", amount: 0, locations: {
-    'paintedWorldOfAriamis': [{type:'[]', where:''}]
+    'paintedWorldOfAriamis': [{type:'[Drop]', where:'Xanthous King Jeremiah (100%)'}]
   }},
   {id: 9019000, name: "Guardian Tail", type: "weapon", amount: 0, locations: {
-    'oolacileSanctuary': [{type:'[]', where:''}]
+    'oolacileSanctuary': [{type:'[Tail]', where:'Sanctuary Guardian'}]
   }},
 //  {id: 900000, name: "Fists", type: "weapon", amount: 0, locations: {}},
   {id: 901000, name: "Caestus", type: "weapon", amount: 0, locations: {
-    'undeadParish': [{type:'[]', where:''}]
+    'undeadParish': [{type:'[Buy]', where:'Andre of Astora'}]
   }},
   {id: 902000, name: "Claw", type: "weapon", amount: 0, locations: {
-    'blighttown': [{type:'[]', where:''}]
+    'blighttown': [{type:'[Buy]', where:'Shiva of the East'}]
   }},
   {id: 903000, name: "Dragon Bone Fist", type: "weapon", amount: 0, locations: {
-    'special': [{type:'[]', where:''}]
+    'anorLondo': [{type:'[Craft]', where:'Any Fist+10 + Core of an Iron Golem'}]
   }},
   {id: 904000, name: "Dark Hand", type: "weapon", amount: 0, locations: {
-    'theAbyss': [{type:'[]', where:''}],
-    'newLondoRuins': [{type:'[]', where:''}]
+    'newLondoRuins': [{type:'[Drop]', where:'Darkwraith (1%)'}],
+    'theAbyss': [{type:'[Covenant]', where:'Join the Darkwraith covenant'}]
   }},
   {id: 1200000, name: "Short Bow", type: "weapon", amount: 0, locations: {
-    'undeadBurg': [{type:'[]', where:''}],
-    'special': [{type:'[]', where:''}]
+    'undeadBurg': [{type:'[Buy]', where:'Undead Male Merchant'}],
+    'start': [{type:'', where:'Hunter'}]
   }},
   {id: 1204000, name: "Composite Bow", type: "weapon", amount: 0, locations: {
-    'newLondoRuins': [{type:'[]', where:''}]
+    'newLondoRuins': [{type:'[Corpse]', where:''}]
   }},
   {id: 1201000, name: "Longbow", type: "weapon", amount: 0, locations: {
-    'darkrootBasin': [{type:'[]', where:''}],
-    'tombOfTheGiants': [{type:'[]', where:''}],
-    'theDukeArchives': [{type:'[]', where:''}]
+    'darkrootBasin': [{type:'[Corpse]', where:''}],
+    'tombOfTheGiants': [{type:'[Drop]', where:'Giant Skeleton (1%)'}],
+    'theDukeArchives': [{type:'[Drop]', where:'Undead Crystal Soldier (2%)'}]
   }},
   {id: 1202000, name: "Black Bow of Pharis", type: "weapon", amount: 0, locations: {
-    'darkrootGarden': [{type:'[]', where:''}]
+    'darkrootGarden': [{type:'[Drop]', where:'Forest Hunter Archer (100%)'}]
   }},
   {id: 1203000, name: "Dragonslayer Greatbow", type: "weapon", amount: 0, locations: {
-    'anorLondo': [{type:'[]', where:''}]
+    'anorLondo': [{type:'[Corpse]', where:''}]
   }},
   {id: 9021000, name: "Gough's Great Bow", type: "weapon", amount: 0, locations: {
-    'oolacileTownship': [{type:'[]', where:''}]
+    'oolacileTownship': [
+      {type:'[Gift]', where:'Hawkeye Gough'},
+      {type:'[Drop]', where:'Hawkeye Gough (100%)'}]
   }},
   {id: 1205000, name: "Darkmoon Bow", type: "weapon", amount: 0, locations: {
-    'special': [{type:'[]', where:''}]
+    'anorLondo': [{type:'[Craft]', where:'Any Bow+10 + Soul of Gwyndolin'}]
   }},
   {id: 1250000, name: "Light Crossbow", type: "weapon", amount: 0, locations: {
-    'undeadBurg': [{type:'[]', where:''}],
-    'senFortress': [{type:'[]', where:''}],
-    'undeadParish': [{type:'[]', where:''}],
-    'undeadBurg': [{type:'[]', where:''}]
+    'undeadBurg': [
+      {type:'[Corpse]', where:''},
+      {type:'[Drop]', where:'Hollow Soldier (2%)'}],
+    'undeadParish': [{type:'[Drop]', where:'Hollow Soldier (2%)'}],
+    'senFortress': [{type:'[Drop]', where:'Balder Knight (2%)'}]
   }},
   {id: 1251000, name: "Heavy Crossbow", type: "weapon", amount: 0, locations: {
-    'depths': [{type:'[]', where:''}]
+    'depths': [{type:'[Corpse]', where:''}]
   }},
   {id: 1253000, name: "Sniper Crossbow", type: "weapon", amount: 0, locations: {
-    'senFortress': [{type:'[]', where:''}]
+    'senFortress': [{type:'[Corpse]', where:''}]
   }},
   {id: 1252000, name: "Avelyn", type: "weapon", amount: 0, locations: {
-    'theDukeArchives': [{type:'[]', where:''}]
+    'theDukeArchives': [{type:'[Chest]', where:'On top of one of the bookshelves'}]
   }},
   {id: 1300000, name: "Sorcerer's Catalyst", type: "weapon", amount: 0, locations: {
-    'firelinkShrine': [{type:'[]', where:''}],
-    'newLondoRuins': [{type:'[]', where:''}],
-    'undeadBurg': [{type:'[]', where:''}],
-    'special': [{type:'[]', where:''}]
+    'undeadBurg': [{type:'[Corpse]', where:''}],
+    'firelinkShrine': [{type:'[Buy]', where:'Griggs of Vinheim'}],
+    'newLondoRuins': [{type:'[Buy]', where:'Rickert of Vinheim'}],
+    'start': [{type:'', where:'Sorcerer'}]
   }},
   {id: 1301000, name: "Beatrice's Catalyst", type: "weapon", amount: 0, locations: {
-    'valleyOfDrakes': [{type:'[]', where:''}]
+    'valleyOfDrakes': [{type:'[Corpse]', where:''}]
   }},
   {id: 1303000, name: "Logan's Catalyst", type: "weapon", amount: 0, locations: {
-    'theDukeArchives': [{type:'[]', where:''}]
+    'theDukeArchives': [{type:'[Chest]', where:''}]
   }},
   {id: 1305000, name: "Oolacile Ivory Catalyst", type: "weapon", amount: 0, locations: {
-    'darkrootBasin': [{type:'[]', where:''}],
-    'oolacileSanctuary': [{type:'[]', where:''}]
+    'darkrootBasin': [{type:'[Buy]', where:'Dusk of Oolacile'}],
+    'oolacileSanctuary': [{type:'[Buy]', where:'Elizabeth'}]
   }},
   {id: 9018000, name: "Oolacile Catalyst", type: "weapon", amount: 0, locations: {
-    'oolacileTownship': [{type:'[]', where:''}]
+    'oolacileTownship': [{type:'[Drop]', where:'Bloathead Sorcerer (0.5%)'}]
   }},
   {id: 1307000, name: "Demon's Catalyst", type: "weapon", amount: 0, locations: {
-    'demonsRuins': [{type:'[]', where:''}]
+    'demonsRuins': [{type:'[Drop]', where:'Demon Firesage (100%)'}]
   }},
   {id: 1308000, name: "Izalith Catalyst", type: "weapon", amount: 0, locations: {
-    'lostIzalith': [{type:'[]', where:''}]
+    'lostIzalith': [{type:'[Drop]', where:'Daughter of Chaos (100%)'}]
   }},
   {id: 1302000, name: "Tin Banishment Catalyst", type: "weapon", amount: 0, locations: {
-    'blighttown': [{type:'[]', where:''}]
+    'blighttown': [{type:'[Corpse]', where:''}]
   }},
   {id: 1306000, name: "Tin Crystallization Ctlyst.", type: "weapon", amount: 0, locations: {
-    'theDukeArchives': [{type:'[]', where:''}]
+    'theDukeArchives': [{type:'[Drop]', where:'Big Hat Logan (100%)'}]
   }},
   {id: 1304000, name: "Tin Darkmoon Catalyst", type: "weapon", amount: 0, locations: {
-    'special': [{type:'[]', where:''}]
+    'anorLondo': [{type:'[Craft]', where:'Any Catalyst+10 + Soul of Gwyndolin'}]
   }},
   {id: 9017000, name: "Manus Catalyst", type: "weapon", amount: 0, locations: {
-    'special': [{type:'[]', where:''}]
+    'anorLondo': [{type:'[Craft]', where:'Any Catalyst+10 + Soul of Manus'}]
   }},
   {id: 1330000, name: "Pyromancy Flame", type: "weapon", amount: 0, locations: {
-    'firelinkShrine': [{type:'[]', where:''}],
-    'blighttown': [{type:'[]', where:''}],
-    'special': [{type:'[]', where:''}]
+    'firelinkShrine': [{type:'[Gift]', where:'Laurentius of the Great Swamp'}],
+    'blighttown': [{type:'[Gift]', where:'Eingyi'}],
+    'start': [{type:'', where:'Pyromancer'}]
   }},
-  {id: 1332000, name: "Pyromancy Flame", type: "weapon", amount: 0, locations: {
-    'blighttown': [{type:'[]', where:''}]
+  {id: 1332000, name: "Pyromancy Flame (Ascended)", type: "weapon", amount: 0, locations: {
+    'blighttown': [{type:'[Craft]', where:'Upgrade from Pyromancy Flame+10 with Quelana'}]
   }},
   {id: 1360000, name: "Talisman", type: "weapon", amount: 0, locations: {
-    'firelinkShrine': [{type:'[]', where:''}],
-    'undeadParish': [{type:'[]', where:''}]
+    'firelinkShrine': [
+      {type:'[Chest]', where:''}],
+      {type:'[Buy]', where:'Petrus of Thorolund'}],
+    'undeadParish': [{type:'[Buy]', where:'Reah of Thorolund'}]
   }},
   {id: 1361000, name: "Canvas Talisman", type: "weapon", amount: 0, locations: {
-    'firelinkShrine': [{type:'[]', where:''}],
-    'special': [{type:'[]', where:''}]
+    'firelinkShrine': [{type:'[Buy]', where:'Patches'}],
+    'start': [{type:'', where:'Cleric class'}]
   }},
   {id: 1362000, name: "Thorolund Talisman", type: "weapon", amount: 0, locations: {
-    'firelinkShrine': [{type:'[]', where:''}]
+    'firelinkShrine': [
+      {type:'[Buy]', where:'Petrus of Thorolund'},
+      {type:'[Buy]', where:'Patches'}]
   }},
   {id: 1363000, name: "Ivory Talisman", type: "weapon", amount: 0, locations: {
-    'firelinkShrine': [{type:'[]', where:''}],
-    'undeadParish': [{type:'[]', where:''}],
-    'theDukeArchives': [{type:'[]', where:''}]
+    'firelinkShrine': [{type:'[Drop]', where:'Petrus of Thorolund (100%)'}],
+    'undeadParish': [{type:'[Drop]', where:'Reah of Thorolund (100%)'}],
+    'tombOfTheGiants': [{type:'[Drop]', where:'Reah of Thorolund (100%)'}],
+    'theDukeArchives': [{type:'[Drop]', where:'Reah of Thorolund (100%)'}]
   }},
   {id: 1365000, name: "Sunlight Talisman", type: "weapon", amount: 0, locations: {
-    'undeadParish': [{type:'[]', where:''}],
-    'anorLondo': [{type:'[]', where:''}],
-    'lostIzalith': [{type:'[]', where:''}]
+    'undeadParish': [{type:'[Drop]', where:'Solaire of Astora (100%)'}],
+    'anorLondo': [{type:'[Drop]', where:'Solaire of Astora (100%)'}],
+    'demonsRuins': [{type:'[Drop]', where:'Solaire of Astora (100%)'}],
+    'lostIzalith': [{type:'[Drop]', where:'Solaire of Astora (100%)'}]
   }},
   {id: 1366000, name: "Darkmoon Talisman", type: "weapon", amount: 0, locations: {
-    'anorLondo': [{type:'[]', where:''}]
+    'anorLondo': [{type:'[Covenant]', where:'Rank the Blade of the Darkmoon covenant up to +1'}]
   }},
   {id: 1367000, name: "Velka's Talisman", type: "weapon", amount: 0, locations: {
-    'undeadParish': [{type:'[]', where:''}]
+    'undeadParish': [{type:'[Buy]', where:'Oswald of Carim'}]
   }},
   {id: 1396000, name: "Skull Lantern", type: "weapon", amount: 0, locations: {
-    'theCatacombs': [{type:'[]', where:''}],
-    'tombOfTheGiants': [{type:'[]', where:''}]
+    'theCatacombs': [{type:'[Drop]', where:'Necromancer (2% -> 100% if last)'}],
+    'tombOfTheGiants': [{type:'[Corpse]', where:'In the pit where Patches pushes you'}]
   }},
   {id: 1460000, name: "Warrior's Round Shield", type: "weapon", amount: 0, locations: {
     'undeadBurg': [{type:'[]', where:''}]
@@ -1497,19 +1534,19 @@ var fullItemList = [
   }},
   {id: 1406000, name: "Cracked Round Shield", type: "weapon", amount: 0, locations: {
     'undeadBurg': [{type:'[]', where:''}],
-    'special': [{type:'[]', where:''}]
+    'start': [{type:'[]', where:''}]
   }},
   {id: 1409000, name: "Plank Shield", type: "weapon", amount: 0, locations: {
     'blighttown': [{type:'[]', where:''}],
-    'special': [{type:'[]', where:''}]
+    'start': [{type:'[]', where:''}]
   }},
   {id: 1403000, name: "Small Leather Shield", type: "weapon", amount: 0, locations: {
     'undeadBurg': [{type:'[]', where:''}],
-    'special': [{type:'[]', where:''}]
+    'start': [{type:'[]', where:''}]
   }},
   {id: 1408000, name: "Leather Shield", type: "weapon", amount: 0, locations: {
     'undeadBurg': [{type:'[]', where:''}],
-    'special': [{type:'[]', where:''}]
+    'start': [{type:'[]', where:''}]
   }},
   {id: 1405000, name: "Buckler", type: "weapon", amount: 0, locations: {
     'undeadBurg': [{type:'[]', where:''}],
@@ -1518,14 +1555,14 @@ var fullItemList = [
   }},
   {id: 1404000, name: "Target Shield", type: "weapon", amount: 0, locations: {
     'undeadBurg': [{type:'[]', where:''}],
-    'special': [{type:'[]', where:''}]
+    'start': [{type:'[]', where:''}]
   }},
   {id: 1411000, name: "Crystal Ring Shield", type: "weapon", amount: 0, locations: {
-    'special': [{type:'[]', where:''}]
+    'start': [{type:'[]', where:''}]
   }},
   {id: 1400000, name: "East-West Shield", type: "weapon", amount: 0, locations: {
     'undeadBurg': [{type:'[]', where:''}],
-    'special': [{type:'[]', where:''}]
+    'start': [{type:'[]', where:''}]
   }},
   {id: 1401000, name: "Wooden Shield", type: "weapon", amount: 0, locations: {
     'undeadBurg': [{type:'[]', where:''}]
@@ -1533,15 +1570,15 @@ var fullItemList = [
   {id: 1402000, name: "Large Leather Shield", type: "weapon", amount: 0, locations: {
     'undeadParish': [{type:'[]', where:''}],
     'paintedWorldOfAriamis': [{type:'[]', where:''}],
-    'special': [{type:'[]', where:''}]
+    'start': [{type:'[]', where:''}]
   }},
   {id: 1450000, name: "Heater Shield", type: "weapon", amount: 0, locations: {
     'undeadBurg': [{type:'[]', where:''}],
-    'special': [{type:'[]', where:''}]
+    'start': [{type:'[]', where:''}]
   }},
   {id: 1452000, name: "Tower Kite Shield", type: "weapon", amount: 0, locations: {
     'undeadParish': [{type:'[]', where:''}],
-    'special': [{type:'[]', where:''}]
+    'start': [{type:'[]', where:''}]
   }},
   {id: 1477000, name: "Caduceus Kite Shield", type: "weapon", amount: 0, locations: {
     'undeadParish': [{type:'[]', where:''}],
@@ -1565,7 +1602,7 @@ var fullItemList = [
   {id: 1462000, name: "Spider Shield", type: "weapon", amount: 0, locations: {
     'depths': [{type:'[]', where:''}],
     'valleyOfDrakes': [{type:'[]', where:''}],
-    'special': [{type:'[]', where:''}]
+    'start': [{type:'[]', where:''}]
   }},
   {id: 1453000, name: "Grass Crest Shield", type: "weapon", amount: 0, locations: {
     'darkrootBasin': [{type:'[]', where:''}]
@@ -1640,7 +1677,7 @@ var fullItemList = [
     'anorLondo': [{type:'[]', where:''}]
   }},
   {id: 1507000, name: "Greatshield of Artorias", type: "weapon", amount: 0, locations: {
-    'special': [{type:'[]', where:''}]
+    'anorLondo': [{type:'[]', where:''}]
   }},
   {id: 9014000, name: "Cleansing Greatshield", type: "weapon", amount: 0, locations: {
     'chasmOfTheAbyss': [{type:'[]', where:''}]
@@ -1721,19 +1758,19 @@ var fullItemList = [
   }},
   {id: 210000, name: "Standard Helm", type: "armor", amount: 0, locations: {
     'depths': [{type:'[]', where:''}],
-    'special': [{type:'[]', where:''}]
+    'start': [{type:'[]', where:''}]
   }},
   {id: 211000, name: "Hard Leather Armor", type: "armor", amount: 0, locations: {
     'depths': [{type:'[]', where:''}],
-    'special': [{type:'[]', where:''}]
+    'start': [{type:'[]', where:''}]
   }},
   {id: 212000, name: "Hard Leather Gauntlets", type: "armor", amount: 0, locations: {
     'depths': [{type:'[]', where:''}],
-    'special': [{type:'[]', where:''}]
+    'start': [{type:'[]', where:''}]
   }},
   {id: 213000, name: "Hard Leather Boots", type: "armor", amount: 0, locations: {
     'depths': [{type:'[]', where:''}],
-    'special': [{type:'[]', where:''}]
+    'start': [{type:'[]', where:''}]
   }},
   {id: 170000, name: "Chain Helm", type: "armor", amount: 0, locations: {
     'undeadBurg': [{type:'[]', where:''}],
@@ -1753,19 +1790,19 @@ var fullItemList = [
   }},
   {id: 390000, name: "Knight Helm", type: "armor", amount: 0, locations: {
     'darkrootBasin': [{type:'[]', where:''}],
-    'special': [{type:'[]', where:''}]
+    'start': [{type:'[]', where:''}]
   }},
   {id: 391000, name: "Knight Armor", type: "armor", amount: 0, locations: {
     'darkrootBasin': [{type:'[]', where:''}],
-    'special': [{type:'[]', where:''}]
+    'start': [{type:'[]', where:''}]
   }},
   {id: 392000, name: "Knight Gauntlets", type: "armor", amount: 0, locations: {
     'darkrootBasin': [{type:'[]', where:''}],
-    'special': [{type:'[]', where:''}]
+    'start': [{type:'[]', where:''}]
   }},
   {id: 393000, name: "Knight Leggings", type: "armor", amount: 0, locations: {
     'darkrootBasin': [{type:'[]', where:''}],
-    'special': [{type:'[]', where:''}]
+    'start': [{type:'[]', where:''}]
   }},
   {id: 350000, name: "Elite Knight Helm", type: "armor", amount: 0, locations: {
     'darkrootGarden': [{type:'[]', where:''}]
@@ -1781,79 +1818,79 @@ var fullItemList = [
   }},
   {id: 360000, name: "Wanderer Hood", type: "armor", amount: 0, locations: {
     'blighttown': [{type:'[]', where:''}],
-    'special': [{type:'[]', where:''}]
+    'start': [{type:'[]', where:''}]
   }},
   {id: 361000, name: "Wanderer Coat", type: "armor", amount: 0, locations: {
     'blighttown': [{type:'[]', where:''}],
-    'special': [{type:'[]', where:''}]
+    'start': [{type:'[]', where:''}]
   }},
   {id: 362000, name: "Wanderer Manchette", type: "armor", amount: 0, locations: {
     'blighttown': [{type:'[]', where:''}],
-    'special': [{type:'[]', where:''}]
+    'start': [{type:'[]', where:''}]
   }},
   {id: 363000, name: "Wanderer Boots", type: "armor", amount: 0, locations: {
     'blighttown': [{type:'[]', where:''}],
-    'special': [{type:'[]', where:''}]
+    'start': [{type:'[]', where:''}]
   }},
   {id: 300000, name: "Thief Mask", type: "armor", amount: 0, locations: {
     'undeadBurg': [{type:'[]', where:''}],
-    'special': [{type:'[]', where:''}]
+    'start': [{type:'[]', where:''}]
   }},
   {id: 301000, name: "Black Leather Armor", type: "armor", amount: 0, locations: {
     'undeadBurg': [{type:'[]', where:''}],
-    'special': [{type:'[]', where:''}]
+    'start': [{type:'[]', where:''}]
   }},
   {id: 302000, name: "Black Leather Gloves", type: "armor", amount: 0, locations: {
     'undeadBurg': [{type:'[]', where:''}],
-    'special': [{type:'[]', where:''}]
+    'start': [{type:'[]', where:''}]
   }},
   {id: 303000, name: "Black Leather Boots", type: "armor", amount: 0, locations: {
     'undeadBurg': [{type:'[]', where:''}],
-    'special': [{type:'[]', where:''}]
+    'start': [{type:'[]', where:''}]
   }},
   {id: 50000, name: "Brigand Hood", type: "armor", amount: 0, locations: {
     'valleyOfDrakes': [{type:'[]', where:''}],
-    'special': [{type:'[]', where:''}]
+    'start': [{type:'[]', where:''}]
   }},
   {id: 51000, name: "Brigand Armor", type: "armor", amount: 0, locations: {
     'valleyOfDrakes': [{type:'[]', where:''}],
-    'special': [{type:'[]', where:''}]
+    'start': [{type:'[]', where:''}]
   }},
   {id: 52000, name: "Brigand Gauntlets", type: "armor", amount: 0, locations: {
     'valleyOfDrakes': [{type:'[]', where:''}],
-    'special': [{type:'[]', where:''}]
+    'start': [{type:'[]', where:''}]
   }},
   {id: 53000, name: "Brigand Trousers", type: "armor", amount: 0, locations: {
     'valleyOfDrakes': [{type:'[]', where:''}],
-    'special': [{type:'[]', where:''}]
+    'start': [{type:'[]', where:''}]
   }},
   {id: 241000, name: "Leather Armor", type: "armor", amount: 0, locations: {
     'darkrootBasin': [{type:'[]', where:''}],
-    'special': [{type:'[]', where:''}]
+    'start': [{type:'[]', where:''}]
   }},
   {id: 242000, name: "Leather Gloves", type: "armor", amount: 0, locations: {
     'darkrootBasin': [{type:'[]', where:''}],
-    'special': [{type:'[]', where:''}]
+    'start': [{type:'[]', where:''}]
   }},
   {id: 243000, name: "Leather Boots", type: "armor", amount: 0, locations: {
     'darkrootBasin': [{type:'[]', where:''}],
-    'special': [{type:'[]', where:''}]
+    'start': [{type:'[]', where:''}]
   }},
   {id: 220000, name: "Sorcerer Hat", type: "armor", amount: 0, locations: {
     'undeadBurg': [{type:'[]', where:''}],
-    'special': [{type:'[]', where:''}]
+    'start': [{type:'[]', where:''}]
   }},
   {id: 221000, name: "Sorcerer Cloak", type: "armor", amount: 0, locations: {
     'undeadBurg': [{type:'[]', where:''}],
-    'special': [{type:'[]', where:''}]
+    'start': [{type:'[]', where:''}]
   }},
   {id: 222000, name: "Sorcerer Gauntlets", type: "armor", amount: 0, locations: {
     'undeadBurg': [{type:'[]', where:''}],
-    'special': [{type:'[]', where:''}]
+    'start': [{type:'[]', where:''}]
   }},
   {id: 223000, name: "Sorcerer Boots", type: "armor", amount: 0, locations: {
     'undeadBurg': [{type:'[]', where:''}],
-    'special': [{type:'[]', where:''}]
+    'start': [{type:'[]', where:''}]
   }},
   {id: 640000, name: "Black Sorcerer Hat", type: "armor", amount: 0, locations: {
     'senFortress': [{type:'[]', where:''}]
@@ -1873,34 +1910,34 @@ var fullItemList = [
   //  {id: 373000, name: "Mage Smith Boots", type: "armor", amount: 0, locations: {}},
   {id: 230000, name: "Tattered Cloth Hood", type: "armor", amount: 0, locations: {
     'blighttown': [{type:'[]', where:''}],
-    'special': [{type:'[]', where:''}]
+    'start': [{type:'[]', where:''}]
   }},
   {id: 231000, name: "Tattered Cloth Robe", type: "armor", amount: 0, locations: {
     'blighttown': [{type:'[]', where:''}],
-    'special': [{type:'[]', where:''}]
+    'start': [{type:'[]', where:''}]
   }},
   {id: 232000, name: "Tattered Cloth Manchette", type: "armor", amount: 0, locations: {
     'blighttown': [{type:'[]', where:''}],
-    'special': [{type:'[]', where:''}]
+    'start': [{type:'[]', where:''}]
   }},
   {id: 233000, name: "Heavy Boots", type: "armor", amount: 0, locations: {
     'blighttown': [{type:'[]', where:''}],
-    'special': [{type:'[]', where:''}]
+    'start': [{type:'[]', where:''}]
   }},
   {id: 310000, name: "Priest's Hat", type: "armor", amount: 0, locations: {
     'theCatacombs': [{type:'[]', where:''}]
   }},
   {id: 311000, name: "Holy Robe", type: "armor", amount: 0, locations: {
     'theCatacombs': [{type:'[]', where:''}],
-    'special': [{type:'[]', where:''}]
+    'start': [{type:'[]', where:''}]
   }},
   {id: 312000, name: "Traveling Gloves", type: "armor", amount: 0, locations: {
     'theCatacombs': [{type:'[]', where:''}],
-    'special': [{type:'[]', where:''}]
+    'start': [{type:'[]', where:''}]
   }},
   {id: 313000, name: "Holy Trousers", type: "armor", amount: 0, locations: {
     'theCatacombs': [{type:'[]', where:''}],
-    'special': [{type:'[]', where:''}]
+    'start': [{type:'[]', where:''}]
   }},
   {id: 180000, name: "Cleric Helm", type: "armor", amount: 0, locations: {
     'firelinkShrine': [{type:'[]', where:''}]
@@ -2499,7 +2536,7 @@ var fullItemList = [
   }},
   {id: 111, name: "Tiny Being's Ring", type: "ring", amount: 0, locations: {
     'anorLondo': [{type:'[]', where:''}],
-    'special': [{type:'[]', where:''}]
+    'start': [{type:'[]', where:''}]
   }},
   {id: 104, name: "Cloranthy Ring", type: "ring", amount: 0, locations: {
     'theGreatHollow': [{type:'[]', where:''}]
@@ -2612,7 +2649,7 @@ var fullItemList = [
   }},
   {id: 137, name: "Old Witch's Ring", type: "ring", amount: 0, locations: {
     'undeadAsylum': [{type:'[]', where:''}],
-    'special': [{type:'[]', where:''}]
+    'start': [{type:'[]', where:''}]
   }},
   {id: 103, name: "Cat Covenant Ring", type: "ring", amount: 0, locations: {
     'darkrootGarden': [{type:'[]', where:''}]
