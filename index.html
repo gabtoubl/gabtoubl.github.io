@@ -169,7 +169,7 @@
             console.log('error:',item.id,item.type);
           else {
             img.itemAmount = item.amount;
-            if (img.itemType == filter || img.itemLocations.indexOf(filter) != -1)
+            if (img.itemType == filter || filter in img.itemLocations)
               img.style.display = showMissed === true ? 'none' : 'inline-block';
             else
               img.style.display = 'none';
@@ -205,7 +205,11 @@
           document.getElementById('item').click();
         }
       }
+      lastItem = null;
       showItemInfo = (item,e) => {
+        if (lastItem == item)
+          return hideItemInfo();
+        lastItem = item;
         itemInfoImg.src = 'imgs/'+item.itemType+'/'+item.itemId + '.png';
         itemInfoImg.alt = item.id;
         itemInfoName.innerHTML = item.itemName;
@@ -213,28 +217,31 @@
         itemInfoLocations.innerHTML = '';
         for (var itemLocation in item.itemLocations) {
           var titleContent = itemLocation[0].toUpperCase() + itemLocation.slice(1).split(/(?=[A-Z])/).join(' ')
-          var line = document.createElement('tr');
           var title = document.createElement('td');
           title.className = 'itemLocationTitle';
           title.innerHTML = titleContent + ': ';
-          line.appendChild(title);
-          var description = document.createElement('td');
-          description.className = 'itemLocationDescription';
-          for (methodContent of item.itemLocations[itemLocation]) {
-            var method = document.createElement('li');
-            method.innerHTML = methodContent;
-            description.appendChild(method);
+          for (var location of item.itemLocations[itemLocation]) {
+            var line = document.createElement('tr');
+            line.appendChild(title == '' ? document.createElement('td') : title);
+            title = '';
+            for (var prop in location) {
+              var propContainer = document.createElement('td');
+              propContainer.className = 'itemMethod'+prop[0].toUpperCase()+prop.slice(1);
+              propContainer.innerHTML = location[prop];
+              line.appendChild(propContainer);
+            }
+            itemInfoLocations.append(line);
           }
-          line.appendChild(description);
-          itemInfoLocations.append(line);
         }
         itemInfo.style.opacity = 1;
         itemInfo.style.zIndex = 685;
         var rectItem = item.getBoundingClientRect();
         var rectInfo = itemInfo.getBoundingClientRect();
-        itemInfo.style.top = (rectItem.top - rectInfo.height + window.scrollY)+ 'px';
-        itemInfo.style.left = (rectItem.left - rectInfo.width + rectItem.width + window.scrollX)+ 'px';
-        itemInfo.style.left = rectItem.left + window.scrollX + 'px';
+        itemInfo.style.top = (rectItem.top + window.scrollY - rectInfo.height)+ 'px';
+        if (rectItem.left + window.scrollX + rectInfo.width + 16 > window.innerWidth)
+          itemInfo.style.left = window.innerWidth - rectInfo.width - 16 + 'px';
+        else
+          itemInfo.style.left = rectItem.left + window.scrollX + 'px';
         if (parseInt(itemInfo.style.top) < 0)
           itemInfo.style.top = rectItem.top + window.scrollY + rectItem.height + 'px';
         document.onclick = function() {hideItemInfo();};
@@ -244,6 +251,7 @@
         itemInfo.style.opacity = 0;
         itemInfo.style.zIndex = -1;
         document.onclick = '';
+        lastItem = null;
       }
       inputFile.onchange = function(e) {
         var file = this.files[0];

@@ -90,6 +90,8 @@ getPlayersSave = (data, offsets) => {
           else if (item.type == 0x40000000) {
             if (item.id >= 200 && item.id <= 215)
               item.id = 200;
+            if (item.id >= 393 && item.id <= 396)
+              item.id = 393;
             if (item.id < 800 && item.id != 384)
               item.type = 'item';
             else if (item.id >= 1000 && item.id < 2000)

@@ -107,13 +107,14 @@ p {
 #itemInfo {
   z-index: 685;
   opacity: 0;
-  font-family: 'DarkSouls';
+  font-family: 'Garamond';
   padding: 8px;
   background: grey;
   border: 3px ridge azure;
   border-radius: 8px;
   position: absolute;
   transition: opacity 0.2s ease-in;
+  white-space: nowrap;
 }
 #itemInfo #itemInfoImgContainer {
   width: 62px;
@@ -123,6 +124,7 @@ p {
   display: inline-block;
 }
 #itemInfo #itemInfoName {
+  font-family: 'DarkSouls';
   font-size: 20px;
   color: white;
 }
@@ -132,18 +134,21 @@ p {
 }
 #itemInfo #itemInfoAmount {
   text-align: right;
+  font-weight: bold;
 }
 #itemInfo #itemInfoLocations {
-  font-family: 'Garamond';
+  font-size: 16px;
+  vertical-align: top;
 }
 #itemInfo #itemInfoLocations .itemLocationTitle {
-  font-size: 16px;
   font-weight: bold;
-  vertical-align: top;
   color: honeydew;
 }
-#itemInfo #itemInfoLocations .itemLocationDescription {
-  list-style: none;
-  font-size: 14px;
+#itemInfo #itemInfoLocations .itemMethodType {
+  font-weight: bold;
+  text-align: right;
+  color: darkred;
+}
+#itemInfo #itemInfoLocations .itemMethodWhere {
   font-style: italic;
 }
