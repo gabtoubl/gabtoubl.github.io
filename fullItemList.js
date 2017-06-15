@@ -16,19 +16,19 @@ var fullItemList = [
   }},
   {id:375, name:'Sunlight Medal', type:'item', amount:0, locations:{
     'firelinkShrine':[{type:'[Gift]', where:'Lautrec of Carim'}],
-    'anorLondo':[{type:'[Chest]', where:''}],
+    'anorLondo':[{type:'[Chest]', where:'On the room next to Solaire\'s Bonfire'}],
     'demonsRuins':[{type:'[Drop]', where:'Chaos bug (3%)'}],
     'multiplayer':[{type:'[Covenant]', where:'Beat a boss as/with a golden phantom'}]
   }},
   {id:101, name:'Red Sign Soapstone', type:'item', amount:0, locations:{
-    'paintedWorldOfAriamis':[{type:'[Corpse]', where:''}]
+    'paintedWorldOfAriamis':[{type:'[Corpse]', where:'At the top of the stairs on the central tower'}]
   }},
   {id:102, name:'Red Eye Orb', type:'item', amount:0, locations:{
     'theAbyss':[{type:'[Covenant]', where:'Rank Darkwraith covenant up to +1'}]
   }},
   {id:111, name:'Cracked Red Eye Orb', type:'item', amount:0, locations:{
-    'firelinkShrine':[{type:'[Chest]', where:''}],
-    'newLondoRuins':[{type:'[Corpse]', where:''}],
+    'firelinkShrine':[{type:'[Chest]', where:'Under the elevator to Undead Parish'}],
+    'newLondoRuins':[{type:'[Corpse]', where:'On the bottom of new Londo, on a corpse hanging over a well'}],
     'theAbyss':[{type:'[Buy]', where:'Darkstalker Kaathe'}]
   }},
   {id:113, name:'Blue Eye Orb', type:'item', amount:0, locations:{
@@ -58,8 +58,8 @@ var fullItemList = [
     'depths':[{type:'[Drop]', where:'Basilisk (6%)'}],
     'theGreatHollow':[{type:'[Drop]', where:'Basilisk (6%)'}],
     'ashLake':[{type:'[Drop]', where:'Basilisk (6%)'}],
-    'theCatacombs':[{type:'[Corpse]', where:''}],
-    'tombOfTheGiants':[{type:'[Corpse]', where:''}]
+    'theCatacombs':[{type:'[Corpse]', where:'Behind the Titanite Demon'}],
+    'tombOfTheGiants':[{type:'[Corpse]', where:'Near the ladder where there is both normal and archer giant Skeleton'}]
   }},
   {id:103, name:'Black Separation Crystal', type:'item', amount:0, locations:{
     'start':[{type:'', where:'Every class'}]
@@ -87,7 +87,7 @@ var fullItemList = [
     'oolacileSanctuary':[
       {type:'[Gift]', where:'Elizabeth'},
       {type:'[Drop]', where:'Elizabeth (100%)'}],
-    'royalWood':[{type:'[Corpse]', where:''}]
+    'royalWood':[{type:'[Corpse]', where:'After the second bridge, hidden in a small passageway'}]
   }},
   {id:270, name:'Bloodred Moss Clump', type:'item', amount:0, locations:{
     'undeadBurg':[{type:'[Buy]', where:'Undead Female Merchant'}],
@@ -122,7 +122,7 @@ var fullItemList = [
       {type:'[Drop]', where:'Eingyi (100%)'},
       {type:'[Buy]', where:'Eingyi'},
       {type:'[Gift]', where:'Eingyi'}],
-    'paintedWorldOfAriamis':[{type:'[Corpse]', where:''}],
+    'paintedWorldOfAriamis':[{type:'[Corpse]', where:'On the attic where there is a lot of Engorged Zombies'}],
     'demonsRuins':[{type:'[Drop]', where:'Egg burdened (5%)'}]
   }},
   {id:240, name:'Divine Blessing', type:'item', amount:0, locations:{
@@ -130,18 +130,18 @@ var fullItemList = [
     'firelinkShrine':[{type:'[Buy]', where:'Patches'}],
     'undeadParish':[{type:'[Buy]', where:'Reah of Thorolund'}],
     'darkrootGarden':[{type:'[Covenant]', where:'Kill one invader as a Forest Hunter'}],
-    'senFortress':[{type:'[Chest]', where:''}],
-    'lostIzalith':[{type:'[Corpse]', where:''}],
+    'senFortress':[{type:'[Chest]', where:'Inside the tower guarded by Undead Prince Ricard'}],
+    'lostIzalith':[{type:'[Corpse]', where:'Just before entering Lost Izalith, behind a big root'}],
     'start':[{type:'', where:'Starting gift'}]
   }},
   {id:292, name:'Firebomb', type:'item', amount:0, locations:{
-    'firelinkShrine':[{type:'[Corpse]', where:''}],
+    'firelinkShrine':[{type:'[Corpse]', where:'On the rightmost passageway from the bonfire'}],
     'undeadBurg':[
       {type:'[Buy]', where:'Undead Male Merchant'},
       {type:'[Drop]', where:'Hollow Warrior (12%)'}]
   }},
   {id:297, name:'Black Firebomb', type:'item', amount:0, locations:{
-    'undeadBurg':[{type:'[Chest]', where:''}],
+    'undeadBurg':[{type:'[Chest]', where:'In one of the house after the first bonfire'}],
     'senFortress':[{type:'[Buy]', where:'Crestfallen Merchant'}],
     'royalWood':[{type:'[Buy]', where:'Marvelous Chester'}],
     'start':[{type:'', where:'Starting gift'}]
@@ -149,7 +149,7 @@ var fullItemList = [
   {id:290, name:'Throwing Knife', type:'item', amount:0, locations:{
     'undeadBurg':[
       {type:'[Buy]', where:'Undead Male Merchant'},
-      {type:'[Corpse]', where:''}],
+      {type:'[Corpse]', where:'On a roof near the Undead Male Merchant'}],
     'anorLondo':[{type:'[Drop]', where:'Painting Guardian (15%)'}]
   }},
   {id:291, name:'Poison Throwing Knife', type:'item', amount:0, locations:{
@@ -170,7 +170,7 @@ var fullItemList = [
   {id:311, name:'Gold Pine Resin', type:'item', amount:0, locations:{
     'undeadBurg':[
       {type:'[Buy]', where:'Domhnall of Zena'},
-      {type:'[Chest]', where:''}],
+      {type:'[Chest]', where:'Inside the house where the Residence Key is needed'}],
     'darkrootGarden':[
       {type:'[Drop]', where:'Mushroom Child (5%)'},
       {type:'[Drop]', where:'Mushroom Parent (100%)'}],
@@ -181,24 +181,24 @@ var fullItemList = [
     'undeadBurg':[{type:'[Buy]', where:'Undead Female Merchant'}]
   }},
   {id:296, name:'Lloyd\'s Talisman', type:'item', amount:0, locations:{
-    'firelinkShrine':[{type:'[Chest]', where:''}],
+    'firelinkShrine':[{type:'[Chest]', where:'Under the elevator to Undead Parish'}],
     'undeadBurg':[{type:'[Buy]', where:'Undead Male Merchant'}],
     'royalWood':[{type:'[Buy]', where:'Marvelous Chester'}]
   }},
   {id:294, name:'Alluring Skull', type:'item', amount:0, locations:{
     'undeadBurg':[{type:'[Buy]', where:'Undead Female Merchant'}],
-    'undeadParish':[{type:'[Corpse]', where:''}],
+    'undeadParish':[{type:'[Corpse]', where:'Where the two Crossbow Undead Soldier are, above the Fang Boar'}],
     'royalWood':[{type:'[Buy]', where:'Marvelous Chester'}]
   }},
   {id:312, name:'Transient Curse', type:'item', amount:0, locations:{
     'undeadBurg':[{type:'[Buy]', where:'Undead Female Merchant'}],
     'newLondoRuins':[
       {type:'[Buy]', where:'Ingward'},
-      {type:'[Corpse]', where:''},
+      {type:'[Corpse]', where:'Four different locations at the beginning of the level'},
       {type:'[Drop]', where:'Ghost (5%)'}]
   }},
   {id:330, name:'Homeward Bone', type:'item', amount:0, locations:{
-    'firelinkShrine':[{type:'[Chest]', where:''}],
+    'firelinkShrine':[{type:'[Chest]', where:'Under the elevator to Undead Parish'}],
     'undeadBurg':[{type:'[Buy]', where:'Undead Female Merchant'}],
     'undeadParish':[{type:'[Buy]', where:'Oswald of Carim'}],
     'theCatacombs':[{type:'[Buy]', where:'Vamos'}],
@@ -209,7 +209,7 @@ var fullItemList = [
   {id:370, name:'Prism Stone', type:'item', amount:0, locations:{
     'firelinkShrine':[{type:'[Buy]', where:'Patches'}],
     'undeadBurg':[{type:'[Buy]', where:'Undead Female Merchant'}],
-    'theDukeArchives':[{type:'[Chest]', where:''}],
+    'theDukeArchives':[{type:'[Chest]', where:'Beneath the staircase that leads to the Duke\'s Archives'}],
     'oolacileTownship':[{type:'[Buy]', where:'Hawkeye Gough'}]
   }},
   {id:510, name:'Hello Carving', type:'item', amount:0, locations:{
@@ -222,14 +222,14 @@ var fullItemList = [
     'oolacileTownship':[{type:'[Drop]', where:'Mimic (100%)'}]
   }},
   {id:513, name:'I\'m Sorry Carving', type:'item', amount:0, locations:{
-    'oolacileTownship':[{type:'[Drop]', where:'Bloated Sorcerer (100%)'}]
+    'oolacileTownship':[{type:'[Drop]', where:'Bloathead Sorcerer (100%)'}]
   }},
   {id:514, name:'Help Me! Carving', type:'item', amount:0, locations:{
-    'chasmOfTheAbyss':[{type:'[Corpse]', where:''}]
+    'chasmOfTheAbyss':[{type:'[Corpse]', where:'On a dead end with multiple Humanity Phantom'}]
   }},
   {id:371, name:'Binoculars', type:'item', amount:0, locations:{
     'start':[{type:'', where:'Starting gift'}],
-    'firelinkShrine':[{type:'[Corpse]', where:''}]
+    'firelinkShrine':[{type:'[Corpse]', where:'On the far end of the firelinkShrine graveyard'}]
   }},
   {id:400, name:'Soul of a Lost Undead', type:'item', amount:0, locations:{
     'undeadAsylum':[{type:'[Corpse]', where:''}],
@@ -262,30 +262,67 @@ var fullItemList = [
   {id:404, name:'Soul of a Proud Knight', type:'item', amount:0, locations:{
     'darkrootGarden':[{type:'[Corpse]', where:''}],
     'blighttown':[{type:'[Corpse]', where:''}],
-    'valleyOfDrakes':[{type:'[Corpse]', where:''}],
+    'valleyOfDrakes':[{type:'[Corpse]', where:'Near the Undead Dragon'}],
     'theCatacombs':[{type:'[Corpse]', where:''}],
     'newLondoRuins':[{type:'[Corpse]', where:''}],
     'demonsRuins':[{type:'[Corpse]', where:''}]
   }},
   {id:405, name:'Large Soul of a Proud Knight', type:'item', amount:0, locations:{
-    'blighttown':[{type:'[Corpse]', where:''}],
-    'newLondoRuins':[{type:'[Corpse]', where:''}],
-    'demonsRuins':[{type:'[Corpse]', where:''}]
+    'senFortress':[
+      {type:'[Corpse]', where:'On top of the ladder out of the tar pit'},
+      {type:'[Corpse]', where:'By the Serpent Mage overlooking the indoor boulder-path'}],
+    'blighttown':[{type:'[Corpse]', where:'3 different locations in the poison swamp'}],
+    'tombOfTheGiants':[
+      {type:'[Corpse]', where:'In Patches\'s trap pit'},
+      {type:'[Corpse]', where:'On the path back to Catacombs'},
+      {type:'[Corpse]', where:'Just after descending the first slide ramp'}]
+    'newLondoRuins':[{type:'[Corpse]', where:'4 different locations in the water drained area'}],
+    'demonsRuins':[{type:'[Corpse]', where:'Close to the 10 Taurus Demon, in lava'}]
   }},
   {id:406, name:'Soul of a Brave Warrior', type:'item', amount:0, locations:{
-    'darkrootGarden':[{type:'[Corpse]', where:''}],
-    'newLondoRuins':[{type:'[Corpse]', where:''}]
+    'darkrootGarden':[{type:'[Corpse]', where:'Close to the Basin long ladders'}],
+    'senFortress':[
+      {type:'[Corpse]', where:'In the first room of the fortress'},
+      {type:'[Corpse]', where:'Near a Titanite Demon'}],
+    'tombOfTheGiants':[
+      {type:'[Corpse]', where:'In the Giant Skeleton party room'},
+      {type:'[Corpse]', where:'Behind the Giant Skeleton Archer near the second bonfire'},
+      {type:'[Corpse]', where:'Near the end of the darkened area'}],
+    'theDukeArchives':[
+      {type:'[Corpse]', where:'Under the staircase behind the first Channeler'},
+      {type:'[Corpse]', where:'Inside a locked cell'}],
+    'newLondoRuins':[{type:'[Corpse]', where:'After the Darkwraiths\'s camp,<br>up to where the Very Large Ember is'}],
+    'demonsRuins':[
+      {type:'[Corpse]', where:'Next the lone Capra Demon before Demon Firesage'},
+      {type:'[Corpse]', where:'In the Izalith shortcut path, on a branch'},
+      {type:'[Corpse]', where:'After Demon Firesage, behind three Demonic Statues'},
+      {type:'[Corpse]', where:'Before the Centipede Demon, on a ledge next to the branches'}],
+    'lostIzalith':[
+      {type:'[Corpse]', where:'At the start of the magma area'},
+      {type:'[Corpse]', where:'Near the central structure'},
+      {type:'[Corpse]', where:'In the poison pool with the Chaos Eater'}]
   }},
   {id:407, name:'Large Soul of a Brave Warrior', type:'item', amount:0, locations:{
-    'darkrootGarden':[{type:'[Corpse]', where:''}]
+    'darkrootGarden':[{type:'[Corpse]', where:'In the Great Feline area'}],
+    'senFortress':[{type:'[Corpse]', where:'On the rooftop near the bonfire'}],
+    'theDukeArchives':[{type:'[Corpse]', where:'In a locked cell'}],
+    'lostIzalith':[{type:'[Corpse]', where:'Under the staircase with the Chaos Eater on it'}]
   }},
   {id:408, name:'Soul of a Hero', type:'item', amount:0, locations:{
-    'senFortress':[{type:'[Corpse]', where:''}],
-    'anorLondo':[{type:'[Corpse]', where:''}]
+    'senFortress':[{type:'[Corpse]', where:'In a cage near Big Hat Logan'}],
+    'anorLondo':[
+      {type:'[Corpse]', where:'On the balcony above the Titanite Demon'},
+      {type:'[Corpse]', where:'At the end of the corridor guarded by one Silver Knight Archer'}],
+    'tombOfTheGiants':[{type:'[Corpse]', where:'In the Pinwheel Servant room'}],
+    'theDukeArchives':[{type:'[Corpse]', where:'Past the invisble bridge'}],
+    'lostIzalith':[{type:'[Corpse]', where:'Just after the magma lake'}],
+    'oolacileTownship':[{type:'[Corpse]', where:'In the abyss-infected part, before the chasm'}],
+    'royalWood':[{type:'[Corpse]', where:'In Kalameet battleground area'}],
+    'chasmOfTheAbyss':[{type:'[Corpse]', where:'In the room just before Manus'}]
   }},
   {id:409, name:'Soul of a Great Hero', type:'item', amount:0, locations:{
-    'theDukeArchives':[{type:'[Corpse]', where:''}],
-    'lostIzalith':[{type:'[Corpse]', where:''}]
+    'theDukeArchives':[{type:'[Corpse]', where:'In the room where Seath killed you'}],
+    'lostIzalith':[{type:'[Corpse]', where:'Inside the first tower in the Dragon Butt zone'}]
   }},
   {id:390, name:'Fire Keeper Soul', type:'item', amount:0, locations:{
     'anorLondo':[{type:'[Drop]', where:'Darkmoon Knightess (100%)'}]
@@ -297,10 +334,10 @@ var fullItemList = [
     'anorLondo':[{type:'[Drop]', where:'Lautrec of Carim (100%)'}]
   }},
   {id:393, name:'Fire Keeper Soul', type:'item', amount:0, locations:{
-    'undeadParish':[{type:'[Corpse]', where:''}],
-    'newLondoRuins':[{type:'[Corpse]', where:''}],
-    'blighttown':[{type:'[Corpse]', where:''}],
-    'theDukeArchives':[{type:'[Corpse]', where:''}]
+    'undeadParish':[{type:'[Corpse]', where:'On the altar inside the parish'}],
+    'newLondoRuins':[{type:'[Corpse]', where:'Near the ruins after crossing the wood bridge'}],
+    'blighttown':[{type:'[Corpse]', where:'On a dead-end with lots of Blowdart Snipers'}],
+    'theDukeArchives':[{type:'[Corpse]', where:'Where Big Hat Logan is emprisonned'}]
   }},
   {id:705, name:'Soul of the Moonlight Butterfly', type:'item', amount:0, locations:{
     'darkrootGarden':[{type:'[Drop]', where:'Moonlight Butterfly (100%)'}]
@@ -339,24 +376,24 @@ var fullItemList = [
     'kilnOfTheFirstFlame':[{type:'[Drop]', where:'Gwyn, Lord of Cinder (100%)'}]
   }},
   {id:500, name:'Humanity', type:'item', amount:0, locations:{
-    'firelinkShrine':[{type:'[Corpse]', where:''}],
+    'firelinkShrine':[{type:'[Corpse]', where:'On the well just by the bonfire'}],
     'undeadBurg':[
       {type:'[Drop]', where:'Undead Rat (5%)'},
-      {type:'[Corpse]', where:''}],
+      {type:'[Corpse]', where:'On top of the roof of the aqueduct'}],
     'undeadParish':[
       {type:'[Drop]', where:'Undead Rat (5%)'},
-      {type:'[Corpse]', where:''}],
+      {type:'[Corpse]', where:'First floor of the parish, near where Lautrec is being held captive'}],
     'depths':[
       {type:'[Drop]', where:'Undead Rat(small) (3%)'},
       {type:'[Drop]', where:'Undead Rat(big) (5%)'},
-      {type:'[Corpse]', where:''}],
-    'valleyOfDrakes':[{type:'[Corpse]', where:''}],
+      {type:'[Corpse]', where:'In the sewer with the Basilisks'}],
+    'valleyOfDrakes':[{type:'[Corpse]', where:'Near the first lone wyvern, in a small alcove'}],
     'paintedWorldOfAriamis':[{type:'[Drop]', where:'Snow Rat (5%)'}],
     'tombOfTheGiants':[
-      {type:'[Corpse]', where:''},
+      {type:'[Corpse]', where:'At the bottom right of the last slide'},
       {type:'[Drop]', where:'Baby Skeleton (2%)'}],
     'theDukeArchives':[{type:'[Drop]', where:'Pisaca (4%)'}],
-    'crystalCave':[{type:'[Corpse]', where:''}],
+    'crystalCave':[{type:'[Corpse]', where:'Past the first golem, after walking an invisible path'}],
     'chasmOfTheAbyss':[
       {type:'[Drop]', where:'Humanity Phantom(small) (4.44%)'},
       {type:'[Drop]', where:'Humanity Phantom(medium) (8%)'},
@@ -366,13 +403,13 @@ var fullItemList = [
       {type:'[Drop]', where:'Most NPCs (100%)'}]
   }},
   {id:501, name:'Twin Humanities', type:'item', amount:0, locations:{
-    'undeadBurg':[{type:'[Corpse]', where:''}],
+    'undeadBurg':[{type:'[Corpse]', where:'In the back of Lower Undead Burg, where all the Torch Zombies are'}],
     'undeadParish':[{type:'[Drop]', where:'Bell Gargoyles (100%)'}],
     'darkrootGarden':[{type:'[Drop]', where:'Forest Hunter Archer (100%)'}],
     'depths':[{type:'[Drop]', where:'Gaping Dragon (100%)'}],
-    'blighttown':[{type:'[Chest]', where:''}],
+    'blighttown':[{type:'[Chest]', where:'Behind the fake wall that leads to the Great Hollow'}],
     'quelaagDomain':[{type:'[Drop]', where:'Chaos Witch Quelaag (100%)'}],
-    'lostIzalith':[{type:'[Corpse]', where:''}],
+    'lostIzalith':[{type:'[Corpse]', where:'Near the hidden bonfire, on top of the structure'}],
     'chasmOfTheAbyss':[
       {type:'[Drop]', where:'Humanity Phantom(small) (1.11%)'},
       {type:'[Drop]', where:'Humanity Phantom(medium) (2%)'},
@@ -385,12 +422,12 @@ var fullItemList = [
     'start':[{type:'', where:'Starting gift'}]
   }},
   {id:220, name:'Silver Pendant', type:'item', amount:0, locations:{
-    'oolacileTownship':[{type:'[Corpse]', where:''}]
+    'oolacileTownship':[{type:'[Corpse]', where:'Inside a hidden room where a developer message say to use light'}]
   }},
   {id:380, name:'Rubbish', type:'item', amount:0, locations:{
-    'undeadBurg':[{type:'[Corpse]', where:''}],
+    'undeadBurg':[{type:'[Corpse]', where:'Before the first fog door, going to the lower area of undead Burg'}],
     'darkrootGarden':[{type:'[Covenant]', where:'Forest Hunter:Reward (5%)'}],
-    'oolacileTownship':[{type:'[Corpse]', where:''}]
+    'oolacileTownship':[{type:'[Corpse]', where:'Past the Mimic, inside the house with 2 Bloathead Sorcerers and 5 Bloathead'}]
   }},
   {id:381, name:'Copper Coin', type:'item', amount:0, locations:{
     'firelinkShrine':[{type:'[Gift]', where:'Petrus of Thorolund'}]
@@ -400,17 +437,20 @@ var fullItemList = [
   }},
   {id:383, name:'Gold Coin', type:'item', amount:0, locations:{
     'anorLondo':[{type:'[Drop]', where:'Mimic (100%)'}],
-    'paintedWorldOfAriamis':[{type:'[Corpse]', where:''}],
-    'royalWood':[{type:'[Corpse]', where:''}]
+    'paintedWorldOfAriamis':[{type:'[Corpse]', where:'inside the Annex, tricky jump to wrecked floor'}],
+    'royalWood':[{type:'[Corpse]', where:'On a cliff in the last part of the Royal Wood'}]
   }},
   {id:117, name:'Darksign', type:'item', amount:0, locations:{
     'start':[{type:'', where:'Every class'}]
   }},
   {id:385, name:'Dried Finger', type:'item', amount:0, locations:{
-    'paintedWorldOfAriamis':[{type:'[Corpse]', where:''}]
+    'paintedWorldOfAriamis':[{type:'[Corpse]', where:'On top of the first tower, drop onto the balcony'}]
   }},
   {id:1000, name:'Titanite Shard', type:'material', amount:0, locations:{
     'undeadAsylum':[{type:'[Drop]', where:'Hollow Soldier (1.6%)'}],
+    'firelinkShrine': [
+      {type:'[Frampt]', where:'Trade with Large Titanite Shard'},
+      {type:'[Frampt]', where:'Trade with Green Titanite Shard'}],
     'undeadBurg':[{type:'[Drop]', where:'Hollow Soldier (1.6%)'}],
     'undeadParish':[
       {type:'[Buy]', where:'Andre of Astora'},
@@ -425,6 +465,7 @@ var fullItemList = [
     'theCatacombs':[{type:'[Buy]', where:'Vamos'}]
   }},
   {id:1010, name:'Large Titanite Shard', type:'material', amount:0, locations:{
+    'firelinkShrine': [{type:'[Frampt]', where:'Trade with Titanite Chunk'}],
     'darkrootGarden':[{type:'[Covenant]', where:'Forest Hunter:Reward (25%)'}],
     'darkrootBasin':[{type:'[Drop]', where:'Crystal Lizard (25%)'}],
     'depths':[{type:'[Drop]', where:'Slime (2%)'}],
@@ -442,6 +483,7 @@ var fullItemList = [
   }},
   {id:1030, name:'Titanite Chunk', type:'material', amount:0, locations:{
     'undeadAsylum':[{type:'[Snuggly]', where:'Trade with Rubbish'}],
+    'firelinkShrine': [{type:'[Frampt]', where:'Trade with Titanite Slab'}],
     'undeadBurg':[{type:'[Drop]', where:'Sword Black Knight (100%)'}],
     'undeadParish':[{type:'[Drop]', where:'Greatsword Black Knight (100%)'}],
     'darkrootGarden':[{type:'[Covenant]', where:'Forest Hunter:Reward (10%)'}],
@@ -460,21 +502,30 @@ var fullItemList = [
     'royalWood':[{type:'[Chest]', where:'Behind the waterfall in Kalameet battleground'}]
   }},
   {id:1020, name:'Green Titanite Shard', type:'material', amount:0, locations:{
+    'firelinkShrine': [
+      {type:'[Frampt]', where:'Trade with Blue Titanite Chunk'},
+      {type:'[Frampt]', where:'Trade with White Titanite Chunk'},
+      {type:'[Frampt]', where:'Trade with Red Titanite Chunk'}],
     'darkrootGarden':[{type:'[Covenant]', where:'Forest Hunter:Reward (25%)'}],
     'depths':[{type:'[Drop]', where:'Slime (2%)'}],
-    'blighttown':[{type:'[Drop]', where:'Giant Leech (2.06%)'}],
+    'blighttown':[
+      {type:'[Drop]', where:'Giant Leech (2.06%)'},
+      {type:'[Corpse]', where:'Below the ramp leading to the Great Hollow'}],
     'senFortress':[{type:'[Buy]', where:'Crestfallen Merchant'}],
     'anorLondo':[{type:'[Buy]', where:'Giant Blacksmith'}],
-    'theCatacombs':[{type:'[Corpse]', where:''}],
-    'newLondoRuins':[{type:'[Corpse]', where:''}],
+    'theCatacombs':[{type:'[Corpse]', where:'Just before meeting Vamos'}],
+    'newLondoRuins':[{type:'[Corpse]', where:'Between Ingward building and the seal building'}],
     'demonsRuins':[
-      {type:'[Corpse]', where:''},
+      {type:'[Corpse]', where:'Left of the staircase after the final Capra Demon'},
+      {type:'[Corpse]', where:'Go right when facing the Centipede Demon'},
       {type:'[Drop]', where:'Burrowing Rockworm (30.57%)'}],
+    'lostIzalith': [{type:'[Corpse]', where:'In the poison pool with the Chaos Eaters'}],
     'oolacileTownship':[
       {type:'[Buy]', where:'Hawkeye Gough'},
       {type:'[Drop]', where:'Bloathead Sorcerer (6%)'}]
   }},
   {id:1040, name:'Blue Titanite Chunk', type:'material', amount:0, locations:{
+    'firelinkShrine': [{type:'[Frampt]', where:'Trade with Blue Titanite Slab'}],
     'darkrootGarden':[{type:'[Covenant]', where:'Forest Hunter:Reward (10%)'}],
     'darkrootBasin':[
       {type:'[Drop]', where:'Halberd Black Knight (100%)'},
@@ -489,32 +540,36 @@ var fullItemList = [
   }},
   {id:1080, name:'Blue Titanite Slab', type:'material', amount:0, locations:{
     'crystalCave':[
-      {type:'[Corpse]', where:''},
+      {type:'[Corpse]', where:'After the first Crystal Golem, drop inside the cave and navigate through the invisible path behind'},
       {type:'[Drop]', where:'Moonlight Butterfly (0.2%)'}],
-    'royalWood':[{type:'[Chest]', where:''}]
+    'royalWood':[{type:'[Chest]', where:'In a puddle guarded by 3 Guardians'}]
   }},
   {id:1060, name:'Red Titanite Chunk', type:'material', amount:0, locations:{
     'undeadAsylum':[
       {type:'[Snuggly]', where:'Trade with Pyromancy Flame (unupgraded)'},
       {type:'[Drop]', where:'Sword Black Knight (100%)'}
     ],
-    'theGreatHollow' :[{type:'[Corpse]', where:''}],
+    'firelinkShrine': [{type:'[Frampt]', where:'Trade with Red Titanite Slab'}],
+    'theGreatHollow' :[
+      {type:'[Corpse]', where:'Near the top of the area'}],
+      {type:'[Corpse]', where:'On a branch above the Basilisks'}],
     'demonsRuins':[
       {type:'[Drop]', where:'Chaos Bug (0.5%)'},
       {type:'[Drop]', where:'Burrowing Rockworm (5%)'}],
     'lostIzalith':[
-      {type:'[Corpse]', where:''},
+      {type:'[Corpse]', where:'In the poison pool with the Chaos Eaters'},
       {type:'[Drop]', where:'Chaos Eater (10%)'}],
     'kilnOfTheFirstFlame':[{type:'[Drop]', where:'Greatsword Black Knight (100%)'}]
   }},
   {id:1100, name:'Red Titanite Slab', type:'material', amount:0, locations:{
     'undeadAsylum':[{type:'[Snuggly]', where:'Trade with Ascended Pyromancy Flame (unupgraded)'}],
     'lostIzalith':[
-      {type:'[Chest]', where:''},
+      {type:'[Chest]', where:'In the poison pool with the Chaos Eaters'},
       {type:'[Drop]', where:'Chaos Eater (0.3%)'}]
   }},
   {id:1050, name:'White Titanite Chunk', type:'material', amount:0, locations:{
     'undeadAsylum':[{type:'[Snuggly]', where:'Trade with Sunlight Medal'}],
+    'firelinkShrine': [{type:'[Frampt]', where:'Trade with White Titanite Slab'}],
     'darkrootGarden':[{type:'[Covenant]', where:'Forest Hunter:Reward (10%)'}],
     'tombOfTheGiants':[
       {type:'[Drop]', where:'Bone Tower (5%)'},
@@ -525,9 +580,9 @@ var fullItemList = [
   }},
   {id:1090, name:'White Titanite Slab', type:'material', amount:0, locations:{
     'tombOfTheGiants':[
-      {type:'[Corpse]', where:''},
+      {type:'[Corpse]', where:'On the far back on the Pinwheel Servant room'},
       {type:'[Drop]', where:'Pinwheel Servant (0.2%)'}],
-    'chasmOfTheAbyss':[{type:'[Corpse]', where:''}]
+    'chasmOfTheAbyss':[{type:'[Corpse]', where:'At the end of a tunnel near Manus'}]
   }},
   {id:1130, name:'Twinkling Titanite', type:'material', amount:0, locations:{
     'undeadAsylum':[
@@ -539,7 +594,7 @@ var fullItemList = [
     'ashLake':[{type:'[Drop]', where:'Giant Clam (30%)'}],
     'anorLondo':[
       {type:'[Buy]', where:'Giant Blacksmith'},
-      {type:'[Chest]', where:''}],
+      {type:'[Chest]', where:'Guarded by two Sentinels left of the first bonfire'}],
     'theCatacombs':[{type:'[Drop]', where:'Crystal Lizard (100%)'}],
     'theDukeArchives':[{type:'[Drop]', where:'Crystal Lizard (100%)'}],
     'crystalCave':[{type:'[Drop]', where:'Giant Clam (20%)'}],
@@ -553,7 +608,9 @@ var fullItemList = [
     'undeadParish':[{type:'[Drop]', where:'Titanite Demon (100%)'}],
     'senFortress':[{type:'[Drop]', where:'Titanite Demon (100%)'}],
     'anorLondo':[
-      {type:'[Chest]', where:''},
+      {type:'[Chest]', where:'At the bottom of the first elevator'},
+      {type:'[Chest]', where:'Guarded by two Sentinels right of the first bonfire'},
+      {type:'[Chest]', where:'In the room with three Silver Knights'},
       {type:'[Drop]', where:'Titanite Demon (100%)'}],
     'theCatacombs':[{type:'[Drop]', where:'Titanite Demon (100%)'}],
     'lostIzalith':[{type:'[Drop]', where:'Titanite Demon (100%)'}]
@@ -561,9 +618,9 @@ var fullItemList = [
   {id:1110, name:'Dragon Scale', type:'material', amount:0, locations:{
     'undeadAsylum':[{type:'[Snuggly]', where:'Trade with Egg Vermifuge'}],
     'darkrootBasin':[{type:'[Drop]', where:'Hydra (100%)'}],
-    'blighttown':[{type:'[Chest]', where:''}],
+    'blighttown':[{type:'[Chest]', where:'In the pool behind the second bonfire'}],
     'ashLake':[
-      {type:'[Corpse]', where:''},
+      {type:'[Corpse]', where:'3 different locations on the beach'},
       {type:'[Drop]', where:'Hydra (100%)'}],
     'valleyOfDrakes':[
       {type:'[Drop]', where:'Blue Drake (5%)'},
@@ -587,34 +644,34 @@ var fullItemList = [
     'crystalCave':[{type:'[Drop]', where:'Seath the Scaleless (100%)'}]
   }},
   {id:800, name:'Large Ember', type:'key_item', amount:0, locations:{
-    'depths':[{type:'[Chest]', where:''}]
+    'depths':[{type:'[Chest]', where:'Near the Butcher\'s table'}]
   }},
   {id:801, name:'Very Large Ember', type:'key_item', amount:0, locations:{
-    'newLondoRuins':[{type:'[Chest]', where:''}]
+    'newLondoRuins':[{type:'[Chest]', where:'Inside the Darkwraith camp, long corridor leading to it'}]
   }},
   {id:802, name:'Crystal Ember', type:'key_item', amount:0, locations:{
-    'theDukeArchives':[{type:'[Chest]', where:''}]
+    'theDukeArchives':[{type:'[Chest]', where:'In the room before the Duke\'s Garden'}]
   }},
   {id:812, name:'Large Flame Ember', type:'key_item', amount:0, locations:{
-    'demonsRuins':[{type:'[Chest]', where:''}]
+    'demonsRuins':[{type:'[Chest]', where:'Just before facing Demon Firesage, on the corridor with tons of Burrowing Rockworm'}]
   }},
   {id:813, name:'Chaos Flame Ember', type:'key_item', amount:0, locations:{
-    'demonsRuins':[{type:'[Corpse]', where:''}]
+    'demonsRuins':[{type:'[Corpse]', where:'Inside the lava, close to where the 10 Taurus Demon were'}]
   }},
   {id:806, name:'Large Magic Ember', type:'key_item', amount:0, locations:{
-    'theDukeArchives':[{type:'[Chest]', where:''}]
+    'theDukeArchives':[{type:'[Chest]', where:'Inside the room where Seath killed you the first time'}]
   }},
   {id:807, name:'Enchanted Ember', type:'key_item', amount:0, locations:{
-    'darkrootGarden':[{type:'[Chest]', where:''}]
+    'darkrootGarden':[{type:'[Chest]', where:'In the Mushroom zone, in a puddle guarded by two Mushroom Parent'}]
   }},
   {id:808, name:'Divine Ember', type:'key_item', amount:0, locations:{
-    'darkrootGarden':[{type:'[Corpse]', where:''}]
+    'darkrootGarden':[{type:'[Corpse]', where:'After beating the Moonlight Butterfly, follow the only path'}]
   }},
   {id:809, name:'Large Divine Ember', type:'key_item', amount:0, locations:{
-    'tombOfTheGiants':[{type:'[Chest]', where:''}]
+    'tombOfTheGiants':[{type:'[Chest]', where:'In the Giant Skeleton party room'}]
   }},
   {id:810, name:'Dark Ember', type:'key_item', amount:0, locations:{
-    'paintedWorldOfAriamis':[{type:'[Chest]', where:''}]
+    'paintedWorldOfAriamis':[{type:'[Chest]', where:'Inside the Annex, in the courtyard'}]
   }},
   {id:2602, name:'Repairbox', type:'key_item', amount:0, locations:{
     'undeadBurg':[{type:'[Buy]', where:'Undead Male Merchant'}],
@@ -675,25 +732,25 @@ var fullItemList = [
       {type:'[Drop]', where:'Undead Male Merchant (100%)'}]
   }},
   {id:2017, name:'Mystery Key', type:'key_item', amount:0, locations:{
-    'undeadParish':[{type:'[Corpse]', where:''}]
+    'undeadParish':[{type:'[Corpse]', where:'Found after beating the Fang Boar down the staircase'}]
   }},
   {id:2001, name:'Basement Key', type:'key_item', amount:0, locations:{
-    'undeadParish':[{type:'[Corpse]', where:''}]
+    'undeadParish':[{type:'[Corpse]', where:'Next to the lever that open the grate to the Fang Boar zone'}]
   }},
   {id:2014, name:'Key to Depths', type:'key_item', amount:0, locations:{
     'undeadBurg':[{type:'[Drop]', where:'Capra Demon (100%)'}]
   }},
   {id:2019, name:'Watchtower Basement Key', type:'key_item', amount:0, locations:{
-    'darkrootGarden':[{type:'[Corpse]', where:''}]
+    'darkrootGarden':[{type:'[Corpse]', where:'After beating the Moonlight Butterfly, follow the only path'}]
   }},
   {id:2018, name:'Sewer Chamber Key', type:'key_item', amount:0, locations:{
-    'depths':[{type:'[Corpse]', where:''}]
+    'depths':[{type:'[Corpse]', where:'In the Giant Undead Rat room'}]
   }},
   {id:2007, name:'Blighttown Key', type:'key_item', amount:0, locations:{
     'depths':[{type:'[Drop]', where:'Gaping Dragon (100%)'}]
   }},
   {id:2008, name:'Key to New Londo Ruins', type:'key_item', amount:0, locations:{
-    'blighttown':[{type:'[Chest]', where:''}]
+    'blighttown':[{type:'[Chest]', where:'Near Valley Of Drakes\'s shortcut'}]
   }},
   {id:2013, name:'Key to the Seal', type:'key_item', amount:0, locations:{
     'newLondoRuins':[
@@ -701,26 +758,26 @@ var fullItemList = [
       {type:'[Drop]', where:'Ingward (100%)'}]
   }},
   {id:2003, name:'Cage Key', type:'key_item', amount:0, locations:{
-    'senFortress':[{type:'[Chest]', where:''}]
+    'senFortress':[{type:'[Chest]', where:'Below the Crestfallen Merchant'}]
   }},
   {id:2004, name:'Archive Tower Cell Key', type:'key_item', amount:0, locations:{
     'theDukeArchives':[{type:'[Drop]', where:'Serpent Soldier (100%)'}]
   }},
-  {id:2020, name:'Archive Prison Extra Key', type:'key_item', amount:0, locations:{
-    'theDukeArchives':[{type:'[Corpse]', where:''}]
+  {id:2020, name:'Archive Tower Extra Key', type:'key_item', amount:0, locations:{
+    'theDukeArchives':[{type:'[Corpse]', where:'Inside one of the cell'}]
   }},
   {id:2006, name:'Archive Tower Giant Cell Key', type:'key_item', amount:0, locations:{
-    'theDukeArchives':[{type:'[Chest]', where:''}]
+    'theDukeArchives':[{type:'[Chest]', where:'Near the exit to the Crystal Cave'}]
   }},
   {id:2005, name:'Archive Tower Giant Door Key', type:'key_item', amount:0, locations:{
-    'theDukeArchives':[{type:'[Chest]', where:''}]
+    'theDukeArchives':[{type:'[Chest]', where:'Behind the gramophone'}]
   }},
   {id:2009, name:'Annex Key', type:'key_item', amount:0, locations:{
-    'paintedWorldOfAriamis':[{type:'[Chest]', where:''}]
+    'paintedWorldOfAriamis':[{type:'[Chest]', where:'In the sewers, behind an illusory wall'}]
   }},
   //  {id:2015, name:'Lift Chamber Key', type:'key_item', amount:0, locations:{}},
   {id:2022, name:'Crest Key', type:'key_item', amount:0, locations:{
-    'oolacileTownship':[{type:'[Chest]', where:''}]
+    'oolacileTownship':[{type:'[Drop]', where:'Mimic (100%)'}]
   }},
   {id:3000, name:'Sorcery:Soul Arrow', type:'magic', amount:0, locations:{
     'firelinkShrine':[
@@ -789,14 +846,16 @@ var fullItemList = [
     'theDukeArchives':[{type:'[Buy]', where:'Big Hat Logan'}]
   }},
   {id:3310, name:'Sorcery:Strong Magic Shield', type:'magic', amount:0, locations:{
-    'theDukeArchives':[{type:'[Chest]', where:''}]
+    'theDukeArchives':[{type:'[Chest]', where:'At the highest floor next to the Channeler'}]
   }},
   {id:3520, name:'Sorcery:Aural Decoy', type:'magic', amount:0, locations:{
     'firelinkShrine':[{type:'[Buy]', where:'Griggs of Vinheim'}]
   }},
   {id:3510, name:'Sorcery:Hush', type:'magic', amount:0, locations:{
-    'firelinkShrine':[{type:'[Drop]', where:'Griggs '}],
-    'senFortress':[{type:'[Drop]', where:'Griggs of Vinheim (100%)'}]
+    'firelinkShrine':[{type:'[Drop]', where:'Griggs of Vinheim (100%)'}],
+    'senFortress':[
+      {type:'[Corpse]', where:'On the second set of rolling boulder, jump midway to access a hidden area'},
+      {type:'[Drop]', where:'Griggs of Vinheim (100%)'}]
   }},
   {id:3540, name:'Sorcery:Fall Control', type:'magic', amount:0, locations:{
     'firelinkShrine':[{type:'[Buy]', where:'Griggs of Vinheim (100%)'}]
@@ -822,19 +881,19 @@ var fullItemList = [
     'oolacileSanctuary':[{type:'[Buy]', where:'Elizabeth'}]
   }},
   {id:3610, name:'Sorcery:Remedy', type:'magic', amount:0, locations:{
-    'blighttown':[{type:'[Chest]', where:''}]
+    'blighttown':[{type:'[Chest]', where:'Near the elevator close to the Valley of Drakes shortcut'}]
   }},
   {id:3600, name:'Sorcery:Resist Curse', type:'magic', amount:0, locations:{
     'newLondoRuins':[{type:'[Buy]', where:'Ingward'}]
   }},
   {id:3710, name:'Sorcery:Dark Orb', type:'magic', amount:0, locations:{
-    'oolacileTownship':[{type:'[Chest]', where:''}]
+    'oolacileTownship':[{type:'[Chest]', where:'Guarded by two Bloathead Sorcerer'}]
   }},
   {id:3720, name:'Sorcery:Dark Bead', type:'magic', amount:0, locations:{
-    'chasmOfTheAbyss':[{type:'[Corpse]', where:''}]
+    'chasmOfTheAbyss':[{type:'[Corpse]', where:'Behing a Bloathead Sorcerer'}]
   }},
   {id:3730, name:'Sorcery:Dark Fog', type:'magic', amount:0, locations:{
-    'oolacileTownship':[{type:'[Corpse]', where:''}]
+    'oolacileTownship':[{type:'[Corpse]', where:'From a high platform inside the house leading to Chasm Of The Abyss'}]
   }},
   {id:3740, name:'Sorcery:Pursuers', type:'magic', amount:0, locations:{
     'undeadAsylum':[{type:'[Snuggly]', where:'Trade with Soul of Manus'}]
@@ -873,23 +932,23 @@ var fullItemList = [
     'blighttown':[{type:'[Buy]', where:'Quelana of Izalith'}]
   }},
   {id:4050, name:'Pyromancy:Fire Surge', type:'magic', amount:0, locations:{
-    'paintedWorldOfAriamis':[{type:'[Corpse]', where:''}]
+    'paintedWorldOfAriamis':[{type:'[Drop]', where:'Engorged Zombie (100%)'}]
   }},
   {id:4060, name:'Pyromancy:Fire Whip', type:'magic', amount:0, locations:{
     'blighttown':[{type:'[Buy]', where:'Quelana of Izalith'}]
   }},
   {id:4520, name:'Pyromancy:Chaos Fire Whip', type:'magic', amount:0, locations:{
-    'lostIzalith':[{type:'[Chest]', where:''}]
+    'lostIzalith':[{type:'[Chest]', where:'Before the Bed of Chaos, guarded by a Chaos Eater'}]
   }},
   {id:4200, name:'Pyromancy:Poison Mist', type:'magic', amount:0, locations:{
     'quelaagDomain':[{type:'[Buy]', where:'Eingyi'}],
-    'blighttown':[{type:'[Corpse]', where:''}]
+    'blighttown':[{type:'[Corpse]', where:'Left of the second bonfire, in the poison swamp'}]
   }},
   {id:4210, name:'Pyromancy:Toxic Mist', type:'magic', amount:0, locations:{
     'quelaagDomain':[{type:'[Buy]', where:'Eingyi'}]
   }},
   {id:4220, name:'Pyromancy:Acid Surge', type:'magic', amount:0, locations:{
-    'paintedWorldOfAriamis':[{type:'[Corpse]', where:''}]
+    'paintedWorldOfAriamis':[{type:'[Corpse]', where:'In the graveyard'}]
   }},
   {id:4310, name:'Pyromancy:Flash Sweat', type:'magic', amount:0, locations:{
     'firelinkShrine':[{type:'[Buy]', where:'Laurentius of the Great Swamp'}]
@@ -898,13 +957,13 @@ var fullItemList = [
     'firelinkShrine':[{type:'[Buy]', where:'Laurentius of the Great Swamp'}]
   }},
   {id:4400, name:'Pyromancy:Power Within', type:'magic', amount:0, locations:{
-    'blighttown':[{type:'[Corpse]', where:''}]
+    'blighttown':[{type:'[Corpse]', where:'Behind the Parasite Wall Hugger'}]
   }},
   {id:4360, name:'Pyromancy:Undead Rapport', type:'magic', amount:0, locations:{
     'blighttown':[{type:'[Buy]', where:'Quelana of Izalith'}]
   }},
   {id:4530, name:'Pyromancy:Black Flame', type:'magic', amount:0, locations:{
-    'chasmOfTheAbyss':[{type:'[Corpse]', where:''}]
+    'chasmOfTheAbyss':[{type:'[Corpse]', where:'After Sif, to the right, guarded by three Humanity Phantom'}]
   }},
   {id:5000, name:'Miracle:Heal', type:'magic', amount:0, locations:{
     'firelinkShrine':[
@@ -945,7 +1004,7 @@ var fullItemList = [
     'undeadParish':[{type:'[Buy]', where:'Reah of Thorolund'}]
   }},
   {id:5610, name:'Miracle:Great Magic Barrier', type:'magic', amount:0, locations:{
-    'ashLake':[{type:'[Corpse]', where:''}]
+    'ashLake':[{type:'[Corpse]', where:'Inside the central hollow tree'}]
   }},
   {id:5210, name:'Miracle:Homeward', type:'magic', amount:0, locations:{
     'firelinkShrine':[{type:'[Buy]', where:'Petrus of Thorolund'}],
@@ -960,10 +1019,10 @@ var fullItemList = [
     'undeadParish':[{type:'[Buy]', where:'Oswald of Carim'}]
   }},
   {id:5810, name:'Miracle:Vow of Silence', type:'magic', amount:0, locations:{
-    'paintedWorldOfAriamis':[{type:'[Corpse]', where:''}]
+    'paintedWorldOfAriamis':[{type:'[Corpse]', where:'On top of the Annex'}]
   }},
   {id:5800, name:'Miracle:Tranquil Walk of Peace', type:'magic', amount:0, locations:{
-    'theCatacombs':[{type:'[Corpse]', where:''}]
+    'theCatacombs':[{type:'[Corpse]', where:'Access a tomb by the breakable stone wall, then at the end, <br>break the right wall to uncover the secret passage'}]
   }},
   {id:5500, name:'Miracle:Lightning Spear', type:'magic', amount:0, locations:{
     'undeadParish':[{type:'[Covenant]', where:'Join the Warrior of Sunlight covenant'}]
@@ -975,7 +1034,7 @@ var fullItemList = [
     'undeadParish':[{type:'[Craft]', where:'As a Warrior of the Sunlight covenant, craft with Soul of Gwyn at the sunlight altar'}]
   }},
   {id:5900, name:'Miracle:Sunlight Blade', type:'magic', amount:0, locations:{
-    'anorLondo':[{type:'[Chest]', where:''}]
+    'anorLondo':[{type:'[Chest]', where:'Inside Lord Gwyn\'s Tomb, after beating Gwyndolin'}]
   }},
   {id:5910, name:'Miracle:Darkmoon Blade', type:'magic', amount:0, locations:{
     'anorLondo':[{type:'[Covenant]', where:'Rank the Blade of the Darkmoon up to +1'}]
@@ -991,7 +1050,7 @@ var fullItemList = [
     'start':[{type:'', where:'Sorcerer class'}]
   }},
   {id:101000, name:'Parrying Dagger', type:'weapon', amount:0, locations:{
-    'newLondoRuins':[{type:'[Corpse]', where:''}]
+    'newLondoRuins':[{type:'[Corpse]', where:'At the first stairwheel'}]
   }},
   {id:103000, name:'Bandit\'s Knife', type:'weapon', amount:0, locations:{
     'undeadBurg':[{type:'[Drop]', where:'Hollow Thief (2%)'}],
@@ -1053,7 +1112,7 @@ var fullItemList = [
     'anorLondo':[{type:'[Drop]', where:'Silver Knight (2%)'}]
   }},
   {id:209000, name:'Astora\'s Straight Sword', type:'weapon', amount:0, locations:{
-    'valleyOfDrakes':[{type:'[Corpse]', where:''}]
+    'valleyOfDrakes':[{type:'[Corpse]', where:'Near the Undead Dragon'}]
   }},
   {id:211000, name:'Drake Sword', type:'weapon', amount:0, locations:{
     'undeadParish':[{type:'[Tail]', where:'Hellkite Dragon'}]
@@ -1070,7 +1129,7 @@ var fullItemList = [
     'undeadParish':[{type:'[Buy]', where:'Andre of Astora'}]
   }},
   {id:301000, name:'Claymore', type:'weapon', amount:0, locations:{
-    'undeadBurg':[{type:'[Corpse]', where:''}]
+    'undeadBurg':[{type:'[Corpse]', where:'On Hellkite Dragon bridge'}]
   }},
   {id:302000, name:'Man-serpent Greatsword', type:'weapon', amount:0, locations:{
     'senFortress':[{type:'[Drop]', where:'Serpent Soldier (2%)'}],
@@ -1117,11 +1176,11 @@ var fullItemList = [
   {id:351000, name:'Greatsword', type:'weapon', amount:0, locations:{
     'undeadParish':[{type:'[Drop]', where:'Berenike Knight (2%)'}],
     'senFortress':[{type:'[Buy]', where:'Crestfallen Merchant'}],
-    'anorLondo':[{type:'[Corpse]', where:''}],
+    'anorLondo':[{type:'[Corpse]', where:'Bottom-Left of the painting room'}],
     'paintedWorldOfAriamis':[{type:'[Drop]', where:'Berenike Knight (2%)'}]
   }},
   {id:350000, name:'Zweihander', type:'weapon', amount:0, locations:{
-    'firelinkShrine':[{type:'[Corpse]', where:''}]
+    'firelinkShrine':[{type:'[Corpse]', where:'At the graveyard'}]
   }},
   {id:352000, name:'Demon Great Machete', type:'weapon', amount:0, locations:{
     'undeadBurg':[{type:'[Drop]', where:'Capra Demon (5%)'}],
@@ -1143,12 +1202,12 @@ var fullItemList = [
   }},
   {id:401000, name:'Falchion', type:'weapon', amount:0, locations:{
     'firelinkShrine':[{type:'[Drop]', where:'Skeleton (2%)'}],
-    'blighttown':[{type:'[Corpse]', where:''}],
+    'blighttown':[{type:'[Corpse]', where:'At the bottom of the \'village\', guarded by a Blowdart Sniper'}],
     'theCatacombs':[{type:'[Drop]', where:'Skeleton (2%)'}],
     'theDukeArchives':[{type:'[Drop]', where:'Mimic (100%)'}]
   }},
   {id:402000, name:'Shotel', type:'weapon', amount:0, locations:{
-    'senFortress':[{type:'[Corpse]', where:''}],
+    'senFortress':[{type:'[Corpse]', where:'Next to Siegmeyer of Catarina'}],
     'blighttown':[{type:'[Buy]', where:'Shiva of the East'}]
   }},
   {id:405000, name:'Painting Guardian Sword', type:'weapon', amount:0, locations:{
@@ -1173,7 +1232,7 @@ var fullItemList = [
     'tombOfTheGiants':[{type:'[Drop]', where:'Giant Skeleton (2%)'}]
   }},
   {id:450000, name:'Server', type:'weapon', amount:0, locations:{
-    'blighttown':[{type:'[Corpse]', where:''}]
+    'blighttown':[{type:'[Corpse]', where:'In the poison swamp guarded by three Leechs'}]
   }},
   {id:453000, name:'Gravelord Sword', type:'weapon', amount:0, locations:{
     'tombOfTheGiants':[{type:'[Covenant]', where:'Join the Gravelord Servant covenant'}]
@@ -1183,7 +1242,7 @@ var fullItemList = [
     'blighttown':[{type:'[Buy]', where:'Shiva of the East'}]
   }},
   {id:502000, name:'Iaito', type:'weapon', amount:0, locations:{
-    'blighttown':[{type:'[Corpse]', where:''}]
+    'blighttown':[{type:'[Corpse]', where:'On a roof of one of the wooden structure coming from the Depths'}]
   }},
   {id:501000, name:'Washing Pole', type:'weapon', amount:0, locations:{
     'blighttown':[{type:'[Buy]', where:'Shiva of the East'}]
@@ -1192,7 +1251,7 @@ var fullItemList = [
     'anorLondo':[{type:'[Craft]', where:'Any Katana+10 + Soul of Quelaag'}]
   }},
   {id:600000, name:'Mail Breaker', type:'weapon', amount:0, locations:{
-    'undeadBurg':[{type:'[Corpse]', where:''}]
+    'undeadBurg':[{type:'[Corpse]', where:'In a house in Lower Undead Burg'}]
   }},
   {id:601000, name:'Rapier', type:'weapon', amount:0, locations:{
     'undeadBurg':[{type:'[Buy]', where:'Undead Male Merchant'}],
@@ -1200,13 +1259,13 @@ var fullItemList = [
     'senFortress':[{type:'[Drop]', where:'Balder Knight (2%)'}]
   }},
   {id:602000, name:'Estoc', type:'weapon', amount:0, locations:{
-    'newLondoRuins':[{type:'[Corpse]', where:''}]
+    'newLondoRuins':[{type:'[Corpse]', where:'At the beginning of the Ruins, after the first bridge'}]
   }},
   {id:604000, name:'Ricard\'s Rapier', type:'weapon', amount:0, locations:{
     'senFortress':[{type:'[Drop]', where:'Undead Prince Ricard (100%)'}]
   }},
   {id:603000, name:'Velka\'s Rapier', type:'weapon', amount:0, locations:{
-    'paintedWorldOfAriamis':[{type:'[Corpse]', where:''}]
+    'paintedWorldOfAriamis':[{type:'[Corpse]', where:'inside the Annex'}]
   }},
   {id:700000, name:'Hand Axe', type:'weapon', amount:0, locations:{
     'undeadBurg':[{type:'[Buy]', where:'Undead Male Merchant'}],
@@ -1236,7 +1295,7 @@ var fullItemList = [
   }},
   {id:750000, name:'Greataxe', type:'weapon', amount:0, locations:{
     'undeadParish':[{type:'[Drop]', where:'Berenike Knight (2%)'}],
-    'depths':[{type:'[Corpse]', where:''}],
+    'depths':[{type:'[Corpse]', where:'Close to the bonfire, guarded by rats'}],
     'senFortress':[
       {type:'[Buy]', where:'Crestfallen Merchant'},
       {type:'[Drop]', where:'Berenike Knight (2%)'}],
@@ -1268,11 +1327,11 @@ var fullItemList = [
   }},
   {id:801000, name:'Mace', type:'weapon', amount:0, locations:{
     'firelinkShrine':[{type:'[Buy]', where:'Patches'}],
-    'theCatacombs':[{type:'[Corpse]', where:''}],
+    'theCatacombs':[{type:'[Corpse]', where:'In the Bonewheel zone, drop from above'}],
     'start':[{type:'', where:'Cleric class'}]
   }},
   {id:802000, name:'Morning Star', type:'weapon', amount:0, locations:{
-    'firelinkShrine':[{type:'[Chest]', where:''}]
+    'firelinkShrine':[{type:'[Chest]', where:'Under the elevator to Undead Parish'}]
   }},
   {id:803000, name:'Warpick', type:'weapon', amount:0, locations:{
     'undeadParish':[{type:'[Buy]', where:'Andre of Astora'}]
@@ -1290,7 +1349,7 @@ var fullItemList = [
     'blighttown':[{type:'[Drop]', where:'Infested Barbarian (2%)'}]
   }},
   {id:850000, name:'Great Club', type:'weapon', amount:0, locations:{
-    'blighttown':[{type:'[Corpse]', where:''}]
+    'blighttown':[{type:'[Corpse]', where:'Just before Quelaag Domain, where the Boulder Barbarians are'}]
   }},
   {id:852000, name:'Demon\'s Great Hammer', type:'weapon', amount:0, locations:{
     'undeadAsylum':[
@@ -1301,7 +1360,7 @@ var fullItemList = [
     'tombOfTheGiants':[{type:'[Drop]', where:'Paladin Leeroy (100%)'}]
   }},
   {id:854000, name:'Dragon Tooth', type:'weapon', amount:0, locations:{
-    'anorLondo':[{type:'[Chest]', where:''}]
+    'anorLondo':[{type:'[Chest]', where:'Behind an illusory wall in a fireplace'}]
   }},
   {id:856000, name:'Smough\'s Hammer', type:'weapon', amount:0, locations:{
     'anorLondo':[{type:'[Craft]', where:'Any Hammer/Club+10 + Soul of Smough'}]
@@ -1312,10 +1371,10 @@ var fullItemList = [
     'paintedWorldOfAriamis':[{type:'[Drop]', where:'Phalanx (1%)'}]
   }},
   {id:1001000, name:'Winged Spear', type:'weapon', amount:0, locations:{
-    'firelinkShrine':[{type:'[Corpse]', where:''}]
+    'firelinkShrine':[{type:'[Corpse]', where:'In the graveyard'}]
   }},
   {id:1002000, name:'Partizan', type:'weapon', amount:0, locations:{
-    'darkrootGarden':[{type:'[Corpse]', where:''}]
+    'darkrootGarden':[{type:'[Corpse]', where:'Guarded by a tree lizard'}]
   }},
   {id:9016000, name:'Four-Pronged Prow', type:'weapon', amount:0, locations:{
     'royalWood':[{type:'[Drop]', where:'Wooden Scarecrow (1%)'}]
@@ -1342,13 +1401,14 @@ var fullItemList = [
     'anorLondo':[{type:'[Craft]', where:'Any Spear/Trust+10 + Soul of Ornstein'}]
   }},
   {id:1100000, name:'Halberd', type:'weapon', amount:0, locations:{
-    'undeadParish':[{type:'[Corpse]', where:''}]
+    'undeadParish':[{type:'[Corpse]', where:'Left of the front door of the Parish'}],
+    'anorLondo':[{type:'[Drop]', where:'Mimic (100%)'}]
   }},
   {id:1106000, name:'Lucerne ', type:'weapon', amount:0, locations:{
-    'theCatacombs':[{type:'[Corpse]', where:''}]
+    'theCatacombs':[{type:'[Corpse]', where:'Past the second Necromancer, in an optional chamber'}]
   }},
   {id:1107000, name:'Scythe', type:'weapon', amount:0, locations:{
-    'senFortress':[{type:'[Corpse]', where:''}]
+    'senFortress':[{type:'[Corpse]', where:'In the pit with the Titanite Demon'}]
   }},
   {id:1103000, name:'Gargoyle\'s Halberd', type:'weapon', amount:0, locations:{
     'undeadParish':[{type:'[Drop]', where:'Bell Gargoyles (3%)'}],
@@ -1372,13 +1432,13 @@ var fullItemList = [
     'kilnOfTheFirstFlame':[{type:'[Drop]', where:'Halberd Black Knight (20%)'}]
   }},
   {id:1150000, name:'Great Scythe', type:'weapon', amount:0, locations:{
-    'theCatacombs':[{type:'[Corpse]', where:''}]
+    'theCatacombs':[{type:'[Corpse]', where:'Jump from the last bridge to the right<br>(the one where Patches tries to kill you)'}]
   }},
   {id:1151000, name:'Lifehunt Scythe', type:'weapon', amount:0, locations:{
     'anorLondo':[{type:'[Craft]', where:'Any Halberd/Whip+10 + Soul of Priscilla'}]
   }},
   {id:1600000, name:'Whip', type:'weapon', amount:0, locations:{
-    'blighttown':[{type:'[Corpse]', where:''}]
+    'blighttown':[{type:'[Corpse]', where:'Near the Parasite Wall Hugger'}]
   }},
   {id:1601000, name:'Notched Whip', type:'weapon', amount:0, locations:{
     'paintedWorldOfAriamis':[{type:'[Drop]', where:'Xanthous King Jeremiah (100%)'}]
@@ -1405,10 +1465,10 @@ var fullItemList = [
     'start':[{type:'', where:'Hunter'}]
   }},
   {id:1204000, name:'Composite Bow', type:'weapon', amount:0, locations:{
-    'newLondoRuins':[{type:'[Corpse]', where:''}]
+    'newLondoRuins':[{type:'[Corpse]', where:'Near the staircase to the seal'}]
   }},
   {id:1201000, name:'Longbow', type:'weapon', amount:0, locations:{
-    'darkrootBasin':[{type:'[Corpse]', where:''}],
+    'darkrootBasin':[{type:'[Corpse]', where:'Just after the Crystal Lizard'}],
     'tombOfTheGiants':[{type:'[Drop]', where:'Giant Skeleton (1%)'}],
     'theDukeArchives':[{type:'[Drop]', where:'Undead Crystal Soldier (2%)'}]
   }},
@@ -1416,7 +1476,7 @@ var fullItemList = [
     'darkrootGarden':[{type:'[Drop]', where:'Forest Hunter Archer (100%)'}]
   }},
   {id:1203000, name:'Dragonslayer Greatbow', type:'weapon', amount:0, locations:{
-    'anorLondo':[{type:'[Corpse]', where:''}]
+    'anorLondo':[{type:'[Corpse]', where:'Through the broken glass from the hall before the Londo Bros'}]
   }},
   {id:9021000, name:'Gough\'s Great Bow', type:'weapon', amount:0, locations:{
     'oolacileTownship':[
@@ -1428,31 +1488,31 @@ var fullItemList = [
   }},
   {id:1250000, name:'Light Crossbow', type:'weapon', amount:0, locations:{
     'undeadBurg':[
-      {type:'[Corpse]', where:''},
+      {type:'[Corpse]', where:'At the start of the area, need a tricky jump'},
       {type:'[Drop]', where:'Hollow Soldier (2%)'}],
     'undeadParish':[{type:'[Drop]', where:'Hollow Soldier (2%)'}],
     'senFortress':[{type:'[Drop]', where:'Balder Knight (2%)'}]
   }},
   {id:1251000, name:'Heavy Crossbow', type:'weapon', amount:0, locations:{
-    'depths':[{type:'[Corpse]', where:''}]
+    'depths':[{type:'[Corpse]', where:'On the balcony overlooking the Gaping Dragon\'s area'}]
   }},
   {id:1253000, name:'Sniper Crossbow', type:'weapon', amount:0, locations:{
-    'senFortress':[{type:'[Corpse]', where:''}]
+    'senFortress':[{type:'[Corpse]', where:'Miss your jump to go to the Crestfallen Merchant'}]
   }},
   {id:1252000, name:'Avelyn', type:'weapon', amount:0, locations:{
     'theDukeArchives':[{type:'[Chest]', where:'On top of one of the bookshelves'}]
   }},
   {id:1300000, name:'Sorcerer\'s Catalyst', type:'weapon', amount:0, locations:{
-    'undeadBurg':[{type:'[Corpse]', where:''}],
+    'undeadBurg':[{type:'[Corpse]', where:'Just next to where Griggs of Vinheim is held captive'}],
     'firelinkShrine':[{type:'[Buy]', where:'Griggs of Vinheim'}],
     'newLondoRuins':[{type:'[Buy]', where:'Rickert of Vinheim'}],
     'start':[{type:'', where:'Sorcerer'}]
   }},
   {id:1301000, name:'Beatrice\'s Catalyst', type:'weapon', amount:0, locations:{
-    'valleyOfDrakes':[{type:'[Corpse]', where:''}]
+    'valleyOfDrakes':[{type:'[Corpse]', where:'At one end of the Valley after killing the Four Kings'}]
   }},
   {id:1303000, name:'Logan\'s Catalyst', type:'weapon', amount:0, locations:{
-    'theDukeArchives':[{type:'[Chest]', where:''}]
+    'theDukeArchives':[{type:'[Chest]', where:'Where Logan sold his magic, after killing him in Seath\'s room'}]
   }},
   {id:1305000, name:'Oolacile Ivory Catalyst', type:'weapon', amount:0, locations:{
     'darkrootBasin':[{type:'[Buy]', where:'Dusk of Oolacile'}],
@@ -1468,7 +1528,7 @@ var fullItemList = [
     'lostIzalith':[{type:'[Drop]', where:'Daughter of Chaos (100%)'}]
   }},
   {id:1302000, name:'Tin Banishment Catalyst', type:'weapon', amount:0, locations:{
-    'blighttown':[{type:'[Corpse]', where:''}]
+    'blighttown':[{type:'[Corpse]', where:'Near the Blowdart Snipers area'}]
   }},
   {id:1306000, name:'Tin Crystallization Ctlyst.', type:'weapon', amount:0, locations:{
     'theDukeArchives':[{type:'[Drop]', where:'Big Hat Logan (100%)'}]
@@ -1489,7 +1549,7 @@ var fullItemList = [
   }},
   {id:1360000, name:'Talisman', type:'weapon', amount:0, locations:{
     'firelinkShrine':[
-      {type:'[Chest]', where:''},
+      {type:'[Chest]', where:'Under the elevator to Undead Parish'},
       {type:'[Buy]', where:'Petrus of Thorolund'}],
     'undeadParish':[{type:'[Buy]', where:'Reah of Thorolund'}]
   }},
@@ -1528,10 +1588,10 @@ var fullItemList = [
     'undeadBurg':[{type:'[Buy]', where:'Undead Male Merchant'}]
   }},
   {id:1410000, name:'Caduceus Round Shield', type:'weapon', amount:0, locations:{
-    'firelinkShrine':[{type:'[Corpse]', where:''}]
+    'firelinkShrine':[{type:'[Corpse]', where:'In the graveyard'}]
   }},
   {id:9000000, name:'Effigy Shield', type:'weapon', amount:0, locations:{
-    'tombOfTheGiants':[{type:'[Corpse]', where:''}]
+    'tombOfTheGiants':[{type:'[Corpse]', where:'Near the Halberd Black Knight'}]
   }},
   {id:1476000, name:'Red and White Round Shield', type:'weapon', amount:0, locations:{
     'firelinkShrine':[{type:'[Drop]', where:'Skeleton (1%)'}],
@@ -1542,7 +1602,7 @@ var fullItemList = [
     'start':[{type:'', where:'Pyromancer class'}]
   }},
   {id:1409000, name:'Plank Shield', type:'weapon', amount:0, locations:{
-    'blighttown':[{type:'[Corpse]', where:''}],
+    'blighttown':[{type:'[Corpse]', where:'Just before the entrance to the Great Hollow'}],
     'start':[{type:'', where:'Deprived class'}]
   }},
   {id:1403000, name:'Small Leather Shield', type:'weapon', amount:0, locations:{
@@ -1560,7 +1620,7 @@ var fullItemList = [
   }},
   {id:1404000, name:'Target Shield', type:'weapon', amount:0, locations:{
     'undeadBurg':[
-      {type:'[Corpse]', where:''},
+      {type:'[Corpse]', where:'In a room just before the Capra Demon'},
       {type:'[Drop]', where:'Hollow Thief (1%)'}],
     'start':[{type:'', where:'Thief class'}]
   }},
@@ -1572,7 +1632,7 @@ var fullItemList = [
     'start':[{type:'', where:'Cleric class'}]
   }},
   {id:1401000, name:'Wooden Shield', type:'weapon', amount:0, locations:{
-    'undeadBurg':[{type:'[Corpse]', where:''}]
+    'undeadBurg':[{type:'[Corpse]', where:'From the first bonfire, in the house under the Crossbow Hollow Soldier'}]
   }},
   {id:1402000, name:'Large Leather Shield', type:'weapon', amount:0, locations:{
     'undeadParish':[{type:'[Buy]', where:'Andre of Astora'}],
@@ -1596,7 +1656,8 @@ var fullItemList = [
     'undeadParish':[{type:'[Drop]', where:'Hollow Soldier (1%)'}]
   }},
   {id:1451000, name:'Knight Shield', type:'weapon', amount:0, locations:{
-    'undeadParish':[{type:'[Corpse]', where:''}]
+    'undeadParish':[{type:'[Corpse]', where:'Before accessing the Parish, on a side tower guarded by a Balder Knight'}],
+    'theDukeArchives':[{type:'[Drop]', where:'Mimic (100%)'}]
   }},
   {id:9001000, name:'Sanctus', type:'weapon', amount:0, locations:{
     'tombOfTheGiants':[{type:'[Drop]', where:'Paladin Leeroy (100%)'}]
@@ -1608,15 +1669,15 @@ var fullItemList = [
       {type:'[Drop]', where:'Balder Knight (1%)'}]
   }},
   {id:1462000, name:'Spider Shield', type:'weapon', amount:0, locations:{
-    'depths':[{type:'[Corpse]', where:''}],
-    'valleyOfDrakes':[{type:'[Corpse]', where:''}],
+    'depths':[{type:'[Corpse]', where:'Above the Giant Undead Rat'}],
+    'valleyOfDrakes':[{type:'[Corpse]', where:'On the bridge with all the Blue Drake'}],
     'start':[{type:'', where:'Bandit class'}]
   }},
   {id:1453000, name:'Grass Crest Shield', type:'weapon', amount:0, locations:{
-    'darkrootBasin':[{type:'[Corpse]', where:''}]
+    'darkrootBasin':[{type:'[Corpse]', where:'Near the Halberd Black Knight'}]
   }},
   {id:9002000, name:'Bloodshield', type:'weapon', amount:0, locations:{
-    'paintedWorldOfAriamis':[{type:'[Corpse]', where:''}]
+    'paintedWorldOfAriamis':[{type:'[Corpse]', where:'Near the Undead Dragon'}]
   }},
   {id:1461000, name:'Iron Round Shield', type:'weapon', amount:0, locations:{
     'darkrootGarden':[{type:'[Drop]', where:'Shiva of the East (100%)'}],
@@ -1648,7 +1709,7 @@ var fullItemList = [
     'undeadAsylum':[{type:'[Drop]', where:'Oscar of Astora (100% when revisit)'}]
   }},
   {id:1457000, name:'Dragon Crest Shield', type:'weapon', amount:0, locations:{
-    'valleyOfDrakes':[{type:'[Corpse]', where:''}]
+    'valleyOfDrakes':[{type:'[Corpse]', where:'Near the Undead Dragon'}]
   }},
   {id:1473000, name:'Silver Knight Shield', type:'weapon', amount:0, locations:{
     'anorLondo':[{type:'[Drop]', where:'Silver Knight (1%)'}]
@@ -1662,7 +1723,7 @@ var fullItemList = [
     'kilnOfTheFirstFlame':[{type:'[Drop]', where:'Black Knight (5%)'}]
   }},
   {id:1500000, name:'Eagle Shield', type:'weapon', amount:0, locations:{
-    'blighttown':[{type:'[Corpse]', where:''}]
+    'blighttown':[{type:'[Corpse]', where:'Close to the first bonfire'}]
   }},
   {id:1501000, name:'Tower Shield', type:'weapon', amount:0, locations:{
     'undeadParish':[{type:'[Drop]', where:'Berenike Knight (2%)'}],
@@ -1672,7 +1733,7 @@ var fullItemList = [
     'paintedWorldOfAriamis':[{type:'[Drop]', where:'Berenike Knight (2%)'}]
   }},
   {id:9003000, name:'Black Iron Greatshield', type:'weapon', amount:0, locations:{
-    'anorLondo':[{type:'[Corpse]', where:''}]
+    'anorLondo':[{type:'[Corpse]', where:'Bottom-Left of the painting room'}]
   }},
   {id:1502000, name:'Giant Shield', type:'weapon', amount:0, locations:{
     'anorLondo':[
@@ -1688,7 +1749,7 @@ var fullItemList = [
     'darkrootGarden':[{type:'[Drop]', where:'Stone Knight (2%)'}]
   }},
   {id:1505000, name:'Havel\'s Greatshield', type:'weapon', amount:0, locations:{
-    'anorLondo':[{type:'[Chest]', where:''}]
+    'anorLondo':[{type:'[Chest]', where:'Behind an illusory wall in a fireplace'}]
   }},
   {id:1507000, name:'Greatshield of Artorias', type:'weapon', amount:0, locations:{
     'anorLondo':[{type:'[Craft]', where:'Any Shield+10 + Soul of Sif'}]
@@ -1724,11 +1785,11 @@ var fullItemList = [
     'senFortress':[{type:'[Buy]', where:'Crestfallen Merchant'}],
     'anorLondo':[{type:'[Buy]', where:'Giant Blacksmith'}],
     'theCatacombs':[{type:'[Buy]', where:'Vamos'}],
-    'newLondoRuins':[{type:'[Corpse]', where:''}],
+    'newLondoRuins':[{type:'[Corpse]', where:'Near the staircase to the seal'}],
     'royalWood':[{type:'[Buy]', where:'Marvelous Chester'}]
   }},
   {id:2002000, name:'Feather Arrow', type:'ammunition', amount:0, locations:{
-    'darkrootBasin':[{type:'[Corpse]', where:''}],
+    'darkrootBasin':[{type:'[Corpse]', where:'Just after the Crystal Lizard'}],
     'senFortress':[{type:'[Buy]', where:'Crestfallen Merchant'}],
     'anorLondo':[{type:'[Buy]', where:'Giant Blacksmith'}],
     'royalWood':[{type:'[Buy]', where:'Marvelous Chester'}]
@@ -1747,8 +1808,8 @@ var fullItemList = [
   }},
   {id:2008000, name:'Gough\'s Great Arrow', type:'ammunition', amount:0, locations:{
     'royalWood':[
-      {type:'[Corpse]', where:''},
-      {type:'[Corpse]', where:''}],
+      {type:'[Corpse]', where:'On a cliff overlooking Kalameet battleground'},
+      {type:'[Corpse]', where:'At the far end of Kalameet battleground'}],
     'oolacileTownship':[{type:'[Buy]', where:'Hawkeye Gough'}]
   }},
   {id:2103000, name:'Wood Bolt', type:'ammunition', amount:0, locations:{
@@ -1792,19 +1853,19 @@ var fullItemList = [
     'anorLondo':[{type:'[Buy]', where:'Giant Blacksmith'}]
   }},
   {id:210000, name:'Standard Helm', type:'armor', amount:0, locations:{
-    'depths':[{type:'[Corpse]', where:''}],
+    'depths':[{type:'[Corpse]', where:'In the Gaping Dragon\'s area'}],
     'start':[{type:'', where:'Warrior class'}]
   }},
   {id:211000, name:'Hard Leather Armor', type:'armor', amount:0, locations:{
-    'depths':[{type:'[Corpse]', where:''}],
+    'depths':[{type:'[Corpse]', where:'In the Gaping Dragon\'s area'}],
     'start':[{type:'', where:'Warrior class'}]
   }},
   {id:212000, name:'Hard Leather Gauntlets', type:'armor', amount:0, locations:{
-    'depths':[{type:'[Corpse]', where:''}],
+    'depths':[{type:'[Corpse]', where:'In the Gaping Dragon\'s area'}],
     'start':[{type:'', where:'Warrior class'}]
   }},
   {id:213000, name:'Hard Leather Boots', type:'armor', amount:0, locations:{
-    'depths':[{type:'[Corpse]', where:''}],
+    'depths':[{type:'[Corpse]', where:'In the Gaping Dragon\'s area'}],
     'start':[{type:'', where:'Warrior class'}]
   }},
   {id:170000, name:'Chain Helm', type:'armor', amount:0, locations:{
@@ -1824,154 +1885,154 @@ var fullItemList = [
     'oolacileTownship':[{type:'[Drop]', where:'Chained Prisoner (20%)'}]
   }},
   {id:390000, name:'Knight Helm', type:'armor', amount:0, locations:{
-    'darkrootBasin':[{type:'[Corpse]', where:''}],
+    'darkrootBasin':[{type:'[Corpse]', where:'In front of the Hydra'}],
     'start':[{type:'', where:'Knight class'}]
   }},
   {id:391000, name:'Knight Armor', type:'armor', amount:0, locations:{
-    'darkrootBasin':[{type:'[Corpse]', where:''}],
+    'darkrootBasin':[{type:'[Corpse]', where:'In front of the Hydra'}],
     'start':[{type:'', where:'Knight class'}]
   }},
   {id:392000, name:'Knight Gauntlets', type:'armor', amount:0, locations:{
-    'darkrootBasin':[{type:'[Corpse]', where:''}],
+    'darkrootBasin':[{type:'[Corpse]', where:'In front of the Hydra'}],
     'start':[{type:'', where:'Knight class'}]
   }},
   {id:393000, name:'Knight Leggings', type:'armor', amount:0, locations:{
-    'darkrootBasin':[{type:'[Corpse]', where:''}],
+    'darkrootBasin':[{type:'[Corpse]', where:'In front of the Hydra'}],
     'start':[{type:'', where:'Knight class'}]
   }},
   {id:350000, name:'Elite Knight Helm', type:'armor', amount:0, locations:{
-    'darkrootGarden':[{type:'[Corpse]', where:''}]
+    'darkrootGarden':[{type:'[Corpse]', where:'Near the fog gate of the Moonlight Butterfly'}]
   }},
   {id:351000, name:'Elite Knight Armor', type:'armor', amount:0, locations:{
-    'darkrootGarden':[{type:'[Corpse]', where:''}]
+    'darkrootGarden':[{type:'[Corpse]', where:'Near the fog gate of the Moonlight Butterfly'}]
   }},
   {id:352000, name:'Elite Knight Gauntlets', type:'armor', amount:0, locations:{
-    'darkrootGarden':[{type:'[Corpse]', where:''}]
+    'darkrootGarden':[{type:'[Corpse]', where:'Near the fog gate of the Moonlight Butterfly'}]
   }},
   {id:353000, name:'Elite Knight Leggings', type:'armor', amount:0, locations:{
-    'darkrootGarden':[{type:'[Corpse]', where:''}]
+    'darkrootGarden':[{type:'[Corpse]', where:'Near the fog gate of the Moonlight Butterfly'}]
   }},
   {id:360000, name:'Wanderer Hood', type:'armor', amount:0, locations:{
-    'blighttown':[{type:'[Corpse]', where:''}],
+    'blighttown':[{type:'[Corpse]', where:'At the bottom of the \'village\', guarded by a Blowdart Sniper'}],
     'start':[{type:'', where:'Wanderer class'}]
   }},
   {id:361000, name:'Wanderer Coat', type:'armor', amount:0, locations:{
-    'blighttown':[{type:'[Corpse]', where:''}],
+    'blighttown':[{type:'[Corpse]', where:'At the bottom of the \'village\', guarded by a Blowdart Sniper'}],
     'start':[{type:'', where:'Wanderer class'}]
   }},
   {id:362000, name:'Wanderer Manchette', type:'armor', amount:0, locations:{
-    'blighttown':[{type:'[Corpse]', where:''}],
+    'blighttown':[{type:'[Corpse]', where:'At the bottom of the \'village\', guarded by a Blowdart Sniper'}],
     'start':[{type:'', where:'Wanderer class'}]
   }},
   {id:363000, name:'Wanderer Boots', type:'armor', amount:0, locations:{
-    'blighttown':[{type:'[Corpse]', where:''}],
+    'blighttown':[{type:'[Corpse]', where:'At the bottom of the \'village\', guarded by a Blowdart Sniper'}],
     'start':[{type:'', where:'Wanderer class'}]
   }},
   {id:300000, name:'Thief Mask', type:'armor', amount:0, locations:{
-    'undeadBurg':[{type:'[Corpse]', where:''}],
+    'undeadBurg':[{type:'[Corpse]', where:'Inside one of the house in Lower Undead Burg'}],
     'start':[{type:'', where:'Thief class'}]
   }},
   {id:301000, name:'Black Leather Armor', type:'armor', amount:0, locations:{
-    'undeadBurg':[{type:'[Corpse]', where:''}],
+    'undeadBurg':[{type:'[Corpse]', where:'Inside one of the house in Lower Undead Burg'}],
     'start':[{type:'', where:'Thief class'}]
   }},
   {id:302000, name:'Black Leather Gloves', type:'armor', amount:0, locations:{
-    'undeadBurg':[{type:'[Corpse]', where:''}],
+    'undeadBurg':[{type:'[Corpse]', where:'Inside one of the house in Lower Undead Burg'}],
     'start':[{type:'', where:'Thief class'}]
   }},
   {id:303000, name:'Black Leather Boots', type:'armor', amount:0, locations:{
-    'undeadBurg':[{type:'[Corpse]', where:''}],
+    'undeadBurg':[{type:'[Corpse]', where:'Inside one of the house in Lower Undead Burg'}],
     'start':[{type:'', where:'Thief class'}]
   }},
   {id:50000, name:'Brigand Hood', type:'armor', amount:0, locations:{
-    'valleyOfDrakes':[{type:'[Corpse]', where:''}],
+    'valleyOfDrakes':[{type:'[Corpse]', where:'On the bridge with all the Blue Drake'}],
     'start':[{type:'', where:'Bandit class'}]
   }},
   {id:51000, name:'Brigand Armor', type:'armor', amount:0, locations:{
-    'valleyOfDrakes':[{type:'[Corpse]', where:''}],
+    'valleyOfDrakes':[{type:'[Corpse]', where:'On the bridge with all the Blue Drake'}],
     'start':[{type:'', where:'Bandit class'}]
   }},
   {id:52000, name:'Brigand Gauntlets', type:'armor', amount:0, locations:{
-    'valleyOfDrakes':[{type:'[Corpse]', where:''}],
+    'valleyOfDrakes':[{type:'[Corpse]', where:'On the bridge with all the Blue Drake'}],
     'start':[{type:'', where:'Bandit class'}]
   }},
   {id:53000, name:'Brigand Trousers', type:'armor', amount:0, locations:{
-    'valleyOfDrakes':[{type:'[Corpse]', where:''}],
+    'valleyOfDrakes':[{type:'[Corpse]', where:'On the bridge with all the Blue Drake'}],
     'start':[{type:'', where:'Bandit class'}]
   }},
   {id:241000, name:'Leather Armor', type:'armor', amount:0, locations:{
-    'darkrootBasin':[{type:'[Corpse]', where:''}],
+    'darkrootBasin':[{type:'[Corpse]', where:'Just after the Crystal Lizard'}],
     'start':[{type:'', where:'Hunter class'}]
   }},
   {id:242000, name:'Leather Gloves', type:'armor', amount:0, locations:{
-    'darkrootBasin':[{type:'[Corpse]', where:''}],
+    'darkrootBasin':[{type:'[Corpse]', where:'Just after the Crystal Lizard'}],
     'start':[{type:'', where:'Hunter class'}]
   }},
   {id:243000, name:'Leather Boots', type:'armor', amount:0, locations:{
-    'darkrootBasin':[{type:'[Corpse]', where:''}],
+    'darkrootBasin':[{type:'[Corpse]', where:'Just after the Crystal Lizard'}],
     'start':[{type:'', where:'Hunter class'}]
   }},
   {id:220000, name:'Sorcerer Hat', type:'armor', amount:0, locations:{
-    'undeadBurg':[{type:'[Corpse]', where:''}],
+    'undeadBurg':[{type:'[Corpse]', where:'Just after the Crystal Lizard'}],
     'start':[{type:'', where:'Sorcerer class'}]
   }},
   {id:221000, name:'Sorcerer Cloak', type:'armor', amount:0, locations:{
-    'undeadBurg':[{type:'[Corpse]', where:''}],
+    'undeadBurg':[{type:'[Corpse]', where:'Just next to where Griggs of Vinheim is held captive'}],
     'start':[{type:'', where:'Sorcerer class'}]
   }},
   {id:222000, name:'Sorcerer Gauntlets', type:'armor', amount:0, locations:{
-    'undeadBurg':[{type:'[Corpse]', where:''}],
+    'undeadBurg':[{type:'[Corpse]', where:'Just next to where Griggs of Vinheim is held captive'}],
     'start':[{type:'', where:'Sorcerer class'}]
   }},
   {id:223000, name:'Sorcerer Boots', type:'armor', amount:0, locations:{
-    'undeadBurg':[{type:'[Corpse]', where:''}],
+    'undeadBurg':[{type:'[Corpse]', where:'Just next to where Griggs of Vinheim is held captive'}],
     'start':[{type:'', where:'Sorcerer class'}]
   }},
   {id:640000, name:'Black Sorcerer Hat', type:'armor', amount:0, locations:{
-    'senFortress':[{type:'[Corpse]', where:''}]
+    'senFortress':[{type:'[Corpse]', where:'On the second set of rolling boulder, jump midway to access a hidden area'}]
   }},
   {id:641000, name:'Black Sorcerer Cloak', type:'armor', amount:0, locations:{
-    'senFortress':[{type:'[Corpse]', where:''}]
+    'senFortress':[{type:'[Corpse]', where:'On the second set of rolling boulder, jump midway to access a hidden area'}]
   }},
   {id:642000, name:'Black Sorcerer Gauntlets', type:'armor', amount:0, locations:{
-    'senFortress':[{type:'[Corpse]', where:''}]
+    'senFortress':[{type:'[Corpse]', where:'On the second set of rolling boulder, jump midway to access a hidden area'}]
   }},
   {id:643000, name:'Black Sorcerer Boots', type:'armor', amount:0, locations:{
-    'senFortress':[{type:'[Corpse]', where:''}]
+    'senFortress':[{type:'[Corpse]', where:'On the second set of rolling boulder, jump midway to access a hidden area'}]
   }},
   //  {id:370000, name:'Mage Smith Hat', type:'armor', amount:0, locations:{}},
   //  {id:371000, name:'Mage Smith Coat', type:'armor', amount:0, locations:{}},
   //  {id:372000, name:'Mage Smith Gauntlets', type:'armor', amount:0, locations:{}},
   //  {id:373000, name:'Mage Smith Boots', type:'armor', amount:0, locations:{}},
   {id:230000, name:'Tattered Cloth Hood', type:'armor', amount:0, locations:{
-    'blighttown':[{type:'[Corpse]', where:''}],
+    'blighttown':[{type:'[Corpse]', where:'Left of the second bonfire, in the poison swamp'}],
     'start':[{type:'', where:'Pyromancer'}]
   }},
   {id:231000, name:'Tattered Cloth Robe', type:'armor', amount:0, locations:{
-    'blighttown':[{type:'[Corpse]', where:''}],
+    'blighttown':[{type:'[Corpse]', where:'Left of the second bonfire, in the poison swamp'}],
     'start':[{type:'', where:'Pyromancer'}]
   }},
   {id:232000, name:'Tattered Cloth Manchette', type:'armor', amount:0, locations:{
-    'blighttown':[{type:'[Corpse]', where:''}],
+    'blighttown':[{type:'[Corpse]', where:'Left of the second bonfire, in the poison swamp'}],
     'start':[{type:'', where:'Pyromancer'}]
   }},
   {id:233000, name:'Heavy Boots', type:'armor', amount:0, locations:{
-    'blighttown':[{type:'[Corpse]', where:''}],
+    'blighttown':[{type:'[Corpse]', where:'Left of the second bonfire, in the poison swamp'}],
     'start':[{type:'', where:'Pyromancer'}]
   }},
   {id:310000, name:'Priest\'s Hat', type:'armor', amount:0, locations:{
-    'theCatacombs':[{type:'[Corpse]', where:''}]
+    'theCatacombs':[{type:'[Corpse]', where:'In the Bonewheel zone, drop from above'}]
   }},
   {id:311000, name:'Holy Robe', type:'armor', amount:0, locations:{
-    'theCatacombs':[{type:'[Corpse]', where:''}],
+    'theCatacombs':[{type:'[Corpse]', where:'In the Bonewheel zone, drop from above'}],
     'start':[{type:'', where:'Cleric class'}]
   }},
   {id:312000, name:'Traveling Gloves', type:'armor', amount:0, locations:{
-    'theCatacombs':[{type:'[Corpse]', where:''}],
+    'theCatacombs':[{type:'[Corpse]', where:'In the Bonewheel zone, drop from above'}],
     'start':[{type:'', where:'Cleric class'}]
   }},
   {id:313000, name:'Holy Trousers', type:'armor', amount:0, locations:{
-    'theCatacombs':[{type:'[Corpse]', where:''}],
+    'theCatacombs':[{type:'[Corpse]', where:'In the Bonewheel zone, drop from above'}],
     'start':[{type:'', where:'Cleric class'}]
   }},
   {id:180000, name:'Cleric Helm', type:'armor', amount:0, locations:{
@@ -2015,16 +2076,16 @@ var fullItemList = [
     'lostIzalith':[{type:'[Drop]', where:'Solaire of Astora (100%)'}]
   }},
   {id:70000, name:'Black Iron Helm', type:'armor', amount:0, locations:{
-    'anorLondo':[{type:'[Corpse]', where:'Top-Left of the painting room'}]
+    'anorLondo':[{type:'[Corpse]', where:'Bottom-Left of the painting room'}]
   }},
   {id:71000, name:'Black Iron Armor', type:'armor', amount:0, locations:{
-    'anorLondo':[{type:'[Corpse]', where:'Top-Left of the painting room'}]
+    'anorLondo':[{type:'[Corpse]', where:'Bottom-Left of the painting room'}]
   }},
   {id:72000, name:'Black Iron Gauntlets', type:'armor', amount:0, locations:{
-    'anorLondo':[{type:'[Corpse]', where:'Top-Left of the painting room'}]
+    'anorLondo':[{type:'[Corpse]', where:'Bottom-Left of the painting room'}]
   }},
   {id:73000, name:'Black Iron Leggings', type:'armor', amount:0, locations:{
-    'anorLondo':[{type:'[Corpse]', where:'Top-Left of the painting room'}]
+    'anorLondo':[{type:'[Corpse]', where:'Bottom-Left of the painting room'}]
   }},
   {id:110000, name:'Helm of the Wise', type:'armor', amount:0, locations:{
     'firelinkShrine':[{type:'[Buy]', where:'Domhnall of Zena'}],
@@ -2055,34 +2116,34 @@ var fullItemList = [
     'senFortress':[{type:'[Buy]', where:'Crestfallen Merchant'}]
   }},
   {id:130000, name:'Crystalline Helm', type:'armor', amount:0, locations:{
-    'theDukeArchives':[{type:'[Corpse]', where:''}]
+    'theDukeArchives':[{type:'[Corpse]', where:'In the Duke\'s Garden, just before the Crystal Cave'}]
   }},
   {id:131000, name:'Crystalline Armor', type:'armor', amount:0, locations:{
-    'theDukeArchives':[{type:'[Corpse]', where:''}]
+    'theDukeArchives':[{type:'[Corpse]', where:'In the Duke\'s Garden, just before the Crystal Cave'}]
   }},
   {id:132000, name:'Crystalline Gauntlets', type:'armor', amount:0, locations:{
-    'theDukeArchives':[{type:'[Corpse]', where:''}]
+    'theDukeArchives':[{type:'[Corpse]', where:'In the Duke\'s Garden, just before the Crystal Cave'}]
   }},
   {id:133000, name:'Crystalline Leggings', type:'armor', amount:0, locations:{
-    'theDukeArchives':[{type:'[Corpse]', where:''}]
+    'theDukeArchives':[{type:'[Corpse]', where:'In the Duke\'s Garden, just before the Crystal Cave'}]
   }},
   {id:450000, name:'Brass Helm', type:'armor', amount:0, locations:{
-    'anorLondo':[{type:'[Chest]', where:''}]
+    'anorLondo':[{type:'[Chest]', where:'Inside Lord Gwyn\'s Tomb, after beating Gwyndolin'}]
   }},
   {id:451000, name:'Brass Armor', type:'armor', amount:0, locations:{
-    'anorLondo':[{type:'[Chest]', where:''}]
+    'anorLondo':[{type:'[Chest]', where:'Inside Lord Gwyn\'s Tomb, after beating Gwyndolin'}]
   }},
   {id:452000, name:'Brass Gauntlets', type:'armor', amount:0, locations:{
-    'anorLondo':[{type:'[Chest]', where:''}]
+    'anorLondo':[{type:'[Chest]', where:'Inside Lord Gwyn\'s Tomb, after beating Gwyndolin'}]
   }},
   {id:453000, name:'Brass Leggings', type:'armor', amount:0, locations:{
-    'anorLondo':[{type:'[Chest]', where:''}]
+    'anorLondo':[{type:'[Chest]', where:'Inside Lord Gwyn\'s Tomb, after beating Gwyndolin'}]
   }},
   {id:240000, name:'Pharis\'s Hat', type:'armor', amount:0, locations:{
     'darkrootGarden':[{type:'[Drop]', where:'Forest Hunter Archer (100%)'}]
   }},
   {id:380000, name:'Big Hat', type:'armor', amount:0, locations:{
-    'theDukeArchives':[{type:'[Chest]', where:''}]
+    'theDukeArchives':[{type:'[Chest]', where:'Big Hat Logan (100%)'}]
   }},
   {id:381000, name:'Sage Robe', type:'armor', amount:0, locations:{
     'theDukeArchives':[{type:'[Drop]', where:'Big Hat Logan (100%)'}]
@@ -2094,64 +2155,64 @@ var fullItemList = [
     'theDukeArchives':[{type:'[Drop]', where:'Big Hat Logan (100%)'}]
   }},
   {id:140000, name:'Mask of the Sealer', type:'armor', amount:0, locations:{
-    'blighttown':[{type:'[Corpse]', where:''}]
+    'blighttown':[{type:'[Corpse]', where:'Near the elevator close to the Valley of Drakes shortcut'}]
   }},
   {id:141000, name:'Crimson Robe', type:'armor', amount:0, locations:{
-    'blighttown':[{type:'[Corpse]', where:''}]
+    'blighttown':[{type:'[Corpse]', where:'Near the elevator close to the Valley of Drakes shortcut'}]
   }},
   {id:142000, name:'Crimson Gloves', type:'armor', amount:0, locations:{
-    'blighttown':[{type:'[Corpse]', where:''}]
+    'blighttown':[{type:'[Corpse]', where:'Near the elevator close to the Valley of Drakes shortcut'}]
   }},
   {id:143000, name:'Crimson Waistcloth', type:'armor', amount:0, locations:{
-    'blighttown':[{type:'[Corpse]', where:''}]
+    'blighttown':[{type:'[Corpse]', where:'Near the elevator close to the Valley of Drakes shortcut'}]
   }},
   {id:340000, name:'Witch Hat', type:'armor', amount:0, locations:{
-    'valleyOfDrakes':[{type:'[Corpse]', where:''}]
+    'valleyOfDrakes':[{type:'[Corpse]', where:'At one end of the Valley after killing the Four Kings'}]
   }},
   {id:341000, name:'Witch Cloak', type:'armor', amount:0, locations:{
-    'valleyOfDrakes':[{type:'[Corpse]', where:''}]
+    'valleyOfDrakes':[{type:'[Corpse]', where:'At one end of the Valley after killing the Four Kings'}]
   }},
   {id:342000, name:'Witch Gloves', type:'armor', amount:0, locations:{
-    'valleyOfDrakes':[{type:'[Corpse]', where:''}]
+    'valleyOfDrakes':[{type:'[Corpse]', where:'At one end of the Valley after killing the Four Kings'}]
   }},
   {id:343000, name:'Witch Skirt', type:'armor', amount:0, locations:{
-    'valleyOfDrakes':[{type:'[Corpse]', where:''}]
+    'valleyOfDrakes':[{type:'[Corpse]', where:'At one end of the Valley after killing the Four Kings'}]
   }},
   {id:330000, name:'Crown of Dusk', type:'armor', amount:0, locations:{
-    'darkrootBasin':[{type:'[Corpse]', where:''}]
+    'darkrootBasin':[{type:'[Corpse]', where:'At the very end of the basin, even after Manus portal'}]
   }},
   {id:331000, name:'Antiquated Dress', type:'armor', amount:0, locations:{
-    'darkrootBasin':[{type:'[Corpse]', where:''}]
+    'darkrootBasin':[{type:'[Corpse]', where:'At the very end of the basin, even after Manus portal'}]
   }},
   {id:332000, name:'Antiquated Gloves', type:'armor', amount:0, locations:{
-    'darkrootBasin':[{type:'[Corpse]', where:''}]
+    'darkrootBasin':[{type:'[Corpse]', where:'At the very end of the basin, even after Manus portal'}]
   }},
   {id:333000, name:'Antiquated Skirt', type:'armor', amount:0, locations:{
-    'darkrootBasin':[{type:'[Corpse]', where:''}]
+    'darkrootBasin':[{type:'[Corpse]', where:'At the very end of the basin, even after Manus portal'}]
   }},
   {id:460000, name:'Gold-Hemmed Black Hood', type:'armor', amount:0, locations:{
-    'demonsRuins':[{type:'[Corpse]', where:''}]
+    'demonsRuins':[{type:'[Corpse]', where:'On an altar facing the Ceaseless Discharge'}]
   }},
   {id:461000, name:'Gold-Hemmed Black Cloak', type:'armor', amount:0, locations:{
-    'demonsRuins':[{type:'[Corpse]', where:''}]
+    'demonsRuins':[{type:'[Corpse]', where:'On an altar facing the Ceaseless Discharge'}]
   }},
   {id:462000, name:'Gold-Hemmed Black Gloves', type:'armor', amount:0, locations:{
-    'demonsRuins':[{type:'[Corpse]', where:''}]
+    'demonsRuins':[{type:'[Corpse]', where:'On an altar facing the Ceaseless Discharge'}]
   }},
   {id:463000, name:'Gold-Hemmed Black Skirt', type:'armor', amount:0, locations:{
-    'demonsRuins':[{type:'[Corpse]', where:''}]
+    'demonsRuins':[{type:'[Corpse]', where:'On an altar facing the Ceaseless Discharge'}]
   }},
   {id:150000, name:'Mask of Velka', type:'armor', amount:0, locations:{
-    'paintedWorldOfAriamis':[{type:'[Corpse]', where:''}]
+    'paintedWorldOfAriamis':[{type:'[Corpse]', where:'On top of the Annex'}]
   }},
   {id:151000, name:'Black Cleric Robe', type:'armor', amount:0, locations:{
-    'paintedWorldOfAriamis':[{type:'[Corpse]', where:''}]
+    'paintedWorldOfAriamis':[{type:'[Corpse]', where:'On top of the Annex'}]
   }},
   {id:152000, name:'Black Manchette', type:'armor', amount:0, locations:{
-    'paintedWorldOfAriamis':[{type:'[Corpse]', where:''}]
+    'paintedWorldOfAriamis':[{type:'[Corpse]', where:'On top of the Annex'}]
   }},
   {id:153000, name:'Black Tights', type:'armor', amount:0, locations:{
-    'paintedWorldOfAriamis':[{type:'[Corpse]', where:''}]
+    'paintedWorldOfAriamis':[{type:'[Corpse]', where:'On top of the Annex'}]
   }},
   {id:700000, name:'Snickering Top Hat', type:'armor', amount:0, locations:{
     'royalWood':[{type:'[Drop]', where:'Marvelous Chester'}]
@@ -2166,52 +2227,52 @@ var fullItemList = [
     'royalWood':[{type:'[Drop]', where:'Marvelous Chester'}]
   }},
   {id:410000, name:'Maiden Hood', type:'armor', amount:0, locations:{
-    'theDukeArchives':[{type:'[Corpse]', where:''}]
+    'theDukeArchives':[{type:'[Corpse]', where:'In one of the cell, close to where you fight Reah'}]
   }},
   {id:411000, name:'Maiden Robe', type:'armor', amount:0, locations:{
-    'theDukeArchives':[{type:'[Corpse]', where:''}]
+    'theDukeArchives':[{type:'[Corpse]', where:'In one of the cell, close to where you fight Reah'}]
   }},
   {id:412000, name:'Maiden Gloves', type:'armor', amount:0, locations:{
-    'theDukeArchives':[{type:'[Corpse]', where:''}]
+    'theDukeArchives':[{type:'[Corpse]', where:'In one of the cell, close to where you fight Reah'}]
   }},
   {id:413000, name:'Maiden Skirt', type:'armor', amount:0, locations:{
-    'theDukeArchives':[{type:'[Corpse]', where:''}]
+    'theDukeArchives':[{type:'[Corpse]', where:'In one of the cell, close to where you fight Reah'}]
   }},
   {id:400000, name:'Dingy Hood', type:'armor', amount:0, locations:{
-    'firelinkShrine':[{type:'[Corpse]', where:''}]
+    'firelinkShrine':[{type:'[Corpse]', where:'Near the firekeeper cell'}]
   }},
   {id:401000, name:'Dingy Robe', type:'armor', amount:0, locations:{
-    'firelinkShrine':[{type:'[Corpse]', where:''}]
+    'firelinkShrine':[{type:'[Corpse]', where:'Near the firekeeper cell'}]
   }},
   {id:402000, name:'Dingy Gloves', type:'armor', amount:0, locations:{
-    'firelinkShrine':[{type:'[Corpse]', where:''}]
+    'firelinkShrine':[{type:'[Corpse]', where:'Near the firekeeper cell'}]
   }},
   {id:403000, name:'Blood-Stained Skirt', type:'armor', amount:0, locations:{
-    'firelinkShrine':[{type:'[Corpse]', where:''}]
+    'firelinkShrine':[{type:'[Corpse]', where:'Near the firekeeper cell'}]
   }},
   {id:280000, name:'Eastern Helm', type:'armor', amount:0, locations:{
-    'darkrootGarden':[{type:'[Corpse]', where:''}]
+    'darkrootGarden':[{type:'[Corpse]', where:'Behind Crest of Artorias\'s door, near a cliff'}]
   }},
   {id:281000, name:'Eastern Armor', type:'armor', amount:0, locations:{
-    'darkrootGarden':[{type:'[Corpse]', where:''}]
+    'darkrootGarden':[{type:'[Corpse]', where:'Behind Crest of Artorias\'s door, near a cliff'}]
   }},
   {id:282000, name:'Eastern Gauntlets', type:'armor', amount:0, locations:{
-    'darkrootGarden':[{type:'[Corpse]', where:''}]
+    'darkrootGarden':[{type:'[Corpse]', where:'Behind Crest of Artorias\'s door, near a cliff'}]
   }},
   {id:283000, name:'Eastern Leggings', type:'armor', amount:0, locations:{
-    'darkrootGarden':[{type:'[Corpse]', where:''}]
+    'darkrootGarden':[{type:'[Corpse]', where:'Behind Crest of Artorias\'s door, near a cliff'}]
   }},
   {id:60000, name:'Shadow Mask', type:'armor', amount:0, locations:{
-    'blighttown':[{type:'[Corpse]', where:''}]
+    'blighttown':[{type:'[Corpse]', where:'Close the depths entrypoint'}]
   }},
   {id:61000, name:'Shadow Garb', type:'armor', amount:0, locations:{
-    'blighttown':[{type:'[Corpse]', where:''}]
+    'blighttown':[{type:'[Corpse]', where:'Close the depths entrypoint'}]
   }},
   {id:62000, name:'Shadow Gauntlets', type:'armor', amount:0, locations:{
-    'blighttown':[{type:'[Corpse]', where:''}]
+    'blighttown':[{type:'[Corpse]', where:'Close the depths entrypoint'}]
   }},
   {id:63000, name:'Shadow Leggings', type:'armor', amount:0, locations:{
-    'blighttown':[{type:'[Corpse]', where:''}]
+    'blighttown':[{type:'[Corpse]', where:'Close the depths entrypoint'}]
   }},
   {id:520000, name:'Hollow Warrior Helm', type:'armor', amount:0, locations:{
     'undeadBurg':[{type:'[Drop]', where:'Hollow Warrior (1%)'}]
@@ -2299,28 +2360,28 @@ var fullItemList = [
     'undeadBurg':[{type:'[Drop]', where:'Hollow Thief (1%)'}]
   }},
   {id:420000, name:'Silver Knight Helm', type:'armor', amount:0, locations:{
-    'anorLondo':[{type:'[Chest]', where:''}]
+    'anorLondo':[{type:'[Chest]', where:'Guarded by two Silver Knight in the trophy room'}]
   }},
   {id:421000, name:'Silver Knight Armor', type:'armor', amount:0, locations:{
-    'anorLondo':[{type:'[Chest]', where:''}]
+    'anorLondo':[{type:'[Chest]', where:'Guarded by two Silver Knight in the trophy room'}]
   }},
   {id:422000, name:'Silver Knight Gauntlets', type:'armor', amount:0, locations:{
-    'anorLondo':[{type:'[Chest]', where:''}]
+    'anorLondo':[{type:'[Chest]', where:'Guarded by two Silver Knight in the trophy room'}]
   }},
   {id:423000, name:'Silver Knight Leggings', type:'armor', amount:0, locations:{
-    'anorLondo':[{type:'[Chest]', where:''}]
+    'anorLondo':[{type:'[Chest]', where:'Guarded by two Silver Knight in the trophy room'}]
   }},
   {id:320000, name:'Black Knight Helm', type:'armor', amount:0, locations:{
-    'kilnOfTheFirstFlame':[{type:'[Corpse]', where:''}]
+    'kilnOfTheFirstFlame':[{type:'[Corpse]', where:'On the bridges to the right'}]
   }},
   {id:321000, name:'Black Knight Armor', type:'armor', amount:0, locations:{
-    'kilnOfTheFirstFlame':[{type:'[Corpse]', where:''}]
+    'kilnOfTheFirstFlame':[{type:'[Corpse]', where:'On the bridges to the right'}]
   }},
   {id:322000, name:'Black Knight Gauntlets', type:'armor', amount:0, locations:{
-    'kilnOfTheFirstFlame':[{type:'[Corpse]', where:''}]
+    'kilnOfTheFirstFlame':[{type:'[Corpse]', where:'On the bridges to the right'}]
   }},
   {id:323000, name:'Black Knight Leggings', type:'armor', amount:0, locations:{
-    'kilnOfTheFirstFlame':[{type:'[Corpse]', where:''}]
+    'kilnOfTheFirstFlame':[{type:'[Corpse]', where:'On the bridges to the right'}]
   }},
   {id:530000, name:'Giant Helm', type:'armor', amount:0, locations:{
     'anorLondo':[{type:'[Buy]', where:'Giant Blacksmith'}]
@@ -2335,28 +2396,28 @@ var fullItemList = [
     'anorLondo':[{type:'[Buy]', where:'Giant Blacksmith'}]
   }},
   {id:90000, name:'Six-Eyed Helm of the Channelers', type:'armor', amount:0, locations:{
-    'theDukeArchives':[{type:'[Chest]', where:''}]
+    'theDukeArchives':[{type:'[Chest]', where:'Near the end of the Duke\'s Archives'}]
   }},
   {id:91000, name:'Robe of the Channelers', type:'armor', amount:0, locations:{
-    'theDukeArchives':[{type:'[Chest]', where:''}]
+    'theDukeArchives':[{type:'[Chest]', where:'Near the end of the Duke\'s Archives'}]
   }},
   {id:92000, name:'Gauntlets of the Channelers', type:'armor', amount:0, locations:{
-    'theDukeArchives':[{type:'[Chest]', where:''}]
+    'theDukeArchives':[{type:'[Chest]', where:'Near the end of the Duke\'s Archives'}]
   }},
   {id:93000, name:'Waistcloth of the Channelers', type:'armor', amount:0, locations:{
-    'theDukeArchives':[{type:'[Chest]', where:''}]
+    'theDukeArchives':[{type:'[Chest]', where:'Near the end of the Duke\'s Archives'}]
   }},
   {id:250000, name:'Painting Guardian Hood', type:'armor', amount:0, locations:{
-    'paintedWorldOfAriamis':[{type:'[Chest]', where:''}]
+    'paintedWorldOfAriamis':[{type:'[Chest]', where:'In a room with two Snow Rats'}]
   }},
   {id:251000, name:'Painting Guardian Robe', type:'armor', amount:0, locations:{
-    'paintedWorldOfAriamis':[{type:'[Chest]', where:''}]
+    'paintedWorldOfAriamis':[{type:'[Chest]', where:'In a room with two Snow Rats'}]
   }},
   {id:252000, name:'Painting Guardian Gloves', type:'armor', amount:0, locations:{
-    'paintedWorldOfAriamis':[{type:'[Chest]', where:''}]
+    'paintedWorldOfAriamis':[{type:'[Chest]', where:'In a room with two Snow Rats'}]
   }},
   {id:253000, name:'Painting Guardian Waistcloth', type:'armor', amount:0, locations:{
-    'paintedWorldOfAriamis':[{type:'[Chest]', where:''}]
+    'paintedWorldOfAriamis':[{type:'[Chest]', where:'In a room with two Snow Rats'}]
   }},
   {id:620000, name:'Fang Boar Helm', type:'armor', amount:0, locations:{
     'undeadParish':[{type:'[Drop]', where:'Fang Boar (20%)'}],
@@ -2475,88 +2536,88 @@ var fullItemList = [
     'theAbyss':[{type:'[Covenant]', where:'Rank the Darkwraith covenant up to +2'}]
   }},
   {id:200000, name:'Helm of Thorns', type:'armor', amount:0, locations:{
-    'quelaagDomain':[{type:'[Corpse]', where:''}]
+    'quelaagDomain':[{type:'[Corpse]', where:'After beating Kirk three times, near the Izalith\'s shortcut'}]
   }},
   {id:201000, name:'Armor of Thorns', type:'armor', amount:0, locations:{
-    'quelaagDomain':[{type:'[Corpse]', where:''}]
+    'quelaagDomain':[{type:'[Corpse]', where:'After beating Kirk three times, near the Izalith\'s shortcut'}]
   }},
   {id:202000, name:'Gauntlets of Thorns', type:'armor', amount:0, locations:{
-    'quelaagDomain':[{type:'[Corpse]', where:''}]
+    'quelaagDomain':[{type:'[Corpse]', where:'After beating Kirk three times, near the Izalith\'s shortcut'}]
   }},
   {id:203000, name:'Leggings of Thorns', type:'armor', amount:0, locations:{
-    'quelaagDomain':[{type:'[Corpse]', where:''}]
+    'quelaagDomain':[{type:'[Corpse]', where:'After beating Kirk three times, near the Izalith\'s shortcut'}]
   }},
   {id:100000, name:'Helm of Favor', type:'armor', amount:0, locations:{
-    'anorLondo':[{type:'[Corpse]', where:''}]
+    'anorLondo':[{type:'[Corpse]', where:'After beating Lautrec using the Black Eye Orb, in Gwynevere\'s room'}]
   }},
   {id:101000, name:'Embraced Armor of Favor', type:'armor', amount:0, locations:{
-    'anorLondo':[{type:'[Corpse]', where:''}]
+    'anorLondo':[{type:'[Corpse]', where:'After beating Lautrec using the Black Eye Orb, in Gwynevere\'s room'}]
   }},
   {id:102000, name:'Gauntlets of Favor', type:'armor', amount:0, locations:{
-    'anorLondo':[{type:'[Corpse]', where:''}]
+    'anorLondo':[{type:'[Corpse]', where:'After beating Lautrec using the Black Eye Orb, in Gwynevere\'s room'}]
   }},
   {id:103000, name:'Leggings of Favor', type:'armor', amount:0, locations:{
-    'anorLondo':[{type:'[Corpse]', where:''}]
+    'anorLondo':[{type:'[Corpse]', where:'After beating Lautrec using the Black Eye Orb, in Gwynevere\'s room'}]
   }},
   {id:20000, name:'Paladin Helm', type:'armor', amount:0, locations:{
-    'tombOfTheGiants':[{type:'[Corpse]', where:''}]
+    'tombOfTheGiants':[{type:'[Corpse]', where:'After beating Leeroy, inside Nito\'s grave'}]
   }},
   {id:21000, name:'Paladin Armor', type:'armor', amount:0, locations:{
-    'tombOfTheGiants':[{type:'[Corpse]', where:''}]
+    'tombOfTheGiants':[{type:'[Corpse]', where:'After beating Leeroy, inside Nito\'s grave'}]
   }},
   {id:22000, name:'Paladin Gauntlets', type:'armor', amount:0, locations:{
-    'tombOfTheGiants':[{type:'[Corpse]', where:''}]
+    'tombOfTheGiants':[{type:'[Corpse]', where:'After beating Leeroy, inside Nito\'s grave'}]
   }},
   {id:23000, name:'Paladin Leggings', type:'armor', amount:0, locations:{
-    'tombOfTheGiants':[{type:'[Corpse]', where:''}]
+    'tombOfTheGiants':[{type:'[Corpse]', where:'After beating Leeroy, inside Nito\'s grave'}]
   }},
   {id:120000, name:'Stone Helm', type:'armor', amount:0, locations:{
-    'darkrootGarden':[{type:'[Chest]', where:''}]
+    'darkrootGarden':[{type:'[Chest]', where:'Under the bridge past Alvina'}]
   }},
   {id:121000, name:'Stone Armor', type:'armor', amount:0, locations:{
-    'darkrootGarden':[{type:'[Chest]', where:''}]
+    'darkrootGarden':[{type:'[Chest]', where:'Under the bridge past Alvina'}]
   }},
   {id:122000, name:'Stone Gauntlets', type:'armor', amount:0, locations:{
-    'darkrootGarden':[{type:'[Chest]', where:''}]
+    'darkrootGarden':[{type:'[Chest]', where:'Under the bridge past Alvina'}]
   }},
   {id:123000, name:'Stone Leggings', type:'armor', amount:0, locations:{
-    'darkrootGarden':[{type:'[Chest]', where:''}]
+    'darkrootGarden':[{type:'[Chest]', where:'Under the bridge past Alvina'}]
   }},
   {id:690000, name:'Guardian Helm', type:'armor', amount:0, locations:{
-    'royalWood':[{type:'[Corpse]', where:''}]
+    'royalWood':[{type:'[Corpse]', where:'Towards the edge of the map, west of Oolacile Sanctuary'}]
   }},
   {id:691000, name:'Guardian Armor', type:'armor', amount:0, locations:{
-    'royalWood':[{type:'[Corpse]', where:''}]
+    'royalWood':[{type:'[Corpse]', where:'In the last part of the woods, where Guardian are patroling'}]
   }},
   {id:692000, name:'Guardian Gauntlets', type:'armor', amount:0, locations:{
-    'royalWood':[{type:'[Corpse]', where:''}]
+    'royalWood':[{type:'[Corpse]', where:'In the first ruins you find, up the stairs'}]
   }},
   {id:693000, name:'Guardian Leggings', type:'armor', amount:0, locations:{
-    'royalWood':[{type:'[Corpse]', where:''}]
+    'royalWood':[{type:'[Corpse]', where:'Just before the bridge where you meet Kalameet'}]
   }},
   {id:440000, name:'Havel\'s Helm', type:'armor', amount:0, locations:{
-    'anorLondo':[{type:'[Chest]', where:''}]
+    'anorLondo':[{type:'[Chest]', where:'Behind an illusory wall in a fireplace'}]
   }},
   {id:441000, name:'Havel\'s Armor', type:'armor', amount:0, locations:{
-    'anorLondo':[{type:'[Chest]', where:''}]
+    'anorLondo':[{type:'[Chest]', where:'Behind an illusory wall in a fireplace'}]
   }},
   {id:442000, name:'Havel\'s Gauntlets', type:'armor', amount:0, locations:{
-    'anorLondo':[{type:'[Chest]', where:''}]
+    'anorLondo':[{type:'[Chest]', where:'Behind an illusory wall in a fireplace'}]
   }},
   {id:443000, name:'Havel\'s Leggings', type:'armor', amount:0, locations:{
-    'anorLondo':[{type:'[Chest]', where:''}]
+    'anorLondo':[{type:'[Chest]', where:'Behind an illusory wall in a fireplace'}]
   }},
   {id:290000, name:'Xanthous Crown', type:'armor', amount:0, locations:{
-    'paintedWorldOfAriamis':[{type:'[Corpse]', where:''}]
+    'paintedWorldOfAriamis':[{type:'[Corpse]', where:'After beating Xanthous, Behind Crossbreed Priscilla'}]
   }},
   {id:291000, name:'Xanthous Overcoat', type:'armor', amount:0, locations:{
-    'paintedWorldOfAriamis':[{type:'[Corpse]', where:''}]
+    'paintedWorldOfAriamis':[{type:'[Corpse]', where:'After beating Xanthous, Behind Crossbreed Priscilla'}]
   }},
   {id:292000, name:'Xanthous Gloves', type:'armor', amount:0, locations:{
-    'paintedWorldOfAriamis':[{type:'[Corpse]', where:''}]
+    'paintedWorldOfAriamis':[{type:'[Corpse]', where:'After beating Xanthous, Behind Crossbreed Priscilla'}]
   }},
   {id:293000, name:'Xanthous Waistcloth', type:'armor', amount:0, locations:{
-    'paintedWorldOfAriamis':[{type:'[Corpse]', where:''}]
+    'paintedWorldOfAriamis':[{type:'[Corpse]', where:'After beating Xanthous, Behind Crossbreed Priscilla'}]
   }},
   {id:590000, name:'Mask of the Father', type:'armor', amount:0, locations:{
     'firelinkShrine':[{type:'[Buy]', where:'Patches'}],
@@ -2600,19 +2661,19 @@ var fullItemList = [
     'start':[{type:'', where:'Starting gift'}]
   }},
   {id:104, name:'Cloranthy Ring', type:'ring', amount:0, locations:{
-    'theGreatHollow':[{type:'[Corpse]', where:''}]
+    'theGreatHollow':[{type:'[Corpse]', where:'Jump inside the tree'}]
   }},
   {id:100, name:'Havel\'s Ring', type:'ring', amount:0, locations:{
     'darkrootBasin':[{type:'[Drop]', where:'Havel the Rock (100%)'}]
   }},
   {id:120, name:'Ring of Steel Protection', type:'ring', amount:0, locations:{
-    'senFortress':[{type:'[Chest]', where:''}]
+    'senFortress':[{type:'[Chest]', where:'On top of the stairs where the first boulder drop'}]
   }},
   {id:107, name:'Spell Stoneplate Ring', type:'ring', amount:0, locations:{
     'senFortress':[{type:'[Buy]', where:'Crestfallen Merchant'}]
   }},
   {id:105, name:'Flame Stoneplate Ring', type:'ring', amount:0, locations:{
-    'senFortress':[{type:'[Corpse]', where:''}]
+    'senFortress':[{type:'[Corpse]', where:'Outdoor after the two Balder Knight'}]
   }},
   {id:106, name:'Thunder Stoneplate Ring', type:'ring', amount:0, locations:{
     'senFortress':[{type:'[Buy]', where:'Crestfallen Merchant'}]
@@ -2628,23 +2689,23 @@ var fullItemList = [
     'undeadParish':[{type:'[Buy]', where:'Oswald'}]
   }},
   {id:113, name:'Cursebite Ring', type:'ring', amount:0, locations:{
-    'newLondoRuins':[{type:'[Corpse]', where:''}]
+    'newLondoRuins':[{type:'[Corpse]', where:'Close to Ingward, guarded by a Ghost'}]
   }},
   {id:101, name:'Red Tearstone Ring', type:'ring', amount:0, locations:{
-    'valleyOfDrakes':[{type:'[Corpse]', where:''}]
+    'valleyOfDrakes':[{type:'[Corpse]', where:'Up the ladder where ther is 3 Blue Drakes'}]
   }},
   {id:147, name:'Blue Tearstone Ring', type:'ring', amount:0, locations:{
     'undeadBurg':[{type:'[Chest]', where:'Behind the Black Knight'}]
   }},
   {id:126, name:'Ring of Sacrifice', type:'ring', amount:0, locations:{
     'undeadAsylum':[{type:'[Snuggly]', where:'Trade with Humanity'}],
-    'firelinkShrine':[{type:'[Corpse]', where:''}],
+    'firelinkShrine':[{type:'[Corpse]', where:'Where Domhnall of Zena is Located, under the acqueduct'}],
     'undeadParish':[{type:'[Buy]', where:'Oswald of Carim'}]
   }},
   {id:127, name:'Rare Ring of Sacrifice', type:'ring', amount:0, locations:{
     'undeadAsylum':[{type:'[Snuggly]', where:'Trade with Twin Humanities'}],
-    'senFortress':[{type:'[Corpse]', where:''}],
-    'newLondoRuins':[{type:'[Corpse]', where:''}]
+    'senFortress':[{type:'[Corpse]', where:'Inside the tower guarded by Undead Prince Ricard'}],
+    'newLondoRuins':[{type:'[Corpse]', where:'On Ingward\'s roof'}]
   }},
   {id:115, name:'Bellowing Dragoncrest Ring', type:'ring', amount:0, locations:{
     'firelinkShrine':[{type:'[Buy]', where:'Griggs of Vinheim'}]
@@ -2654,19 +2715,19 @@ var fullItemList = [
   }},
   {id:123, name:'Slumbering Dragoncrest Ring', type:'ring', amount:0, locations:{
     'firelinkShrine':[{type:'[Buy]', where:'Griggs of Vinheim'}],
-    'senFortress':[{type:'[Corpse]', where:''}]
+    'senFortress':[{type:'[Corpse]', where:'On the second set of rolling boulder, jump midway to access a hidden area'}]
   }},
   {id:116, name:'Dusk Crown Ring', type:'ring', amount:0, locations:{
     'darkrootBasin':[{type:'[Drop]', where:'Hydra (100%)'}]
   }},
   {id:114, name:'White Seance Ring', type:'ring', amount:0, locations:{
-    'theDukeArchives':[{type:'[Corpse]', where:''}]
+    'theDukeArchives':[{type:'[Corpse]', where:'From the exit of the prison, jump on the pathway'}]
   }},
   {id:149, name:'Darkmoon Seance Ring', type:'ring', amount:0, locations:{
-    'theCatacombs':[{type:'[Corpse]', where:''}]
+    'theCatacombs':[{type:'[Corpse]', where:'Access a tomb by the breakable stone wall, then go to the end of the tomb'}]
   }},
   {id:148, name:'Ring of the Sun\'s Firstborn', type:'ring', amount:0, locations:{
-    'anorLondo':[{type:'[Corpse]', where:''}]
+    'anorLondo':[{type:'[Corpse]', where:'At Gwyndolin bonfire'}]
   }},
   {id:102, name:'Darkmoon Blade Covenant Ring', type:'ring', amount:0, locations:{
     'anorLondo':[{type:'[Covenant]', where:'Join the Blade of the Darkmoon covenant'}]
@@ -2678,7 +2739,7 @@ var fullItemList = [
     'anorLondo':[{type:'[Drop]', where:'Ornstein (100% if killed 2nd)'}]
   }},
   {id:146, name:'Wolf Ring', type:'ring', amount:0, locations:{
-    'darkrootGarden':[{type:'[Corpse]', where:''}]
+    'darkrootGarden':[{type:'[Corpse]', where:'At the end of the area where the Frog-Rays are'}]
   }},
   {id:119, name:'Hawk Ring', type:'ring', amount:0, locations:{
     'anorLondo':[{type:'[Chest]', where:'Just near the Giant Blacksmith'}]
@@ -2694,13 +2755,13 @@ var fullItemList = [
     'blighttown':[{type:'[Drop]', where:'Shiva\'s Bodyguard (100%)'}]
   }},
   {id:125, name:'Rusted Iron Ring', type:'ring', amount:0, locations:{
-    'undeadAsylum':[{type:'[Corpse]', where:''}]
+    'undeadAsylum':[{type:'[Corpse]', where:'Behind the door which open only with F2 West Key'}]
   }},
   {id:121, name:'Covetous Gold Serpent Ring', type:'ring', amount:0, locations:{
-    'senFortress':[{type:'[Corpse]', where:''}]
+    'senFortress':[{type:'[Corpse]', where:'Down the boulder path, let it destroy the wall at the end of the road'}]
   }},
   {id:122, name:'Covetous Silver Serpent Ring', type:'ring', amount:0, locations:{
-    'tombOfTheGiants':[{type:'[Corpse]', where:''}]
+    'tombOfTheGiants':[{type:'[Corpse]', where:'Jump down from the corpse next to the Giant Skeleton Archer'}]
   }},
   {id:138, name:'Covenant of Artorias', type:'ring', amount:0, locations:{
     'darkrootGarden':[{type:'[Drop]', where:'Great Grey Wolf Sif (100%)'}]
@@ -2726,7 +2787,7 @@ var fullItemList = [
     'anorLondo':[{type:'[Drop]', where:'Lautrec of Carim (100%)'}]
   }},
   {id:142, name:'Ring of the Evil Eye', type:'ring', amount:0, locations:{
-    'depths':[{type:'[Corpse]', where:''}]
+    'depths':[{type:'[Corpse]', where:'On the sewer with Basilisks'}]
   }},
   {id:150, name:'Calamity Ring', type:'ring', amount:0, locations:{
     'royalWood':[{type:'[Drop]', where:'Black Dragon Kalameet (100%)'}]

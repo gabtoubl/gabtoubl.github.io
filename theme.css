@@ -138,16 +138,17 @@ p {
 }
 #itemInfo #itemInfoLocations {
   font-size: 16px;
-  vertical-align: top;
 }
 #itemInfo #itemInfoLocations .itemLocationTitle {
   font-weight: bold;
   color: honeydew;
+  vertical-align: top;
 }
 #itemInfo #itemInfoLocations .itemMethodType {
   font-weight: bold;
   text-align: right;
   color: darkred;
+  vertical-align: top;
 }
 #itemInfo #itemInfoLocations .itemMethodWhere {
   font-style: italic;
