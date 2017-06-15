@@ -104,8 +104,8 @@
       var imgsList = [];
       var itemDiv = document.getElementById("itemDiv");
       var itemList = document.getElementById("itemList");
-      var itemTypes = document.getElementById("itemTypes").childNodes;
-      var itemPlaces = document.getElementById("itemPlaces").childNodes;
+      var itemTypes = [].slice.call(document.querySelectorAll("#itemTypes > img"));
+      var itemPlaces = [].slice.call(document.querySelectorAll("#itemPlaces > div"));
       var itemInfo = document.getElementById("itemInfo");
       var itemInfoImg = document.getElementById("itemInfoImg");
       var itemInfoName = document.getElementById("itemInfoName");
@@ -116,14 +116,10 @@
       var currentProfile = -1;
       var showMissed = true;
       var filter = 'item';
-      for (var category of itemTypes) {
-        if (category.id)
-          category.onclick = function() {changeFilter(this);};
-      }
-      for (var place of itemPlaces) {
-        if (place.id)
-          place.onclick = function() {changeFilter(this);};
-      }
+      for (var category of itemTypes)
+        category.onclick = function() {changeFilter(this);};
+      for (var place of itemPlaces)
+        place.onclick = function() {changeFilter(this);};
       hideEverything = () => {
         for (var img of imgsList) {
           if (img.itemType == filter || filter in img.itemLocations)
@@ -153,11 +149,9 @@
         else
           chargeProfile(currentProfile);
         for (var cat of itemTypes)
-          if (cat.id)
-            cat.classList.remove('selected');
+          cat.classList.remove('selected');
         for (var cat of itemPlaces)
-          if (cat.id)
-            cat.classList.remove('selected');
+          cat.classList.remove('selected');
         category.classList.add('selected');
       }
       chargeProfile = (id) => {
@@ -166,7 +160,7 @@
         for (var item of saves[id].items) {
           var img = document.getElementById(item.type+item.id);
           if (!img)
-            console.log('error:',item.id,item.type);
+            console.error('error:',item.id,item.type);
           else {
             img.itemAmount = item.amount;
             if (img.itemType == filter || filter in img.itemLocations)
@@ -198,7 +192,7 @@
             var save = saves[id];
             addradiobutton(profiles, save.name+"(Lv"+save.level+')', +id);
           }
-          chargeProfile(0);
+          currentProfile = 0;
           profiles.style.display = 'inline-block';
           document.getElementById('itemSelector').style.display = 'inline-block';
           document.getElementById('showFoundItems').click();
@@ -275,7 +269,6 @@
         var img = document.createElement("img");
         img.src = 'imgs/'+item.type+'/'+item.id + '.png';
         img.alt = item.id;
-        img.title = item.name;
         imgContainer.appendChild(img);
         imgsList.push(imgContainer);
         itemList.appendChild(imgContainer);

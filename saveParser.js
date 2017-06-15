@@ -104,7 +104,10 @@ getPlayersSave = (data, offsets) => {
           else
             item.type = '';
           if (item.type != "") {
-            player.items.push(item);
+            if ((x = player.items.findIndex(elem => elem.id == item.id && elem.type == item.type)) != -1)
+              player.items[x].amount += item.amount;
+            else
+              player.items.push(item);
           }
         }
       }

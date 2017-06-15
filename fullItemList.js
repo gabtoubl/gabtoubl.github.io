@@ -275,7 +275,7 @@ var fullItemList = [
     'tombOfTheGiants':[
       {type:'[Corpse]', where:'In Patches\'s trap pit'},
       {type:'[Corpse]', where:'On the path back to Catacombs'},
-      {type:'[Corpse]', where:'Just after descending the first slide ramp'}]
+      {type:'[Corpse]', where:'Just after descending the first slide ramp'}],
     'newLondoRuins':[{type:'[Corpse]', where:'4 different locations in the water drained area'}],
     'demonsRuins':[{type:'[Corpse]', where:'Close to the 10 Taurus Demon, in lava'}]
   }},
@@ -540,7 +540,7 @@ var fullItemList = [
   }},
   {id:1080, name:'Blue Titanite Slab', type:'material', amount:0, locations:{
     'crystalCave':[
-      {type:'[Corpse]', where:'After the first Crystal Golem, drop inside the cave and navigate through the invisible path behind'},
+      {type:'[Corpse]', where:'After the first Crystal Golem, drop inside the cave and navigate through the invisible path'},
       {type:'[Drop]', where:'Moonlight Butterfly (0.2%)'}],
     'royalWood':[{type:'[Chest]', where:'In a puddle guarded by 3 Guardians'}]
   }},
@@ -551,7 +551,7 @@ var fullItemList = [
     ],
     'firelinkShrine': [{type:'[Frampt]', where:'Trade with Red Titanite Slab'}],
     'theGreatHollow' :[
-      {type:'[Corpse]', where:'Near the top of the area'}],
+      {type:'[Corpse]', where:'Near the top of the area'},
       {type:'[Corpse]', where:'On a branch above the Basilisks'}],
     'demonsRuins':[
       {type:'[Drop]', where:'Chaos Bug (0.5%)'},
@@ -2686,7 +2686,7 @@ var fullItemList = [
     'undeadParish':[{type:'[Buy]', where:'Oswald of Carim'}]
   }},
   {id:110, name:'Poisonbite Ring', type:'ring', amount:0, locations:{
-    'undeadParish':[{type:'[Buy]', where:'Oswald'}]
+    'undeadParish':[{type:'[Buy]', where:'Oswald of Carim'}]
   }},
   {id:113, name:'Cursebite Ring', type:'ring', amount:0, locations:{
     'newLondoRuins':[{type:'[Corpse]', where:'Close to Ingward, guarded by a Ghost'}]
