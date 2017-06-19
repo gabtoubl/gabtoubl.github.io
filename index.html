@@ -126,6 +126,7 @@
         place.onclick = function() {changeFilter(this);};
       hideEverything = () => {
         for (var img of imgsList) {
+          img.itemAmount = 0;
           if (img.itemType == filter || filter in img.itemLocations)
             img.style.display = showMissed === 'all' || showMissed ? 'inline-block' : 'none';
           else
