@@ -1,0 +1,15 @@
+
+
+p {
+  max-width:600px;
+  font-size:18px;
+  line-height:1.4em;
+  font-family:Georgia, sans-serif;
+}
+
+.content {
+  margin:50px;
+  max-width:700px;
+  padding:30px;
+  border: 10px solid #dd0093;
+}
