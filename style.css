@@ -20,6 +20,9 @@ p {font-family:"Courier New", arial, sans-serif; font-size:12pt;}
 
 .content {  padding: 10px; margin: 10px 20px; background-color:white;}
 
+.trial-level { border:4px solid pink; max-width:300px; margin: 0 auto; text-align:center;}
+
+
 
 /* Mobile */
 @media only screen and (max-width: 500px) {
