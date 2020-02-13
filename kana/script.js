@@ -29,9 +29,11 @@ renderNotes(notes);
 // When true, the silence period is longer (about 15 seconds),
 // allowing us to keep recording even when the user pauses.
 recognition.continuous = true;
+recognition.lang = "ja-JP";
 
 // This block is called every time the Speech APi captures a line.
 recognition.onresult = function(event) {
+  console.log("RESULT!!!", event);
 
   // event is a SpeechRecognitionEvent object.
   // It holds all the lines we have captured so far.
@@ -61,6 +63,7 @@ recognition.onspeechend = function() {
 }
 
 recognition.onerror = function(event) {
+  console.log("ERROR!!", event)
   if(event.error == 'no-speech') {
     instructions.text('No speech was detected. Try again.');
   };
