@@ -19,8 +19,6 @@ var noteContent = '';
 var notes = getAllNotes();
 renderNotes(notes);
 
-
-
 /*-----------------------------
       Voice Recognition
 ------------------------------*/
@@ -33,7 +31,7 @@ recognition.lang = "ja-JP";
 
 // This block is called every time the Speech APi captures a line.
 recognition.onresult = function(event) {
-  console.log("RESULT!!!", event);
+  alert("RESULT!!!", event);
 
   // event is a SpeechRecognitionEvent object.
   // It holds all the lines we have captured so far.
@@ -64,6 +62,8 @@ recognition.onspeechend = function() {
 
 recognition.onerror = function(event) {
   console.log("ERROR!!", event)
+  noteContent += "Error:" + event.error;
+  noteTextarea.val(noteContent);
   if(event.error == 'no-speech') {
     instructions.text('No speech was detected. Try again.');
   };
