@@ -9,7 +9,10 @@ a:hover {
   color: #fff;
 }
 
-/* Custom default button */
+li {
+  list-style: none;
+}
+
 .btn-secondary,
 .btn-secondary:hover,
 .btn-secondary:focus {
